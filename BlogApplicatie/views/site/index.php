@@ -51,3 +51,12 @@ $this->title = 'My Yii Application';
 
     </div>
 </div>
+
+<?php
+if($info === null) {
+    $info = "f";
+    echo "" . $info;
+} else {
+    var_dump($info);
+}
+?>

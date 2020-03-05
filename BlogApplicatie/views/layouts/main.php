@@ -26,21 +26,24 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap">
+<div class="wrap" style="background-color: rgba(18, 52, 86, 0.1)">
     <?php
+    $id = Yii::$app->user->id;
+    $user = \app\components\WebUser::findOne($id);
+
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => 'Telefication',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar navbar-fixed-top',
+            'style' => 'background-color: #f2f2f2',
         ],
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Blog', 'url' => ['/site/about']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
@@ -55,6 +58,12 @@ AppAsset::register($this);
             )
         ],
     ]);
+    $user->isAdmin || $user->isSuperAdmin ? (
+    ['label' => 'Beheer', 'url' => ['/admin/home']]
+
+    ) : ([die(var_dump("2de ding"))])
+    ;
+
     NavBar::end();
     ?>
 
@@ -69,9 +78,9 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; telefication <?= date('Y') ?></p>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-right">Badbit</p>
     </div>
 </footer>
 

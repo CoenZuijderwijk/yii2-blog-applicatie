@@ -61,7 +61,13 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $cache = Yii::$app->cache;
+
+        $info = $cache->get("my_cached_data");
+
+        return $this->render('index', [
+            'info' => $info
+        ]);
     }
 
     /**
@@ -71,18 +77,23 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        $cache = Yii::$app->cache;
+        $info = $cache->get("my_cached_data");
+
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            $info = $model->getUser();
+            $cache->set("my_cached_data", $info, 60);
             return $this->goBack();
         }
-
         $model->password = '';
         return $this->render('login', [
             'model' => $model,
+            'info' => $info
         ]);
     }
 
