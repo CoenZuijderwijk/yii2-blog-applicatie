@@ -6,6 +6,7 @@ use app\models\User;
  * @property boolean $isAdmin
  * @property boolean $isSuperAdmin
  * @property User $user
+ * @property int $id
  */
 class WebUser extends User{
     /**
@@ -42,6 +43,7 @@ class WebUser extends User{
     function getIsAdmin(){
         return ( $this->user && $this->user->accessLevel >= User::LEVEL_ADMIN );
     }
+
 
     /**
      * get the logged user

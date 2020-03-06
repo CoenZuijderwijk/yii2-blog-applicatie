@@ -58,11 +58,6 @@ AppAsset::register($this);
             )
         ],
     ]);
-    $user->isAdmin || $user->isSuperAdmin ? (
-    ['label' => 'Beheer', 'url' => ['/admin/home']]
-
-    ) : ([die(var_dump("2de ding"))])
-    ;
 
     NavBar::end();
     ?>

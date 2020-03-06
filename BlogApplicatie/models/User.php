@@ -18,7 +18,7 @@ use yii\web\IdentityInterface;
  */
 class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 {
-    const LEVEL_REGISTERED=0, LEVEL_AUTHOR=1, LEVEL_ADMIN=6, LEVEL_SUPERADMIN=99;
+    const LEVEL_REGISTERED=0, LEVEL_AUTHOR=16, LEVEL_ADMIN=98, LEVEL_SUPERADMIN=99;
 
     public static function getAccessLevelList( $level = null ){
         $levelList=array(
@@ -72,11 +72,12 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     }
 
     /**
-     * {@inheritdoc}
+     * making sure id gets returned as Integer
+     * @return Integer
      */
     public function getId()
     {
-        return $this->id;
+        return (Integer)$this->id;
     }
 
     /**
@@ -132,7 +133,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     public function attributeLabels() {
         return [
             'id' => 'ID',
-            'username' => 'Name',
+            'username' => 'author',
         ];
     }
 
