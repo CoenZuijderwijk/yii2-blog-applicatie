@@ -3,13 +3,13 @@
 namespace app\controllers;
 
 use app\components\WebUser;
-use Cassandra\Date;
 use Yii;
 use app\models\Blog;
 use app\models\BlogSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
 
 /**
  * BlogController implements the CRUD actions for Blog model.
@@ -69,11 +69,24 @@ class BlogController extends Controller
      */
     public function actionCreate()
     {
+
         $model = new Blog();
+
         $user = WebUser::findOne(Yii::$app->getUser()->id);
         $a_id = $user->getId();
         $date = date('Y-m-d H:i:s');
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            $model->file = UploadedFile::getInstance($model, 'file');
+            $imageName = $model->file->getBaseName() . random_int(1, 100);
+            $model->attachment = 'uploads/' . $imageName . '.' . $model->file->extension;
+            $save = $model->attachment;
+
+            $model->file->saveAs($save);
+
+
+            $model->save();
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
@@ -136,5 +149,16 @@ class BlogController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    public function actionDownload($id) {
+        $model = Blog::findOne($id);
+        $file = $model->attachment;
+        if(file_exists($file)) {
+            Yii::$app->response->sendFile($file);
+        } else {
+        return  $this->render('error');
+        }
+
     }
 }

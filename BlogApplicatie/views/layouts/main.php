@@ -36,7 +36,7 @@ AppAsset::register($this);
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar navbar-fixed-top',
-            'style' => 'background-color: #f2f2f2; color: #EB9200;',
+            'style' => 'background-color: #005499; color: #EB9200;',
         ],
     ]);
     echo Nav::widget([
@@ -50,7 +50,7 @@ AppAsset::register($this);
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
-                '<li>'
+                '<li style="color:#EB9200;">'
                 . Html::beginForm(['/site/logout'], 'post')
                 . Html::submitButton(
                     'Logout (' . Yii::$app->user->identity->username . ')',
