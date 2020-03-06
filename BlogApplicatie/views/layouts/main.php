@@ -26,7 +26,7 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap" style="background-color: rgba(18, 52, 86, 0.1)">
+<div class="wrap" style="background-color: #FFFFFF; color: #002C4F">
     <?php
     $id = Yii::$app->user->id;
     $user = \app\components\WebUser::findOne($id);
@@ -36,13 +36,16 @@ AppAsset::register($this);
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar navbar-fixed-top',
-            'style' => 'background-color: #f2f2f2',
+            'style' => 'background-color: #f2f2f2; color: #EB9200;',
         ],
     ]);
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => [
+                'class' => 'navbar-nav navbar-right',
+                'style' => 'color: #EB9200'
+                ],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
+            ['label' => 'Home', 'url' => ['/site/index'], 'style' => 'color: #EB9200'],
             ['label' => 'Blog', 'url' => ['/site/about']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
@@ -73,9 +76,9 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; telefication <?= date('Y') ?></p>
+        <p class="pull-left" style="color: #002C4F  ">&copy; telefication <?= date('Y') ?></p>
 
-        <p class="pull-right">Badbit</p>
+        <p class="pull-right" style="color: #EB9200;">Badbit</p>
     </div>
 </footer>
 

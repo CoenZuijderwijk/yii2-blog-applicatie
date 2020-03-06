@@ -39,10 +39,12 @@ class BlogController extends Controller
     {
         $searchModel = new BlogSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $models = Blog::find()->all();
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'models' => $models
         ]);
     }
 
@@ -54,8 +56,9 @@ class BlogController extends Controller
      */
     public function actionView($id)
     {
+        $model = Blog::findOne($id);
         return $this->render('view', [
-            'model' => $this->findModel($id),
+            'model' => $model,
         ]);
     }
 
