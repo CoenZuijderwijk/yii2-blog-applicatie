@@ -2,20 +2,17 @@
 
 namespace app\controllers;
 
-use app\components\WebUser;
-use app\models\Comment;
 use Yii;
-use app\models\Blog;
-use app\models\BlogSearch;
+use app\models\Comment;
+use app\models\CommentSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use yii\web\UploadedFile;
 
 /**
- * BlogController implements the CRUD actions for Blog model.
+ * CommentController implements the CRUD actions for Comment model.
  */
-class BlogController extends Controller
+class CommentController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -26,86 +23,60 @@ class BlogController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST'],
+                    'delete' => ['GET'],
                 ],
             ],
         ];
     }
 
     /**
-     * Lists all Blog models.
+     * Lists all Comment models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new BlogSearch();
+        $searchModel = new CommentSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $models = Blog::find()->all();
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
-            'models' => $models
         ]);
     }
 
     /**
-     * Displays a single Blog model.
+     * Displays a single Comment model.
      * @param integer $id
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
     public function actionView($id)
     {
-        $model = Blog::findOne($id);
-
-        $model2 = new Comment();
-        $comments = Comment::find()
-            ->where(['blog_id' => $model->id])->all();
-
-            return $this->render('view', [
-            'model' => $model,
-            'model2' => $model2,
-            'comments' => $comments,
+        return $this->render('view', [
+            'model' => $this->findModel($id),
         ]);
     }
 
     /**
-     * Creates a new Blog model.
+     * Creates a new Comment model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
+        $model = new Comment();
 
-        $model = new Blog();
-
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
-        $a_id = $user->getId();
-        $date = date('Y-m-d H:i:s');
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-
-            $model->file = UploadedFile::getInstance($model, 'file');
-            $imageName = $model->file->getBaseName() . random_int(1, 100);
-            $model->attachment = 'uploads/' . $imageName . '.' . $model->file->extension;
-            $save = $model->attachment;
-
-            $model->file->saveAs($save);
-
-            $model->save();
-
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['blog/view', 'id' => $model->blog_id]);
         }
 
         return $this->render('create', [
             'model' => $model,
-            'user' => $user,
-            'date' => $date,
         ]);
     }
 
     /**
-     * Updates an existing Blog model.
+     * Updates an existing Comment model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -114,22 +85,18 @@ class BlogController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
-        $a_id = $user->getId();
-        $date = date('Y-m-d H:i:s');
+
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
         return $this->render('update', [
             'model' => $model,
-            'user' => $user,
-            'date' => $date,
         ]);
     }
 
     /**
-     * Deletes an existing Blog model.
+     * Deletes an existing Comment model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -139,42 +106,22 @@ class BlogController extends Controller
     {
         $this->findModel($id)->delete();
 
-        return $this->redirect(['index']);
+        return $this->redirect(Yii::$app->request->referrer ?: Yii::$app->homeUrl);
     }
 
     /**
-     * Finds the Blog model based on its primary key value.
+     * Finds the Comment model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Blog the loaded model
+     * @return Comment the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Blog::findOne($id)) !== null) {
+        if (($model = Comment::findOne($id)) !== null) {
             return $model;
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
-    }
-
-    public function actionDownload($id) {
-        $model = Blog::findOne($id);
-        $file = $model->attachment;
-        if(file_exists($file)) {
-            Yii::$app->response->sendFile($file);
-        } else {
-        return  $this->render('error');
-        }
-
-    }
-
-    public function actionDeleteComment($id) {
-        $comment = Comment::findOne($id);
-        $comment->delete();
-
-
-        return $this->redirect('/blog');
-
     }
 }

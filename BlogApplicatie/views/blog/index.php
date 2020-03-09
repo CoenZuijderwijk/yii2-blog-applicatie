@@ -12,6 +12,7 @@ $this->title = 'Blogs';
 $this->params['breadcrumbs'][] = $this->title;
 
 if(!Yii::$app->getUser()->isGuest){
+
     $user = User::findOne(Yii::$app->getUser()->getId());
     if($user->getAccessLevel() >= 40) {
         $gridColumns = [
@@ -19,7 +20,10 @@ if(!Yii::$app->getUser()->isGuest){
                 'attribute' => "id",
                 'value' => 'id'
             ],
-
+            [
+                'attribute' => "author_id",
+                'value' => 'author_id'
+            ],
             [
                 'attribute' => "author",
                 'value' => 'author.username'
@@ -35,7 +39,7 @@ if(!Yii::$app->getUser()->isGuest){
             [
                 'class' => 'kartik\grid\ActionColumn',
 
-                'urlCreator' => function($action, $model, $key, $index, $url) { return "blog/". $action . "?id=" . $key; },
+                'urlCreator' => function($action, $model, $key, $index, $url) { return "/blog/". $action . "?id=" . $key; },
                 'viewOptions' => ['title' => 'This will launch the blog details page.', 'data-toggle' => 'tooltip'],
                 'updateOptions' => ['title' => 'This will launch the blog update page.', 'data-toggle' => 'tooltip'],
                 'deleteOptions' => ['title' => 'This will launch the blog delete action.', 'data-toggle' => 'tooltip'],
@@ -93,11 +97,15 @@ if(!Yii::$app->getUser()->isGuest){
 <div class="blog-index">
 <?php if(!Yii::$app->getUser()->isGuest) {
 ?>
-
     <h1><?= Html::encode($this->title) ?></h1>
+
     <?php
     if (!Yii::$app->getUser()->isGuest) {
-        echo "<p>" . Html::a('Create Blog', ['create'], ['class' => 'btn btn-success']) . "</p>";
+        echo  Html::a('Create Blog', ['create'], ['class' => 'btn btn-success', 'style' => 'margin-right: 1%']) ;
+        $user = User::findOne(Yii::$app->getUser()->getId());
+        if($user->getAccessLevel() >= 98) {
+            echo Html::a('Comment overview', ['comment/index'], ['class' => 'btn btn-success']);
+        }
     }
     ?>
 
@@ -119,7 +127,7 @@ if(!Yii::$app->getUser()->isGuest){
     foreach($models as $model) {
         echo "<div class=' col-xs-12 col-sm-6 col-m-4 col-lg-4' style='padding-bottom: 25px; padding: 1%; background-color: white    '>";
         echo "<div class='border border-danger'>";
-        echo "<h3><a href='blog/view?id=" . $model->id . "' style='text-decoration: none'>" . $model->title  . "</a>";
+        echo "<h3><a href='/blog/view?id=" . $model->id . "' style='text-decoration: none'>" . $model->title  . "</a>";
         echo "<p>" . $model->inleiding . "</p>";
         echo "</div></div>";
     }
@@ -127,5 +135,6 @@ if(!Yii::$app->getUser()->isGuest){
     ?>
 
     <?php } ?>
+    <div>Test</div>
 
 </div>

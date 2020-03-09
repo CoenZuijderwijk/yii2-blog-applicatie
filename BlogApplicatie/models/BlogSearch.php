@@ -13,6 +13,8 @@ use yii\data\ActiveDataProvider;
  */
 class BlogSearch extends Blog
 {
+    public $author;
+
     /**
      * {@inheritdoc}
      */
@@ -55,8 +57,8 @@ class BlogSearch extends Blog
                 ]);
 
                 $dataProvider->sort->attributes['author'] = [
-                    'asc' => ['tbl_author.username' => SORT_ASC],
-                    'desc' => ['tbl_author.username' => SORT_DESC],
+                    'asc' => ['user.username' => SORT_ASC],
+                    'desc' => ['user.username' => SORT_DESC],
                 ];
 
                 $this->load($params);
@@ -66,13 +68,15 @@ class BlogSearch extends Blog
                 }
 
                 $query->andFilterWhere([
-                    'id' => $this->id,
-                    'publish_date' => $this->publish_date,
+                    'blog.id' => $this->id,
+                    'blog.author_id' => $this->author_id,
+                    'user.username' => $this->author,
                 ]);
 
                 $query
-                    ->andFilterWhere(['like', 'title', $this->title])
-                    ->andFilterWhere(['like', 'slug', $this->slug]);
+                    ->andFilterWhere(['like', 'blog.title', $this->title])
+                    ->andFilterWhere(['like', 'blog.slug', $this->slug])
+                    ->andFilterWhere(['like', 'blog.publish_date', $this->publish_date]);
 
                 return $dataProvider;
             } else {
@@ -84,8 +88,8 @@ class BlogSearch extends Blog
                 ]);
 
                 $dataProvider->sort->attributes['author'] = [
-                    'asc' => ['tbl_author.username' => SORT_ASC],
-                    'desc' => ['tbl_author.username' => SORT_DESC],
+                    'asc' => ['user.username' => SORT_ASC],
+                    'desc' => ['user.username' => SORT_DESC],
                 ];
 
                 $this->load($params);
@@ -95,13 +99,14 @@ class BlogSearch extends Blog
                 }
 
                 $query->andFilterWhere([
-                    'id' => $this->id,
-                    'author' => $this->author,
-                    'publish_date' => $this->publish_date,
+                    'blog.id' => $this->id,
+                    'blog.author_id' => $this->author_id,
+                    'user.username' => $this->author,
                 ]);
                 $query
-                    ->andFilterWhere(['like', 'title', $this->title])
-                    ->andFilterWhere(['like', 'slug', $this->slug]);
+                    ->andFilterWhere(['like', 'blog.title', $this->title])
+                    ->andFilterWhere(['like', 'blog.slug', $this->slug])
+                    ->andFilterWhere(['like', 'blog.publish_date', $this->publish_date]);
 
                 return $dataProvider;
             }
@@ -114,8 +119,8 @@ class BlogSearch extends Blog
             ]);
 
             $dataProvider->sort->attributes['author'] = [
-                'asc' => ['tbl_author.username' => SORT_ASC],
-                'desc' => ['tbl_author.username' => SORT_DESC],
+                'asc' => ['user.username' => SORT_ASC],
+                'desc' => ['user.username' => SORT_DESC],
             ];
 
             $this->load($params);
@@ -125,13 +130,15 @@ class BlogSearch extends Blog
             }
 
             $query->andFilterWhere([
-                'id' => $this->id,
-                'author' => $this->author,
-                'publish_date' => $this->publish_date,
+                'blog.id' => $this->id,
+                'blog.author_id' => $this->author_id,
+                'user.username' => $this->author,
             ]);
             $query
-                ->andFilterWhere(['like', 'title', $this->title])
-                ->andFilterWhere(['like', 'slug', $this->slug]);
+                ->andFilterWhere(['like', 'blog.title', $this->title])
+                ->andFilterWhere(['like', 'blog.slug', $this->slug])
+
+                ->andFilterWhere(['like', 'blog.publish_date', $this->publish_date]);
 
             return $dataProvider;
         }

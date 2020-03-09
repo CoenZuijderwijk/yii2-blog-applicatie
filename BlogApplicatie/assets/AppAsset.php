@@ -26,7 +26,6 @@ class AppAsset extends AssetBundle
         'js/BlogFunctions.js'
     ];
     public $depends = [
-        'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
 }

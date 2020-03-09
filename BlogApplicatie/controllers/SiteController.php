@@ -63,11 +63,9 @@ class SiteController extends Controller
     {
         $cache = Yii::$app->cache;
 
-        $info = $cache->get("my_cached_data");
 
-        return $this->render('index', [
-            'info' => $info
-        ]);
+
+        return $this->render('index');
     }
 
     /**

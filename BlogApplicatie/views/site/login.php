@@ -46,11 +46,3 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 </div>
 
-<?php
-if($info === null) {
-    $info = "f";
-    echo "" . $info;
-} else {
-    var_dump($info);
-}
-?>

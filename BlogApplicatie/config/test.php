@@ -14,28 +14,49 @@ return [
     ],
     'language' => 'en-US',
     'components' => [
-        'db' => $db,
-        'mailer' => [
-            'useFileTransport' => true,
+        'request' => [
+            // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+            'cookieValidationKey' => '4tD47gIabaQcOImshMWb8lH7ausvBqYn',
         ],
-        'assetManager' => [
-            'basePath' => __DIR__ . '/../web/assets',
-        ],
-        'urlManager' => [
-            'showScriptName' => true,
+        'cache' => [
+            'class' => 'yii\caching\FileCache',
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'app\components\WebUser',
+            'enableAutoLogin' => true,
         ],
-        'request' => [
-            'cookieValidationKey' => 'test',
-            'enableCsrfValidation' => false,
-            // but if you absolutely need it set cookie domain to localhost
-            /*
-            'csrfCookie' => [
-                'domain' => 'localhost',
+        'errorHandler' => [
+            'errorAction' => 'site/error',
+        ],
+        'mailer' => [
+            'class' => 'yii\swiftmailer\Mailer',
+            // send all mails to a file by default. You have to set
+            // 'useFileTransport' to false and configure a transport
+            // for the mailer to send real emails.
+            'useFileTransport' => true,
+        ],
+        'log' => [
+            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'targets' => [
+                [
+                    'class' => 'yii\log\FileTarget',
+                    'levels' => ['error', 'warning'],
+                ],
             ],
-            */
+        ],
+        'db' => $db,
+
+        'urlManager' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules' => [
+            ],
+        ],
+
+    ],
+    'modules' => [
+        'gridview' =>  [
+            'class' => '\kartik\grid\Module'
         ],
     ],
     'params' => $params,

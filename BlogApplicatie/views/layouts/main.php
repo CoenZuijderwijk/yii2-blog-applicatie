@@ -46,7 +46,7 @@ AppAsset::register($this);
                 ],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index'], 'style' => 'color: #EB9200'],
-            ['label' => 'Blog', 'url' => ['/site/about']],
+            ['label' => 'Blog', 'url' => ['/blog/index']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (
