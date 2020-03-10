@@ -12,7 +12,8 @@ use kartik\file\FileInput;
 
 <div class="blog-form">
 
-    <?php $form = ActiveForm::begin(['options' => ['encypte' => 'multipart/form-date']]); ?>
+    <?php $form = ActiveForm::begin(['options' => ['encypte' => 'multipart/form-date'],
+        'id' => "blog-form"]); ?>
     <?= $form->field($model, 'author_id')->hiddenInput(['value' => $user->getId(),])->label(false) ?>
 
     <?= $form->field($model, 'publish_date')->hiddenInput(['value' => $date,])->label(false) ?>

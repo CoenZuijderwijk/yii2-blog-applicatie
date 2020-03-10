@@ -42,7 +42,6 @@ $gridColumns = [
 
         'urlCreator' => function($action, $model, $key, $index, $url) { return "/comment/". $action . "?id=" . $key; },
         'viewOptions' => ['title' => 'This will launch the blog details page.', 'data-toggle' => 'tooltip'],
-        'updateOptions' => ['title' => 'This will launch the blog update page.', 'data-toggle' => 'tooltip'],
         'deleteOptions' => ['title' => 'This will launch the blog delete action.', 'data-toggle' => 'tooltip'],
         'headerOptions' => ['class' => 'kartik-sheet-style'],
     ],

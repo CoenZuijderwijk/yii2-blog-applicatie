@@ -133,12 +133,21 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
     public function attributeLabels() {
         return [
             'id' => 'ID',
-            'username' => 'author',
+            'username' => 'Username',
         ];
     }
 
     public function getAccessLevel() {
         return $this->accessLevel;
+    }
+
+    public function rules() {
+        return [
+            [['username', 'password', 'authKey', 'accessToken', 'accessLevel'], 'required'],
+            [['username', 'password', 'authKey', 'accessToken'], 'string'],
+            [['accessLevel'], 'integer'],
+        ];
+
     }
 
 

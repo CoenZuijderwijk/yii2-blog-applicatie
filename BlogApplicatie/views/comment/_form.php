@@ -10,7 +10,8 @@ use yii\widgets\ActiveForm;
 
 <div class="comment-form">
 
-    <?php $form = ActiveForm::begin(['action' => ['comment/create']]); ?>
+    <?php $form = ActiveForm::begin(['action' => ['comment/create']
+    ,'id' => "comment-form"]); ?>
 
     <?= $form->field($model, 'blog_id')->hiddenInput(['value' => $id])->label(false) ?>
 

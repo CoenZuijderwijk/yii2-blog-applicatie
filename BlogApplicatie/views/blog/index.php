@@ -63,10 +63,10 @@ if(!Yii::$app->getUser()->isGuest){
         [
             'class' => 'kartik\grid\ActionColumn',
 
-            'urlCreator' => function($action, $model, $key, $index, $url) { return "blog/". $action . "?id=" . $key; },
+            'urlCreator' => function($action, $model, $key, $index, $url) { return "/blog/". $action . "?id=" . $key; },
             'viewOptions' => ['title' => 'This will launch the blog details page.', 'data-toggle' => 'tooltip'],
-            'updateOptions' => ['title' => 'This will launch the blog update page.', 'data-toggle' => 'tooltip'],
-            'deleteOptions' => ['title' => 'This will launch the blog delete action.', 'data-toggle' => 'tooltip'],
+            'updateOptions' => ['title' => 'This will launch the blog update page.', 'data-toggle' => 'tooltip', 'name' => 'updateBlog'],
+            'deleteOptions' => ['title' => 'This will launch the blog delete action.', 'data-toggle' => 'tooltip', 'name' => 'deleteBlog'],
             'headerOptions' => ['class' => 'kartik-sheet-style'],
         ],
     ];
@@ -109,7 +109,6 @@ if(!Yii::$app->getUser()->isGuest){
     }
     ?>
 
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -135,6 +134,5 @@ if(!Yii::$app->getUser()->isGuest){
     ?>
 
     <?php } ?>
-    <div>Test</div>
 
 </div>

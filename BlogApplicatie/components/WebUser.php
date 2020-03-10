@@ -10,10 +10,9 @@ use app\models\User;
  */
 class WebUser extends User{
     /**
-     * cache for the logged in User active record
+     * cache for the logged in UserController active record
      * @return User
      */
-    public $_user;
     private $isGuest;
 
     /**
@@ -65,6 +64,10 @@ class WebUser extends User{
             'name' => "naam",
             'password' => "Wachtwoord",
         ];
+    }
+
+    public static function tableName() {
+        return 'user';
     }
 
 

@@ -7,7 +7,7 @@ use yii\data\ActiveDataProvider;
 use app\components\WebUser;
 
 /**
- * WebUserSearch represents the model behind the search form of `app\components\schrijvers`.
+ * WebUserSearch represents the model behind the search form of `app\components\user`.
  */
 class WebUserSearch extends WebUser
 {
@@ -69,5 +69,4 @@ class WebUserSearch extends WebUser
 
         return $dataProvider;
     }
-
 }

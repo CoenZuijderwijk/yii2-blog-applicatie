@@ -2,6 +2,8 @@
 
 namespace app\controllers;
 
+use app\components\WebUser;
+use Codeception\PHPUnit\Constraint\Page;
 use Yii;
 use app\models\Comment;
 use app\models\CommentSearch;
@@ -33,15 +35,27 @@ class CommentController extends Controller
      * Lists all Comment models.
      * @return mixed
      */
+    //action to run the index page for comments
     public function actionIndex()
     {
         $searchModel = new CommentSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $user = WebUser::findOne(Yii::$app->getUser()->id);
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
-        ]);
+        if(!$user){
+            return $this->render('error');
+        }  elseif($user->getAccessLevel() >= 98) {
+
+            return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
+
+        } else {
+            return $this->render('error');
+        }
+
+
     }
 
     /**
@@ -50,11 +64,22 @@ class CommentController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
+    //action to run the page to view individual comments
     public function actionView($id)
     {
-        return $this->render('view', [
-            'model' => $this->findModel($id),
-        ]);
+        $user = WebUser::findOne(Yii::$app->getUser()->id);
+
+        if(!$user){
+            return $this->render('error');
+        }  elseif($user->getAccessLevel() >= 98) {
+
+            return $this->render('view', [
+                'model' => $this->findModel($id),
+            ]);
+
+        } else {
+            return $this->render('error');
+        }
     }
 
     /**
@@ -62,6 +87,7 @@ class CommentController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
+    //action to run the page to create a comment
     public function actionCreate()
     {
         $model = new Comment();
@@ -75,25 +101,7 @@ class CommentController extends Controller
         ]);
     }
 
-    /**
-     * Updates an existing Comment model.
-     * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-    public function actionUpdate($id)
-    {
-        $model = $this->findModel($id);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        }
-
-        return $this->render('update', [
-            'model' => $model,
-        ]);
-    }
 
     /**
      * Deletes an existing Comment model.
@@ -102,11 +110,27 @@ class CommentController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
+    //action to run the page to delete a comment
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+        $searchModel = new CommentSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $user = WebUser::findOne(Yii::$app->getUser()->id);
 
-        return $this->redirect(Yii::$app->request->referrer ?: Yii::$app->homeUrl);
+        if(!$user){
+            return $this->render('error');
+        }  elseif($user->getAccessLevel() >= 98) {
+
+            $this->findModel($id)->delete();
+
+            return $this->render('index', [
+                'searchModel' => $searchModel,
+                'dataProvider' => $dataProvider,
+            ]);
+
+        } else {
+            return $this->render('error');
+        }
     }
 
     /**
@@ -116,6 +140,7 @@ class CommentController extends Controller
      * @return Comment the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
+    //method to find a model
     protected function findModel($id)
     {
         if (($model = Comment::findOne($id)) !== null) {

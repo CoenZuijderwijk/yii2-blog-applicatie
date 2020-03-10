@@ -59,11 +59,10 @@ class SiteController extends Controller
      *
      * @return string
      */
+    //action to run the index page for the site
     public function actionIndex()
     {
         $cache = Yii::$app->cache;
-
-
 
         return $this->render('index');
     }
@@ -73,6 +72,7 @@ class SiteController extends Controller
      *
      * @return Response|string
      */
+    //action to run the login page
     public function actionLogin()
     {
         $cache = Yii::$app->cache;
@@ -82,13 +82,13 @@ class SiteController extends Controller
             return $this->goHome();
         }
 
+
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             $info = $model->getUser();
             $cache->set("my_cached_data", $info, 60);
             return $this->goBack();
         }
-        $model->password = '';
         return $this->render('login', [
             'model' => $model,
             'info' => $info
@@ -100,6 +100,7 @@ class SiteController extends Controller
      *
      * @return Response
      */
+    //action to run the logout page
     public function actionLogout()
     {
         Yii::$app->user->logout();
@@ -112,6 +113,7 @@ class SiteController extends Controller
      *
      * @return Response|string
      */
+    //action to run the contact page
     public function actionContact()
     {
         $model = new ContactForm();
@@ -130,6 +132,7 @@ class SiteController extends Controller
      *
      * @return string
      */
+    //action to run the about page
     public function actionAbout()
     {
         return $this->render('about');
