@@ -1,5 +1,6 @@
 <?php
-
+// MW: wordt dit contactformulier nog gebruikt in de applicatie?
+// MW: Hoe zit het eigenlijk met de vertaalbaarheid van bijvoorbeeld de attributeLabels en overige delen van de applicatie? (zat wel in de oorspronkelijke opdracht)
 namespace app\models;
 
 use Yii;

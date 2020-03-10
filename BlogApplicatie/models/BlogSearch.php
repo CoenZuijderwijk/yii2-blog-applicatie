@@ -44,8 +44,11 @@ class BlogSearch extends Blog
      */
     public function search($params)
     {
+        // MW: Deze functie omschrijven zodat er geen dubbelingen zijn, voor bijv. de sorting is dat niet nodig 
         if (!Yii::$app->getUser()->isGuest) {
             $id = Yii::$app->getUser()->getIdentity()->getId();
+            
+            // MW: Als het goed is kun je het User-model direct binnenhalen als de identityClass goed staat ingesteld, zie: https://www.yiiframework.com/doc/guide/2.0/en/security-authentication#configuring-user
             $user = User::findOne($id);
             if ($user->accessLevel == 16) {
                 $query = Blog::find()

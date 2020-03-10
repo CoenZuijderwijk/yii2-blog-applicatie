@@ -93,6 +93,8 @@ class BlogController extends Controller
         } elseif($user->getAccessLevel() >= 16) {
 
             if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+                // MW: Werkt dit ook voor de AJAX-uploads, of zitten die niet in de applicatie? :)
                 if(UploadedFile::getInstance($model, 'file' !== NULL)) {
                     $model->file = UploadedFile::getInstance($model, 'file');
                     $imageName = $model->file->getBaseName() . random_int(1, 100);
@@ -133,7 +135,7 @@ class BlogController extends Controller
 
         $user = WebUser::findOne(Yii::$app->getUser()->id);
         $date = date('Y-m-d H:i:s');
-
+        // MW: Hieronder zit een hoop dubbeling, graag aanpassen zodat dit minder dubbel is
         if (!$user) {
             return $this->redirect('error');
         } elseif ($user->getAccessLevel() >= 98) {

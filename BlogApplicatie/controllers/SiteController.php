@@ -75,6 +75,7 @@ class SiteController extends Controller
     //action to run the login page
     public function actionLogin()
     {
+        // MW: Kun dit aanpassen zodat je hier kunt debuggen zonder cached data?
         $cache = Yii::$app->cache;
         $info = $cache->get("my_cached_data");
 
