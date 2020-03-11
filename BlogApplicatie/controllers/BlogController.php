@@ -96,7 +96,7 @@ class BlogController extends Controller
             case 1:
 
                 if ($model->load(Yii::$app->request->post()) && $model->save()) {
-                    $this->createBlog();
+                    $this->createBlog($model);
                 }
 
                 return $this->render('create' , [
@@ -108,7 +108,7 @@ class BlogController extends Controller
             case 2:
                 if ($model->author_id == $user->id) {
                     if ($model->load(Yii::$app->request->post()) && $model->save()) {
-                        $this->createBlog();
+                        $this->createBlog($model);
                     }
 
                     return $this->render('create' , [
@@ -318,11 +318,9 @@ class BlogController extends Controller
 
                     }
 
-    public function createBlog() {
+    public function createBlog($model) {
 
-        $model = new Blog();
-
-        if (UploadedFile::getInstance($model, 'file' !== NULL)) {
+        if (UploadedFile::getInstance($model, 'file') !== NULL) {
             $model->file = UploadedFile::getInstance($model, 'file');
             $imageName = $model->file->getBaseName() . random_int(1, 100);
             $model->attachment = 'uploads/' . $imageName . '.' . $model->file->extension;
@@ -332,7 +330,6 @@ class BlogController extends Controller
         }
 
         $model->save();
-
         return $this->redirect(['view', 'id' => $model->id]);
 
     }

@@ -38,14 +38,20 @@ use kartik\file\FileInput;
 
     <?= $form->field($model, 'file')->fileInput( [
             'maxSize' => 10240000000
-    ]); ?>
+    ])->widget(FileInput::className([
+            'name' => 'Attachment',
+            'pluginOptions' => [
+                    'uploadUrl' => '@web/uploads',
+            ],
+    ])); ?>
 
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Save', ['class' => 'btn btn-success js_button']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
+
 
 
 

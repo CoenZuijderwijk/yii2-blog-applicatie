@@ -75,9 +75,6 @@ class SiteController extends Controller
     //action to run the login page
     public function actionLogin()
     {
-        // MW: Kun dit aanpassen zodat je hier kunt debuggen zonder cached data?
-        $cache = Yii::$app->cache;
-        $info = $cache->get("my_cached_data");
 
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
@@ -86,13 +83,11 @@ class SiteController extends Controller
 
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            $info = $model->getUser();
-            $cache->set("my_cached_data", $info, 60);
+
             return $this->goBack();
         }
         return $this->render('login', [
             'model' => $model,
-            'info' => $info
         ]);
     }
 
