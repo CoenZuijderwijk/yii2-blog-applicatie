@@ -41,6 +41,7 @@ use kartik\file\FileInput;
     ])->widget(FileInput::className([
             'name' => 'Attachment',
             'pluginOptions' => [
+                    // MW: werkt dit nu wel? Zie: https://plugins.krajee.com/file-input#ajax-uploads
                     'uploadUrl' => '@web/uploads',
             ],
     ])); ?>

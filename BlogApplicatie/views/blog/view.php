@@ -27,10 +27,11 @@ $formatter = \Yii::$app->formatter;
 
 
     <div class="row">
+        <!-- MW: Niet inline stylen, dus dit verplaatsen naar de CSS -->
         <div class="col-12 article" style=" padding: 2%; margin-bottom: 10%;">
 
 
-
+            <!-- MW: Dit kan (moet) anders ivm leesbaarhaarheid, zou je ook HTML met PHP erin kunnen doen ipv wat je nu doet (PHP met HTML erin) -->
             <?= "<h3 style='color:#EB9200'>" . $model->title . "</h3>"?>
             <?= "<div class='article_border'></div>" ?>
             <?= "<p style='color:lightgrey'>" . $formatter->asDatetime($model->publish_date, 'long') . "</p>" ?>
@@ -50,6 +51,7 @@ $formatter = \Yii::$app->formatter;
     <div class="row">
         <?php
         foreach($comments as $comm) {
+            // MW: Dit kan (moet) anders ivm leesbaarhaarheid, zou je ook HTML met PHP erin kunnen doen ipv wat je nu doet (PHP met HTML erin)
             echo "<div class='comment col-12 ' style='padding: 2%; margin:1%; '>";
             echo "<h4>" . $comm->title . "</h4>";
             echo "<p>" . $comm->slug . "</p>";

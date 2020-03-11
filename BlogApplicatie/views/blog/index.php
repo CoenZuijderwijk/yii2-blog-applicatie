@@ -11,7 +11,7 @@ use kartik\grid\GridView;
 $this->title = 'Blogs';
 $this->params['breadcrumbs'][] = $this->title;
 
-
+// MW: Eigenlijk zitter hier 3 views in 1 view: guest, etc. Dus splitsen in partial views die je vanuit deze inlaadt, of vanuit de controller andere views inladen
 if(!Yii::$app->getUser()->isGuest){
 
     $user = User::findOne(Yii::$app->getUser()->getId());

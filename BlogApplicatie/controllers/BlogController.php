@@ -46,6 +46,8 @@ class BlogController extends Controller
     {
         $searchModel = new BlogSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        
+        // MW: Hoezo heb je hier een dataProvider nodig en ook nog een verzameling $models? Dit geeft dubbele queries voor onderstaande view
         $models = Blog::find()->all();
 
         return $this->render('index', [
@@ -66,6 +68,7 @@ class BlogController extends Controller
     {
         $model = Blog::findOne($id);
 
+        // MW: Wat gebeurt hier precies, waarom is dat nodig voor het bekijken van een blogartikel?
         $model2 = new Comment();
         $comments = Comment::find()
             ->where(['blog_id' => $model->id])->all();
@@ -88,11 +91,16 @@ class BlogController extends Controller
     {
         $model = new Blog();
         $user = WebUser::findOne(Yii::$app->getUser()->id);
+        
+        // MW: Dit zijn acties die niet in de Controller horen, maar in het Model. Als je bijvoorbeeld ergens anders een Blog aanmaakt, krijg die dan ook de juiste datum mee? 
+        // MW: Kijk eens naar de documentatie mbt afterFind() of beforeSave()
         $date = date('Y-m-d H:i:s');
 
+        // MW: Kan dit ook zonder een $check-variabele aan te maken? Ook bij actionDelete() en actionUpdate()?
         $check = $this->checkAuth();
 
         switch ($check) {
+            // MW: Wat betekent precies 1, 2 en 0? Hoe kan ik daaracht komen zonder naar de checkAuth()-functie te gaan?
             case 1:
 
                 if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -107,6 +115,8 @@ class BlogController extends Controller
                 break;
             case 2:
                 if ($model->author_id == $user->id) {
+                    
+                    // MW: Kan deze dubbeling eruit als je de flow van de switch aan zou passen?
                     if ($model->load(Yii::$app->request->post()) && $model->save()) {
                         $this->createBlog($model);
                     }
@@ -139,6 +149,7 @@ class BlogController extends Controller
     {
         $model = $this->findModel($id);
         $user = WebUser::findOne(Yii::$app->getUser()->id);
+        // MW: Dubbeling mbt actionCreate(), zie comment daar
         $date = date('Y-m-d H:i:s');
         // MW: Hieronder zit een hoop dubbeling, graag aanpassen zodat dit minder dubbel is
         $check = $this->checkAuth();
@@ -179,7 +190,7 @@ class BlogController extends Controller
         }
     }
 
-
+                                                            // MW: Wat een hoop tabs hieronder :)
                 /**
                  * Deletes an existing Blog model.
                  * If deletion is successful, the browser will be redirected to the 'index' page.
@@ -188,6 +199,10 @@ class BlogController extends Controller
                  * @throws NotFoundHttpException if the model cannot be found
                  */
                 //action to run the page to delete a blog
+                // MW: waarom
+                // de functie
+                // over meerdere regels declareren?
+                // (zie ook overige functies hieronder)                
                 public
                 function actionDelete($id)
                 {
@@ -221,6 +236,7 @@ class BlogController extends Controller
                 protected
                 function findModel($id)
                 {
+                    // MW: Wat vergelijk je nu precies in deze if, klopt dat wel (maw: wordt dit ooit wel eens null)?
                     if (($model = Blog::findOne($id)) !== null) {
                         return $model;
                     }
@@ -246,6 +262,7 @@ class BlogController extends Controller
                 public
                 function actionDeleteComment($id)
                 {
+                    // MW: heb je hier wel een variabele nodig?
                     $comment = Comment::findOne($id);
                     $comment->delete();
 
@@ -269,7 +286,7 @@ class BlogController extends Controller
                  */
                 public function getAuth()
                 {
-
+                    // MW: Kun je applicatie aanpassen zodat WebUser niet meer nodig is het User-model staat ingesteld via de identityClass?
                     $user = WebUser::findOne(Yii::$app->getUser()->id);
                     if (!$user) {
                         return 1;
@@ -283,6 +300,7 @@ class BlogController extends Controller
 
                 }
 
+                // MW: Dit (en getAuth()) zijn meer zaken die naar het Blog-model kunnen, toch?
                 public function checkAuth()
                 {
                     $auth = $this->getAuth();
@@ -299,6 +317,8 @@ class BlogController extends Controller
                     }
                 }
 
+
+                // MW: waarom kan dit niet via actionUpdate? Wat doet deze functie?
                 public function updateBlog($id) {
 
                     $model = $this->findModel($id);
@@ -318,6 +338,7 @@ class BlogController extends Controller
 
                     }
 
+    // MW: waarom kan dit niet via actionCreate? Wat doet deze functie?
     public function createBlog($model) {
 
         if (UploadedFile::getInstance($model, 'file') !== NULL) {

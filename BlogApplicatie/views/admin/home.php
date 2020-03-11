@@ -6,17 +6,21 @@ use app\models\User;
 ?>
 
 <div class="container-fluid" >
+    <!-- MW: Niet inline stylen, dus de stylen verplaatsen naar de CSS -->
     <div class="row" style="margin-bottom: 100px; ">
+        <!-- MW: Niet inline stylen, dus de stylen verplaatsen naar de CSS -->
         <div class="col-12" style="margin-bottom: 25px;">
             <h1>Welkom   <?= $name ?> </h1>
         </div>
 
         <div class="col-sm-12 col-md-6 col-xl-6" >
+            <!-- MW: De knoppen niet inline stylen, dus de stylen verplaatsen naar de CSS -->
             <button class="btn a_btn" style="background-color:#002C4F; width:40%; height:30vh; color:white;">
                 <h3><?= Html::a('Users beheren', ['/user']) ?></h3>
             </button>
         </div>
         <div class="col-sm-12 col-md-6 col-xl-6">
+            <!-- MW: De knoppen niet inline stylen, dus de stylen verplaatsen naar de CSS -->
             <button class="btn a_btn" style="background-color: #EB9200; width:40%; height:30vh; color:white;">
                 <h3><?= Html::a('Artikelen beheren', ['/blog']) ?></h3>
             </button>

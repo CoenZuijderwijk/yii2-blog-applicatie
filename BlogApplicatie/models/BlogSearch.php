@@ -77,7 +77,8 @@ class BlogSearch extends Blog
                 $dataProvider = new ActiveDataProvider([
                     'query' => $query,
                 ]);
-
+                
+                // MW: waarom zit hier nodig een dubbeling met hierboven?
                 $dataProvider->sort->attributes['author'] = [
                     'asc' => ['user.username' => SORT_ASC],
                     'desc' => ['user.username' => SORT_DESC],
@@ -100,7 +101,8 @@ class BlogSearch extends Blog
             $dataProvider = new ActiveDataProvider([
                 'query' => $query,
             ]);
-
+            
+            // MW: waarom zit hier nodig een dubbeling met hierboven?
             $dataProvider->sort->attributes['author'] = [
                 'asc' => ['user.username' => SORT_ASC],
                 'desc' => ['user.username' => SORT_DESC],
@@ -120,7 +122,7 @@ class BlogSearch extends Blog
 
     }
 
-
+    // MW: Wat doet deze functie?
     public function standardQuery($query)
     {
         $query->andFilterWhere([
