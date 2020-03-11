@@ -18,8 +18,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Blogs', 'url' => ['blog/']];
 \yii\web\YiiAsset::register($this);
 $comment = new Comment();
 $blog_id = $model->id;
-
-
+$formatter = \Yii::$app->formatter;
 
 
 
@@ -28,31 +27,36 @@ $blog_id = $model->id;
 
 
     <div class="row">
-        <div class="col-12" style="background-color: #f2f2f2; padding: 2%">
-                <div>
-                <?php
-                 echo Html::a('Attachment', Url::to("blog/download?id=" . $model->id, $model->id), ['style' => 'color: #337ab7;']);
-                ?>
-                </div>
+        <div class="col-12 article" style=" padding: 2%; margin-bottom: 10%;">
+
 
 
             <?= "<h3 style='color:#EB9200'>" . $model->title . "</h3>"?>
-            <?= "<p style='color:$002C4F'>" . $model->slug . "</p>"?>
+            <?= "<div class='article_border'></div>" ?>
+            <?= "<p style='color:lightgrey'>" . $formatter->asDatetime($model->publish_date, 'long') . "</p>" ?>
+            <?= "<div style='color:#002C4F' class='slug'>" . $model->slug . "</div>"?>
+
+            <div style="margin-top: 3%;">
+                <?php
+                if($model->attachment){
+                    echo Html::a('Attachment', Url::to("blog/download?id=" . $model->id, $model->id), ['style' => 'color: #337ab7;']);
+                }
+
+                ?>
+            </div>
 
         </div>
     </div>
     <div class="row">
         <?php
         foreach($comments as $comm) {
-            echo "<div class='col-12'>";
+            echo "<div class='comment col-12 ' style='padding: 2%; margin:1%; '>";
             echo "<h4>" . $comm->title . "</h4>";
             echo "<p>" . $comm->slug . "</p>";
-            echo "<div style='float:right'>" . $comm->publish_date . "</div>" ;
+            echo "<div style='float:right'>" . $formatter->asDatetime($comm->publish_date, 'long') . "</div>" ;
             if(!Yii::$app->getUser()->isGuest) {
                 $user = User::findOne(Yii::$app->getUser()->getId());
-                if($user->getAccessLevel() >= 98) {
-                    echo "<button class='btn'>" .  Html::a('Delete', Url::to("/comment/delete?id=" . $comm->id), ['style' => 'color: #337ab7;']) ."</button>";
-                }
+
             }
             echo "</div>";
             }
@@ -69,5 +73,6 @@ $blog_id = $model->id;
 
         </div>
     </div>
+
 
 </div>

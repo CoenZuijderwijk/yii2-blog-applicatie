@@ -50,6 +50,12 @@ $config = [
             'rules' => [
             ],
         ],
+        'formatter' => [
+            'dateFormat' => 'dd.MM.yyyy HH-ii',
+            'decimalSeparator' => ',',
+            'thousandSeparator' => ' ',
+            'currencyCode' => 'EUR',
+        ],
 
     ],
     'modules' => [

@@ -27,10 +27,7 @@ $gridColumns = [
         'attribute' => "title",
         'value' => 'title'
     ],
-    [
-        'attribute' => "slug",
-        'value' => 'slug'
-    ],
+
     [
         'attribute' => "blogSearch",
         'value' => 'blog.title',
@@ -51,8 +48,8 @@ $gridColumns = [
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Create Comment', ['create'], ['class' => 'btn btn-success']) ?>
+    <p style="margin:2% 1% 2% 0%;">
+        <?= Html::a('Create Comment', ['create'], ['class' => 't_btn']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>

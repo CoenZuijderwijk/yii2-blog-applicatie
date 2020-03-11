@@ -35,17 +35,16 @@ AppAsset::register($this);
         'brandLabel' => 'Telefication',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-fixed-top',
-            'style' => 'background-color: #005499; color: #EB9200;',
+            'class' => 'navbar  t_nav',
+            'style' => 'background-color: #white;',
         ],
     ]);
     echo Nav::widget([
         'options' => [
-                'class' => 'navbar-nav navbar-right',
-                'style' => 'color: #EB9200'
+                'class' => 'navbar-nav navbar-right'
                 ],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index'], 'style' => 'color: #EB9200'],
+            ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'Blog', 'url' => ['/blog/index']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
@@ -54,22 +53,18 @@ AppAsset::register($this);
                 . Html::beginForm(['/site/logout'], 'post')
                 . Html::submitButton(
                     'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
+                    ['class' => 'btn btn-link logout t_nav']
                 )
                 . Html::endForm()
                 . '</li>'
             )
         ],
     ]);
-
+     echo Html::img('@web/img/header-content.jpg', ['style' => 'width:100%']);
     NavBar::end();
-    ?>
 
+    ?>
     <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= Alert::widget() ?>
         <?= $content ?>
     </div>
 </div>

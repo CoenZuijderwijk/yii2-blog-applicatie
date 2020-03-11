@@ -41,7 +41,7 @@ class UserController extends Controller
         $user = WebUser::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }  elseif($user->getAccessLevel() >= 98) {
 
             $searchModel = new UserSearch();
@@ -53,7 +53,7 @@ class UserController extends Controller
             ]);
 
         } else {
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }
 
 
@@ -72,14 +72,14 @@ class UserController extends Controller
         $user = WebUser::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }  elseif($user->getAccessLevel() >= 98) {
             return $this->render('view', [
                 'model' => $this->findModel($id),
             ]);
 
         } else {
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }
 
     }
@@ -95,7 +95,7 @@ class UserController extends Controller
         $user = WebUser::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }  elseif($user->getAccessLevel() >= 98) {
 
             $model = new User();
@@ -114,7 +114,7 @@ class UserController extends Controller
             ]);
 
         } else {
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }
 
     }
@@ -132,7 +132,7 @@ class UserController extends Controller
         $user = WebUser::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }  elseif($user->getAccessLevel() >= 98) {
 
             $model = $this->findModel($id);
@@ -148,7 +148,7 @@ class UserController extends Controller
             ]);
 
         } else {
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }
 
 
@@ -167,14 +167,14 @@ class UserController extends Controller
         $user = WebUser::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }  elseif($user->getAccessLevel() >= 98) {
 
             $this->findModel($id)->delete();
 
             return $this->redirect(['index']);
         } else {
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }
     }
 

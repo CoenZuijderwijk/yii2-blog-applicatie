@@ -43,7 +43,7 @@ class CommentController extends Controller
         $user = WebUser::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }  elseif($user->getAccessLevel() >= 98) {
 
             return $this->render('index', [
@@ -52,7 +52,7 @@ class CommentController extends Controller
             ]);
 
         } else {
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }
 
 
@@ -70,7 +70,7 @@ class CommentController extends Controller
         $user = WebUser::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }  elseif($user->getAccessLevel() >= 98) {
 
             return $this->render('view', [
@@ -78,7 +78,7 @@ class CommentController extends Controller
             ]);
 
         } else {
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }
     }
 
@@ -118,7 +118,7 @@ class CommentController extends Controller
         $user = WebUser::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }  elseif($user->getAccessLevel() >= 98) {
 
             $this->findModel($id)->delete();
@@ -129,7 +129,7 @@ class CommentController extends Controller
             ]);
 
         } else {
-            return $this->render('error');
+            throw new \yii\web\HttpException(403);
         }
     }
 

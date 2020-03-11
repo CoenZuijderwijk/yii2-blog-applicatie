@@ -10,9 +10,7 @@ body {
     padding: 0 0 60px;
 }
 
-.wrap > .container {
-    padding: 70px 15px 20px;
-}
+
 
 .footer {
     height: 60px;
@@ -118,6 +116,68 @@ a {
     color: #EB9200;
 }
 
+p {
+    word-wrap:break-word;
+}
+
 .logout {
     color: #EB9200;
+}
+
+.t_btn {
+    background-color: white;
+    border: 1px solid #003B6C;
+    margin: 1% 1% 3% 1%;
+    padding: 1%;
+    color: #003B6C;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.t_btn:hover {
+    background-color: #003B6C;
+    color: white;
+    text-decoration: none;
+}
+.t_nav {
+    color: #002C4F;
+}
+.t_nav li button {
+    color: black;
+    font-weight: bold;
+}
+
+.t_nav li button:hover {
+    color: #002C4F;
+    background-color: #f2f2f2;
+}
+
+.t_nav li a, .t_btn li button a, .navbar-brand  {
+    color: black;
+    font-weight: bold;
+}
+
+.article_border {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #EB9200;
+}
+
+.article {
+    border: rgba(0, 56, 102, 0.4) 1px solid;
+    border-radius: 10px;
+}
+
+.comment {
+    border: rgba(0, 56, 102, 0.4) 1px solid;
+    border-radius: 10px;
+}
+
+.slug div p {
+    display:inline;
+}
+
+.a_btn a {
+    color:white;
+    text-decoration: none;
 }

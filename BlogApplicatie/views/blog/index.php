@@ -11,6 +11,7 @@ use kartik\grid\GridView;
 $this->title = 'Blogs';
 $this->params['breadcrumbs'][] = $this->title;
 
+
 if(!Yii::$app->getUser()->isGuest){
 
     $user = User::findOne(Yii::$app->getUser()->getId());
@@ -97,17 +98,19 @@ if(!Yii::$app->getUser()->isGuest){
 <div class="blog-index">
 <?php if(!Yii::$app->getUser()->isGuest) {
 ?>
-    <h1><?= Html::encode($this->title) ?></h1>
-
+    <h1 ><?= Html::encode($this->title) ?></h1>
+<p style="margin:2% 1% 2% 0%;">
     <?php
     if (!Yii::$app->getUser()->isGuest) {
-        echo  Html::a('Create Blog', ['create'], ['class' => 'btn btn-success', 'style' => 'margin-right: 1%']) ;
+        echo  Html::a('Create Blog', ['create'], ['class' => ' t_btn', 'style' => 'margin-bottom: 30%']) ;
         $user = User::findOne(Yii::$app->getUser()->getId());
         if($user->getAccessLevel() >= 98) {
-            echo Html::a('Comment overview', ['comment/index'], ['class' => 'btn btn-success']);
+            echo Html::a('Comment overview', ['comment/index'], ['class' => 't_btn']);
         }
     }
     ?>
+</p>
+
 
 
     <?= GridView::widget([
@@ -124,15 +127,18 @@ if(!Yii::$app->getUser()->isGuest){
     <?php
     echo "<div class'row'>";
     foreach($models as $model) {
-        echo "<div class=' col-xs-12 col-sm-6 col-m-4 col-lg-4' style='padding-bottom: 25px; padding: 1%; background-color: white    '>";
-        echo "<div class='border border-danger'>";
-        echo "<h3><a href='/blog/view?id=" . $model->id . "' style='text-decoration: none'>" . $model->title  . "</a>";
-        echo "<p>" . $model->inleiding . "</p>";
-        echo "</div></div>";
+        echo "<div class=' col-12' style='padding-bottom: 25px; padding: 1%; background-color: white'>";
+
+        echo "<h3><a href='/blog/view?id=" . $model->id . "' style='text-decoration: none'>" . $model->title  . "</a></h3>";
+        echo "<div class='article_border'></div>";
+        echo "<p style='font-size: 18pt'>" . $model->inleiding . "</p>";
+        echo "</div>";
     }
     echo "</div>";
     ?>
 
+
     <?php } ?>
+
 
 </div>

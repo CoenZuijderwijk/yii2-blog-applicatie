@@ -35,8 +35,7 @@ class AdminController extends Controller
                 'name' => $name
             ]);
         } else {
-            // MW: Dit aanpassen zodat de browser ook echt een Access Denied/Not Found header (403/404) meekrijgt
-            return $this->render("error");
+            throw new \yii\web\HttpException(403);
         }
 
     }
