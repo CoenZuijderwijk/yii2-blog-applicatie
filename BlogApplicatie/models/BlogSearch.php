@@ -44,15 +44,12 @@ class BlogSearch extends Blog
      */
     public function search($params)
     {
-        // MW: Deze functie omschrijven zodat er geen dubbelingen zijn, voor bijv. de sorting is dat niet nodig 
         if (!Yii::$app->getUser()->isGuest) {
-            $id = Yii::$app->getUser()->getIdentity()->getId();
-            
-            // MW: Als het goed is kun je het User-model direct binnenhalen als de identityClass goed staat ingesteld, zie: https://www.yiiframework.com/doc/guide/2.0/en/security-authentication#configuring-user
-            $user = User::findOne($id);
+            $user = Yii::$app->getUser()->getIdentity();
+
             if ($user->accessLevel == 16) {
                 $query = Blog::find()
-                    ->where(["author_id" => $id]);
+                    ->where(["author_id" => $user->getId()]);
                 $query->joinWith(['author']);
 
                 $dataProvider = new ActiveDataProvider([
@@ -70,16 +67,7 @@ class BlogSearch extends Blog
                     return $dataProvider;
                 }
 
-                $query->andFilterWhere([
-                    'blog.id' => $this->id,
-                    'blog.author_id' => $this->author_id,
-                    'user.username' => $this->author,
-                ]);
-
-                $query
-                    ->andFilterWhere(['like', 'blog.title', $this->title])
-                    ->andFilterWhere(['like', 'blog.slug', $this->slug])
-                    ->andFilterWhere(['like', 'blog.publish_date', $this->publish_date]);
+                $query = $this->standardQuery($query);
 
                 return $dataProvider;
             } else {
@@ -101,15 +89,7 @@ class BlogSearch extends Blog
                     return $dataProvider;
                 }
 
-                $query->andFilterWhere([
-                    'blog.id' => $this->id,
-                    'blog.author_id' => $this->author_id,
-                    'user.username' => $this->author,
-                ]);
-                $query
-                    ->andFilterWhere(['like', 'blog.title', $this->title])
-                    ->andFilterWhere(['like', 'blog.slug', $this->slug])
-                    ->andFilterWhere(['like', 'blog.publish_date', $this->publish_date]);
+                $query = $this->standardQuery($query);
 
                 return $dataProvider;
             }
@@ -132,19 +112,28 @@ class BlogSearch extends Blog
                 return $dataProvider;
             }
 
-            $query->andFilterWhere([
-                'blog.id' => $this->id,
-                'blog.author_id' => $this->author_id,
-                'user.username' => $this->author,
-            ]);
-            $query
-                ->andFilterWhere(['like', 'blog.title', $this->title])
-                ->andFilterWhere(['like', 'blog.slug', $this->slug])
 
-                ->andFilterWhere(['like', 'blog.publish_date', $this->publish_date]);
+            $query = $this->standardQuery($query);
 
             return $dataProvider;
         }
 
+    }
+
+
+    public function standardQuery($query)
+    {
+        $query->andFilterWhere([
+            'blog.id' => $this->id,
+            'blog.author_id' => $this->author_id,
+            'user.username' => $this->author,
+        ]);
+
+        $query
+            ->andFilterWhere(['like', 'blog.title', $this->title])
+            ->andFilterWhere(['like', 'blog.slug', $this->slug])
+            ->andFilterWhere(['like', 'blog.publish_date', $this->publish_date]);
+
+        return $query;
     }
 }
