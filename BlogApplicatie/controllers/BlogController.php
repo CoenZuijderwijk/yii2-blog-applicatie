@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\components\WebUser;
+use app\models\Attachment;
 use app\models\Comment;
 use app\models\User;
 use Codeception\PHPUnit\Constraint\Page;
@@ -180,6 +181,13 @@ class BlogController extends Controller
         }
     }
 
+    public function actionAttachment() {
+        $model = new Attachment();
+        return $this->render('attachment', [
+            'model' => $model,
+        ]);
+    }
+
 
                 /**
                  * Deletes an existing Blog model.
@@ -314,6 +322,20 @@ class BlogController extends Controller
 
         $model->save();
         return $this->redirect(['view', 'id' => $model->id]);
+
+    }
+
+    public function actionHandleAttachment() {
+        $this->handleAttachment();
+        }
+
+    public function handleAttachment() {
+        $model = new Attachment();
+        die(var_dump(UploadedFile::getInstance($model, 'files'), "dood"));
+        if(UploadedFile::getInstance($model, 'files')) {
+            $files = UploadedFile::getInstance($model, 'files[]');
+            die(var_dump($files, "dood"));
+        }
 
     }
 
