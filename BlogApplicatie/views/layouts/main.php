@@ -26,10 +26,10 @@ AppAsset::register($this);
 <body>
 <?php $this->beginBody() ?>
 
-<div class="wrap" style="background-color: #FFFFFF; color: #002C4F">
+<div class="wrap">
     <?php
     $id = Yii::$app->user->id;
-    $user = \app\components\WebUser::findOne($id);
+    $user = \app\models\User::findOne($id);
 
     NavBar::begin([
         'brandLabel' => 'Telefication',
@@ -60,9 +60,9 @@ AppAsset::register($this);
             )
         ],
     ]);
-     echo Html::img('@web/img/header-content.jpg', ['style' => 'width:100%']);
     NavBar::end();
 
+    echo Html::img('@web/img/header-content.jpg', ['style' => 'width:100%']);
     ?>
     <div class="container">
         <?= $content ?>
@@ -71,9 +71,9 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left" style="color: #002C4F  ">&copy; telefication <?= date('Y') ?></p>
+        <p class="pull-left">&copy; telefication <?= date('Y') ?></p>
 
-        <p class="pull-right" style="color: #EB9200;">Badbit</p>
+        <p class="pull-right">Badbit</p>
     </div>
 </footer>
 

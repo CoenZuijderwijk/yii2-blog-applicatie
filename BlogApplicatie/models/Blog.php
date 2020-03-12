@@ -67,4 +67,8 @@ class Blog extends \yii\db\ActiveRecord
     {
         return $this->hasOne(User::className(), ['id' => 'author_id']);
     }
+
+    public function setDate() {
+        $this->date = date('Y-m-d H:i:s');
+    }
 }

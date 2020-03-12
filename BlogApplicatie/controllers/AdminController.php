@@ -28,7 +28,7 @@ class AdminController extends Controller
     }
 
     public function actionHome() {
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
+        $user = User::findOne(Yii::$app->getUser()->id);
         if($user->accessLevel >= 98) {
             $name = $user->username;
             return $this->render("home", [

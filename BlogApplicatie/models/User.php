@@ -15,6 +15,8 @@ use yii\web\IdentityInterface;
  * @property string|null $authKey
  * @property string|null $accessToken
  * @property int|null $accessLevel
+ * @property boolean $isAdmin
+ * @property boolean $isSuperAdmin
  */
 class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 {
@@ -148,6 +150,40 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
             [['accessLevel'], 'integer'],
         ];
 
+    }
+
+    /**
+     * cache for the logged in UserController active record
+     * @return User
+     */
+    private $isGuest;
+
+    /**
+     * is the user a superadmin ?
+     * @return boolean
+     */
+    function getIsSuperAdmin(){
+        return ( $this->user && $this->user->accessLevel == User::LEVEL_SUPERADMIN );
+    }
+
+    public function getIsGeust() {
+        return $this->isGuest;
+    }
+
+    /**
+     * is the user logged in ?
+     * @return boolean
+     */
+    function getIsRegister() {
+        return ($this->user && $this->user->accessLevel == User::LEVEL_REGISTERED);
+    }
+
+    /**
+     * is the user an administrator ?
+     * @return boolean
+     */
+    function getIsAdmin(){
+        return ( $this->user && $this->user->accessLevel >= User::LEVEL_ADMIN );
     }
 
 

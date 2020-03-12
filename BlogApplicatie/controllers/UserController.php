@@ -38,7 +38,7 @@ class UserController extends Controller
     //action to run the user index page
     public function actionIndex()
     {
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
+        $user = User::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
             throw new \yii\web\HttpException(403);
@@ -69,7 +69,7 @@ class UserController extends Controller
     public function actionView($id)
     {
 
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
+        $user = User::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
             throw new \yii\web\HttpException(403);
@@ -92,7 +92,7 @@ class UserController extends Controller
     //action to run the user create page
     public function actionCreate()
     {
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
+        $user = User::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
             throw new \yii\web\HttpException(403);
@@ -129,7 +129,7 @@ class UserController extends Controller
     //action to run the user update page
     public function actionUpdate($id)
     {
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
+        $user = User::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
             throw new \yii\web\HttpException(403);
@@ -164,7 +164,7 @@ class UserController extends Controller
     //action to run the user delete page
     public function actionDelete($id)
     {
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
+        $user = User::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
             throw new \yii\web\HttpException(403);

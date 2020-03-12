@@ -16,7 +16,7 @@ use kartik\file\FileInput;
         'id' => "blog-form"]); ?>
     <?= $form->field($model, 'author_id')->hiddenInput(['value' => $user->getId(),])->label(false) ?>
 
-    <?= $form->field($model, 'publish_date')->hiddenInput(['value' => $date,])->label(false) ?>
+    <?= $form->field($model, 'publish_date')->hiddenInput(['value' => date('Y-m-d H:i:s'),])->label(false) ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
     <?= $form->field($model, 'inleiding')->textInput(['maxlength' => 120]) ?>

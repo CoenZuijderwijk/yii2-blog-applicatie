@@ -40,7 +40,7 @@ class CommentController extends Controller
     {
         $searchModel = new CommentSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
+        $user = User::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
             throw new \yii\web\HttpException(403);
@@ -67,7 +67,7 @@ class CommentController extends Controller
     //action to run the page to view individual comments
     public function actionView($id)
     {
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
+        $user = User::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
             throw new \yii\web\HttpException(403);
@@ -115,7 +115,7 @@ class CommentController extends Controller
     {
         $searchModel = new CommentSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
+        $user = User::findOne(Yii::$app->getUser()->id);
 
         if(!$user){
             throw new \yii\web\HttpException(403);

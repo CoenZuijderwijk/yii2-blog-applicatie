@@ -27,17 +27,16 @@ $formatter = \Yii::$app->formatter;
 
 
     <div class="row">
-        <!-- MW: Niet inline stylen, dus dit verplaatsen naar de CSS -->
-        <div class="col-12 article" style=" padding: 2%; margin-bottom: 10%;">
+        <div class="col-12 article">
 
 
-            <!-- MW: Dit kan (moet) anders ivm leesbaarhaarheid, zou je ook HTML met PHP erin kunnen doen ipv wat je nu doet (PHP met HTML erin) -->
-            <?= "<h3 style='color:#EB9200'>" . $model->title . "</h3>"?>
-            <?= "<div class='article_border'></div>" ?>
-            <?= "<p style='color:lightgrey'>" . $formatter->asDatetime($model->publish_date, 'long') . "</p>" ?>
-            <?= "<div style='color:#002C4F' class='slug'>" . $model->slug . "</div>"?>
 
-            <div style="margin-top: 3%;">
+            <h3 class="title"><?= $model->title?> </h3>
+            <div class='article_border'></div>
+           <p style='color:lightgrey'><?=$formatter->asDatetime($model->publish_date, 'long') ?></p>
+            <div  class='slug'><?=$model->slug ?> </div>
+
+            <div class="attachment">
                 <?php
                 if($model->attachment){
                     echo Html::a('Attachment', Url::to("blog/download?id=" . $model->id, $model->id), ['style' => 'color: #337ab7;']);
@@ -51,11 +50,13 @@ $formatter = \Yii::$app->formatter;
     <div class="row">
         <?php
         foreach($comments as $comm) {
-            // MW: Dit kan (moet) anders ivm leesbaarhaarheid, zou je ook HTML met PHP erin kunnen doen ipv wat je nu doet (PHP met HTML erin)
-            echo "<div class='comment col-12 ' style='padding: 2%; margin:1%; '>";
-            echo "<h4>" . $comm->title . "</h4>";
-            echo "<p>" . $comm->slug . "</p>";
-            echo "<div style='float:right'>" . $formatter->asDatetime($comm->publish_date, 'long') . "</div>" ;
+            ?>
+
+            <div class='comment col-12 '>
+           <h4><?= $comm->title ?></h4>
+           <p><?= $comm->slug?></p>
+                <div> <?= $formatter->asDatetime($comm->publish_date, 'long') ?></div>
+                <?php
             if(!Yii::$app->getUser()->isGuest) {
                 $user = User::findOne(Yii::$app->getUser()->getId());
 

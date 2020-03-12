@@ -46,8 +46,7 @@ class BlogController extends Controller
     {
         $searchModel = new BlogSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-        
-        // MW: Hoezo heb je hier een dataProvider nodig en ook nog een verzameling $models? Dit geeft dubbele queries voor onderstaande view
+        //de dataprovider is om de search requests te handelen en de verzameling van models is voor als je de pagina opent zonder zoekopdrachten
         $models = Blog::find()->all();
 
         return $this->render('index', [
@@ -68,7 +67,8 @@ class BlogController extends Controller
     {
         $model = Blog::findOne($id);
 
-        // MW: Wat gebeurt hier precies, waarom is dat nodig voor het bekijken van een blogartikel?
+        // model2 word aangemaakt voor als er een nieuwe comment word toegevoegd
+        //comments zijn alle comments onder een bepaalde blogpost
         $model2 = new Comment();
         $comments = Comment::find()
             ->where(['blog_id' => $model->id])->all();
@@ -90,17 +90,10 @@ class BlogController extends Controller
     public function actionCreate()
     {
         $model = new Blog();
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
-        
-        // MW: Dit zijn acties die niet in de Controller horen, maar in het Model. Als je bijvoorbeeld ergens anders een Blog aanmaakt, krijg die dan ook de juiste datum mee? 
-        // MW: Kijk eens naar de documentatie mbt afterFind() of beforeSave()
-        $date = date('Y-m-d H:i:s');
+        $user = User::findOne(Yii::$app->getUser()->id);
 
-        // MW: Kan dit ook zonder een $check-variabele aan te maken? Ook bij actionDelete() en actionUpdate()?
-        $check = $this->checkAuth();
-
-        switch ($check) {
-            // MW: Wat betekent precies 1, 2 en 0? Hoe kan ik daaracht komen zonder naar de checkAuth()-functie te gaan?
+        switch ($this->checkAuth()) {
+            //1 means that the user is a admin or super admin
             case 1:
 
                 if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -110,13 +103,12 @@ class BlogController extends Controller
                 return $this->render('create' , [
                     'model' => $model,
                     'user' => $user,
-                    'date' => $date,
                 ]);
                 break;
+                //2 means that the user is an author
             case 2:
                 if ($model->author_id == $user->id) {
-                    
-                    // MW: Kan deze dubbeling eruit als je de flow van de switch aan zou passen?
+
                     if ($model->load(Yii::$app->request->post()) && $model->save()) {
                         $this->createBlog($model);
                     }
@@ -124,12 +116,12 @@ class BlogController extends Controller
                     return $this->render('create' , [
                         'model' => $model,
                         'user' => $user,
-                        'date' => $date,
                     ]);
                 } else {
                     throw new \yii\web\HttpException(403);
                 }
                 break;
+                //0 means that the user is neither a geust or author.
             case 0: {
                 throw new \yii\web\HttpException(403);
                 break;
@@ -148,13 +140,11 @@ class BlogController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        $user = WebUser::findOne(Yii::$app->getUser()->id);
-        // MW: Dubbeling mbt actionCreate(), zie comment daar
-        $date = date('Y-m-d H:i:s');
-        // MW: Hieronder zit een hoop dubbeling, graag aanpassen zodat dit minder dubbel is
-        $check = $this->checkAuth();
+        $user = User::findOne(Yii::$app->getUser()->id);
 
-        switch ($check) {
+
+        switch ($this->checkAuth()) {
+            //1 means that the user is a admin or super admin
             case 1:
 
                 if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -164,9 +154,9 @@ class BlogController extends Controller
                 return $this->render('update' , [
                     'model' => $model,
                     'user' => $user,
-                    'date' => $date,
                 ]);
                 break;
+            //2 means that the user is an author
             case 2:
                 if ($model->author_id == $user->id) {
                     if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -176,12 +166,12 @@ class BlogController extends Controller
                     return $this->render('update' , [
                         'model' => $model,
                         'user' => $user,
-                        'date' => $date,
                     ]);
                 } else {
                     throw new \yii\web\HttpException(403);
                 }
                 break;
+            //0 means that the user is neither a geust or author.
             case 0: {
                 throw new \yii\web\HttpException(403);
                 break;
@@ -190,7 +180,7 @@ class BlogController extends Controller
         }
     }
 
-                                                            // MW: Wat een hoop tabs hieronder :)
+
                 /**
                  * Deletes an existing Blog model.
                  * If deletion is successful, the browser will be redirected to the 'index' page.
@@ -199,30 +189,31 @@ class BlogController extends Controller
                  * @throws NotFoundHttpException if the model cannot be found
                  */
                 //action to run the page to delete a blog
-                // MW: waarom
-                // de functie
-                // over meerdere regels declareren?
-                // (zie ook overige functies hieronder)                
-                public
-                function actionDelete($id)
-                {
-                    $user = WebUser::findOne(Yii::$app->getUser()->id);
 
-                    $check = $this->checkAuth();
-                    switch ($check) {
-                        case 1:
-                            $this->findModel($id)->delete();
-                            return $this->redirect('/blog/index');
+    public function actionDelete($id)
+    {
+        $user = User::findOne(Yii::$app->getUser()->id);
 
-                        case 2:
-                            if ($this->findModel($id)->author_id == $user->id) {
-                                $this->findModel($id)->delete();
-                                return $this->redirect('/blog/index');
-                            } else {
-                                throw new \yii\web\HttpException(403);
+            switch ($this->checkAuth()) {
+                //1 means that the user is a admin or super admin
+                case 1:
+                    $this->findModel($id)->delete();
+                    return $this->redirect('/blog/index');
+                //2 means that the user is an author
+                case 2:
+                    if ($this->findModel($id)->author_id == $user->id) {
+                        $this->findModel($id)->delete();
+                        return $this->redirect('/blog/index');
+                    } else {
+                        throw new \yii\web\HttpException(403);
                             }
-                    }
+                //0 means that the user is neither a geust or author.
+                case 0: {
+                    throw new \yii\web\HttpException(403);
+                    break;
                 }
+            }
+    }
 
 
                 /**
@@ -233,112 +224,83 @@ class BlogController extends Controller
                  * @throws NotFoundHttpException if the model cannot be found
                  */
                 //method to find a model
-                protected
-                function findModel($id)
-                {
+    protected function findModel($id)
+    {
                     // MW: Wat vergelijk je nu precies in deze if, klopt dat wel (maw: wordt dit ooit wel eens null)?
-                    if (($model = Blog::findOne($id)) !== null) {
-                        return $model;
-                    }
+                    // CZ: Deze vergelijking kijkt of het model bestaat als je hem bijv wilt verwijderen. Dus als je een blog wilt verwijderen met een id wat niet bestaat throwt hij een exception
+        if (($model = Blog::findOne($id)) !== null) {
+            return $model;
+        }
+        throw new NotFoundHttpException('The requested page does not exist.');
+    }
+    //action to download the attachment
+    public function actionDownload($id)
+    {
+        $model = Blog::findOne($id);
+        $file = $model->attachment;
+        if (file_exists($file)) {
+            Yii::$app->response->sendFile($file);
+        } else {
+            throw new \yii\web\HttpException(403);
+        }
+    }
+    //action to delete a comment
+    public function actionDeleteComment($id)
+    {
+        $this->findModel($id)->delete();
 
-                    throw new NotFoundHttpException('The requested page does not exist.');
-                }
+        return $this->redirect('/blog');
+    }
 
-
-                public
-                function actionDownload($id)
-                {
-                    $model = Blog::findOne($id);
-                    $file = $model->attachment;
-                    if (file_exists($file)) {
-                        Yii::$app->response->sendFile($file);
-                    } else {
-                        throw new \yii\web\HttpException(403);
-                    }
-
-                }
-
-                //action to delete a comment
-                public
-                function actionDeleteComment($id)
-                {
-                    // MW: heb je hier wel een variabele nodig?
-                    $comment = Comment::findOne($id);
-                    $comment->delete();
-
-
-                    return $this->redirect('/blog');
-
-                }
-
-
-                public
-                function actionTest()
-                {
-                    die(var_dump($this->checkAuth()));
-
-                }
-
-
-                /**
-                 * @param $user
-                 * @return int
-                 */
-                public function getAuth()
-                {
-                    // MW: Kun je applicatie aanpassen zodat WebUser niet meer nodig is het User-model staat ingesteld via de identityClass?
-                    $user = WebUser::findOne(Yii::$app->getUser()->id);
-                    if (!$user) {
-                        return 1;
-                    } elseif ($user->getAccessLevel() >= 98) {
+    public function getAuth()
+    {
+        $user = User::findOne(Yii::$app->getUser()->id);
+        if (!$user) {
+            return 1;
+        } elseif ($user->getAccessLevel() >= 98) {
+            return 2;
+        } elseif ($user->getAccessLevel() >= 16) {
+            return 3;
+        } else {
+            return 1;
+        }
+    }
+    // MW: Dit (en getAuth()) zijn meer zaken die naar het Blog-model kunnen, toch?
+    // CZ: naar mijn idee niet. Ze zouden wel naar het user-model kunnen, maar met get en check auth vraag je op of user de rechten heeft om iets uit te voeren of niet.
+    public function checkAuth()
+    {
+        switch ($this->getAuth()) {
+            case 1:
+                throw new \yii\web\HttpException(403);
+                break;
+                case 2:
+                    return 1;
+                    break;
+                    case 3:
                         return 2;
-                    } elseif ($user->getAccessLevel() >= 16) {
-                        return 3;
-                    } else {
-                        return 1;
-                    }
+                        break;
+        }
+    }
+    //saves the attachment
+    public function updateBlog($id)
+    {
+        $model = $this->findModel($id);
 
-                }
+        if (UploadedFile::getInstance($model, 'file' !== NULL)) {
+            $model->file = UploadedFile::getInstance($model, 'file');
+            $imageName = $model->file->getBaseName() . random_int(1, 100);
+            $model->attachment = 'uploads/' . $imageName . '.' . $model->file->extension;
+            $save = $model->attachment;
 
-                // MW: Dit (en getAuth()) zijn meer zaken die naar het Blog-model kunnen, toch?
-                public function checkAuth()
-                {
-                    $auth = $this->getAuth();
-                    switch ($auth) {
-                        case 1:
-                            throw new \yii\web\HttpException(403);
-                            break;
-                        case 2:
-                            return 1;
-                            break;
-                        case 3:
-                            return 2;
-                            break;
-                    }
-                }
+            $model->file->saveAs($save);
+        }
 
+        $model->save();
 
-                // MW: waarom kan dit niet via actionUpdate? Wat doet deze functie?
-                public function updateBlog($id) {
+        return $this->redirect(['view', 'id' => $model->id]);
 
-                    $model = $this->findModel($id);
-
-                        if (UploadedFile::getInstance($model, 'file' !== NULL)) {
-                            $model->file = UploadedFile::getInstance($model, 'file');
-                            $imageName = $model->file->getBaseName() . random_int(1, 100);
-                            $model->attachment = 'uploads/' . $imageName . '.' . $model->file->extension;
-                            $save = $model->attachment;
-
-                            $model->file->saveAs($save);
-                        }
-
-                        $model->save();
-
-                        return $this->redirect(['view', 'id' => $model->id]);
-
-                    }
-
-    // MW: waarom kan dit niet via actionCreate? Wat doet deze functie?
+    }
+        //saves the attachment
     public function createBlog($model) {
 
         if (UploadedFile::getInstance($model, 'file') !== NULL) {

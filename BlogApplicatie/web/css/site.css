@@ -8,6 +8,8 @@ body {
     height: auto;
     margin: 0 auto -60px;
     padding: 0 0 60px;
+    background-color: #FFFFFF;
+    color: #002C4F;
 }
 
 
@@ -166,18 +168,82 @@ p {
 .article {
     border: rgba(0, 56, 102, 0.4) 1px solid;
     border-radius: 10px;
+    padding: 2%;
+    margin-bottom: 10%;
 }
 
 .comment {
     border: rgba(0, 56, 102, 0.4) 1px solid;
     border-radius: 10px;
+    padding: 2%;
+    margin:1%;
 }
 
 .slug div p {
     display:inline;
 }
 
+.slug {
+    color: #002C4F;
+}
+
 .a_btn a {
     color:white;
     text-decoration: none;
+}
+
+#art_btn {
+    background-color: #EB9200;
+    width:40%;
+    height:30vh;
+    color:white;
+}
+
+#usr_btn {
+    background-color:#002C4F;
+    width:40%;
+    height:30vh;
+    color:white;
+}
+
+.ad-h_row {
+    margin-bottom: 100px;
+}
+
+#ad-h_wel {
+    margin-bottom: 25px;
+}
+
+.pull-left {
+    color: #002C4F;
+}
+
+.pull-right {
+    color: #EB9200;
+}
+
+.title {
+    color:#EB9200;
+}
+
+.attachment {
+    margin-top: 3%;
+}
+
+.g-blog-in {
+    padding-bottom: 25px;
+    padding: 1%;
+    background-color:white;
+}
+
+.g-blog-in h3 a {
+    text-decoration: none;
+}
+
+.p_article {
+    font-size: 18pt;
+}
+
+.b-i-btn {
+    margin: 2% 1% 2% 0%;
 }
