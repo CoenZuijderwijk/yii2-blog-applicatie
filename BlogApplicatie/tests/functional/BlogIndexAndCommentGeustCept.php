@@ -13,8 +13,6 @@ $I->amOnPage("/blog/index");
 $I->see("lorem ipsum");
 //does see the page to go to a blog
 $I->click("lorem ipsum");
-//is on a blog page
-$I->see("attachment");
 //check to see comments
 //filling in the comment form
 $I->fillField("#comment-title", 'testTitle');

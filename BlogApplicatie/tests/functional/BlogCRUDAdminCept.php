@@ -23,9 +23,9 @@ $I->see("Comment overview");
 //going to the comment overview page
 $I->click("Comment overview");
 //checking to see a certain comment with "jatoch php"
-$I->see("jatoch php");
+$I->see("php");
 //going to the view page of the comment
-$I->amOnPage("/comment/view?id=17");
+$I->amOnPage("/comment/view?id=46");
 $I->see("php");
 //going to delete the comment
 $I->click("Delete");
@@ -52,8 +52,7 @@ $I->fillField("#comment-slug", "gekkeSlug");
 $I->click("Save");
 //checking to see if we see our comment
 $I->see("gekkeTitle");
-//looking to delete the comment
-$I->see("Delete");
+
 //we can also delete comments because we are admins.
 //we are going back to update a blogpost.
 $I->amOnPage("/blog/update?id=7");

@@ -32,14 +32,6 @@ $I->fillField("#blog-inleiding", "testInleiding");
 $I->fillField("#blog-slug", "testSlug");
 $I->see("Save");
 $I->click("Save");
-$I->see("Commentaar toevoegen");
-//Checking comments since we are here already.
-$I->fillField("#comment-title", "gekkeTitle");
-$I->fillField("#comment-slug", "gekkeSlug");
-$I->click("Save");
-//checking to see if the new comment is here
-$I->see("gekkeTitle");
-$I->see("gekkeSlug");
 //opening a blog post to edit
 $I->amOnPage("/blog/update?id=89");
 $I->see("testTitle");

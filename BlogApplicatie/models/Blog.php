@@ -36,7 +36,7 @@ class Blog extends \yii\db\ActiveRecord
             [['author_id', 'publish_date', 'title', 'slug'], 'required'],
             [['author_id'], 'integer'],
             [['publish_date', 'author'], 'safe'],
-            [['title', 'inleiding', 'attachment'], 'string', 'max' => 255],
+            [['title', 'inleiding'], 'string', 'max' => 255],
             [['file'], 'file'],
             [['author_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['author_id' => 'id']],
         ];
@@ -54,7 +54,6 @@ class Blog extends \yii\db\ActiveRecord
             'title' => 'Title',
             'slug' => 'Slug',
             'inleiding' => 'Inleiding',
-            'file' => 'Attachment',
         ];
     }
 

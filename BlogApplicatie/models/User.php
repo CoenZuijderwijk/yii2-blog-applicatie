@@ -50,7 +50,7 @@ class User extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
         $user = (new \yii\db\Query())
             ->select(['*'])
             ->from('user')
-            ->where('accesToken = :token', [':token' => $token])
+            ->where('accessToken = :token', [':token' => $token])
             ->one();
         return $user;
     }

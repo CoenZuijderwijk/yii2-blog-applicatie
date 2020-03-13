@@ -23,5 +23,5 @@ $I->amOnPage("/blog/delete?id=57");
 //i dont get redirected back so i got back by my self
 $I->amOnPage("/blog");
 //checking if id 57 is still there
-$I->see("57");
+$I->dontSee("57");
 

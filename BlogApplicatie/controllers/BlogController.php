@@ -101,7 +101,7 @@ class BlogController extends Controller
             case 1:
 
                 if ($model->load(Yii::$app->request->post()) && $model->save()) {
-                    $this->createBlog($model);
+                    $this->redirect('/blog/view?id=' . $model->id);
                 }
 
                 return $this->render('create' , [
@@ -114,7 +114,7 @@ class BlogController extends Controller
                 if ($model->author_id == $user->id) {
 
                     if ($model->load(Yii::$app->request->post()) && $model->save()) {
-                        $this->createBlog($model);
+                        $this->redirect('/blog/view?id=' . $model->id);
                     }
 
                     return $this->render('create' , [
@@ -152,7 +152,7 @@ class BlogController extends Controller
             case 1:
 
                 if ($model->load(Yii::$app->request->post()) && $model->save()) {
-                    $this->updateBlog($id);
+                    $this->redirect('/blog/view?id=' . $model->id);
                 }
 
                 return $this->render('update' , [
@@ -164,7 +164,7 @@ class BlogController extends Controller
             case 2:
                 if ($model->author_id == $user->id) {
                     if ($model->load(Yii::$app->request->post()) && $model->save()) {
-                        $this->updateBlog($id);
+                        $this->redirect('/blog/view?id=' . $model->id);
                     }
 
                     return $this->render('update' , [
@@ -183,16 +183,16 @@ class BlogController extends Controller
 
         }
     }
+//the attachment action commented it out just to save it
+   // public function actionAttachment() {
 
-    public function actionAttachment() {
-
-        $model = new Attachment();
+        //$model = new Attachment();
 
 
-        return $this->render('attachment', [
-            'model' => $model,
-        ]);
-    }
+        //return $this->render('attachment', [
+         //   'model' => $model,
+        //]);
+    //}
 
 
                 /**
@@ -262,7 +262,7 @@ class BlogController extends Controller
 
         return $this->redirect('/blog');
     }
-
+    //action to delete an attachment
     public function actionDeleteAttachment($id) {
 
         $attachment = Attachment::findOne($id);
@@ -270,11 +270,11 @@ class BlogController extends Controller
         $attachment->delete();
         return $this->redirect('/blog/view?id=' . $b_id);
     }
-
+        //action to handle an attachment
     public function actionHandleAttachment() {
         $this->handleAttachment();
     }
-
+//method to handle an attachment
     public function handleAttachment() {
         $model = new Attachment();
         if ( Yii::$app->request->post() ) {
@@ -299,7 +299,7 @@ class BlogController extends Controller
 
     }
 
-
+    //method to authenticate
     public function getAuth()
     {
         $user = User::findOne(Yii::$app->getUser()->id);
@@ -315,6 +315,7 @@ class BlogController extends Controller
     }
     // MW: Dit (en getAuth()) zijn meer zaken die naar het Blog-model kunnen, toch?
     // CZ: naar mijn idee niet. Ze zouden wel naar het user-model kunnen, maar met get en check auth vraag je op of user de rechten heeft om iets uit te voeren of niet.
+    //method to return an authentication
     public function checkAuth()
     {
         switch ($this->getAuth()) {

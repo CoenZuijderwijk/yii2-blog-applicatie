@@ -8,28 +8,26 @@ $I->amOnPage("/blog");
 $I->see("lorem ipsum");
 //we will view this blog
 $I->click("lorem ipsum");
-//checking if we see the right layout
-$I->see("attachment");
 //going to the edit page wich we should be allowed to be at.
 $I->amOnPage("/blog/update?id=23");
 //checking if we see the error
-$I->see("Acces Denied");
+$I->see("(#403)");
 //now we will try to delete a blog
 $I->amOnPage("/blog/delete?id=23");
 //checking if we see the error
-$I->see("Acces Denied");
+$I->see("(#405)");
 //now we will try to access the comment overview page
 $I->amOnPage("/comment");
 //checking if we see the error
-$I->see("Acces Denied");
+$I->see("(#403)");
 //we will check to see a comment
 $I->amOnPage("/comment/view?id=13");
 //checking if we see the error
-$I->see("Acces Denied");
+$I->see("(#403)");
 //the same goes for delete
 $I->amOnPage("/comment/delete?id=13");
 //checking if we see the error
-$I->see("Acces Denied");
+$I->see("(#403)");
 
 
 
