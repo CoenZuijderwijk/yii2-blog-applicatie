@@ -2,7 +2,6 @@
 
 namespace app\controllers;
 
-use app\components\WebUser;
 use app\models\Attachment;
 use app\models\Comment;
 use app\models\User;
@@ -182,7 +181,25 @@ class BlogController extends Controller
     }
 
     public function actionAttachment() {
+
         $model = new Attachment();
+
+        if ( Yii::$app->request->post() ) {
+            $model->load( Yii::$app->request->post() );
+            $files = UploadedFile::getInstances($model, 'files');
+            foreach($files as $file) {
+                $attachment = new Attachment();
+                $attachment->file_extension = $file->extension;
+                $attachment->file_name = $file->getBaseName();
+                $attachment->file_full_name = $attachment->file_name . "." . $attachment->file_extension;
+                $attachment->blog_id = 3;
+                $save = $attachment->file_full_name;
+                $file->saveAs('uploads/' . $save);
+                $attachment->save();
+                die(var_dump($attachment));
+            }
+            $this->redirect("/blog/index");
+        }
         return $this->render('attachment', [
             'model' => $model,
         ]);
@@ -338,5 +355,6 @@ class BlogController extends Controller
         }
 
     }
+
 
         }

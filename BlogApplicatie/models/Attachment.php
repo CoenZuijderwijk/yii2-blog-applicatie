@@ -36,7 +36,7 @@ class Attachment extends \yii\db\ActiveRecord
             [['blog_id'], 'integer'],
             [['file_full_name'], 'string'],
             [['file_name', 'file_extension'], 'string', 'max' => 255],
-            [['file'], 'file'],
+            [['files'], 'safe'],
             [['blog_id'], 'exist', 'skipOnError' => true, 'targetClass' => Blog::className(), 'targetAttribute' => ['blog_id' => 'id']],
         ];
     }

@@ -8,31 +8,22 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 
 ?>
-<h1>Test</h1>
-
 <div class="attachment-form">
-    <?php $form = ActiveForm::begin(['options' => ['name' => 'attachments', 'enctype' => 'multipart/form-data']]);?>
-    <?= $form->field($model, 'blog_id')->hiddenInput(['value'=> 3,])->label(false)?>
-
+    <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]);?>
+    <?= $form->field($model, 'files[]')->widget(FileInput::classname(), [
+        'options' => ['multiple' => true, 'id' => 'input-bla'],
+        'pluginOptions' => ['previewFileType' => 'any', 'showUpload' => true]
+    ]);
+    ?>
 </div>
 
-        <?= $form->field($model, 'files[]')->widget(FileInput::classname(), [
-            'options' => ['multiple' => true, 'id' => 'input-bla'],
-            'pluginOptions' => ['previewFileType' => 'any', 'showUpload' => true]
-        ]);
-        ?>
-
-<button id="gaan">Gaan</button>
-
-<script>
+<?= $form->field($model, 'blog_id')->hiddenInput(['value' => 3])->label(false)?>
 
 
-    var button = document.getElementById('gaan');
-    button.addEventListener('click',  function() {
-        console.log('click');
-        $("#input-bla").fileinput({
-            uploadUrl: "/blog/handle-attachment"
-        })
-    });
+<div class="form-group">
 
-</script>
+
+    <?= Html::submitButton('Save', ['class' => 'btn btn-success js_button']) ?>
+</div>
+
+<?php ActiveForm::end(); ?>
