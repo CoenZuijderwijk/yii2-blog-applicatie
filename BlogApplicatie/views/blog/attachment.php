@@ -1,6 +1,6 @@
 <?php
 use kartik\file\FileInput;
-use yii\helpers\Html;
+use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
@@ -8,11 +8,16 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 
 ?>
+
 <div class="attachment-form">
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]);?>
     <?= $form->field($model, 'files[]')->widget(FileInput::classname(), [
         'options' => ['multiple' => true, 'id' => 'input-bla'],
-        'pluginOptions' => ['previewFileType' => 'any', 'showUpload' => true]
+        'pluginOptions' => [
+                'previewFileType' => 'any',
+                'showUpload' => true,
+                'uploadUrl' => Url::to(['/blog/handle-attachment']),
+        ]
     ]);
     ?>
 </div>
@@ -23,7 +28,9 @@ use yii\widgets\ActiveForm;
 <div class="form-group">
 
 
-    <?= Html::submitButton('Save', ['class' => 'btn btn-success js_button']) ?>
+
+    <button type="submit" class="btn btn-success js_button">Save</button>
 </div>
 
 <?php ActiveForm::end(); ?>
+

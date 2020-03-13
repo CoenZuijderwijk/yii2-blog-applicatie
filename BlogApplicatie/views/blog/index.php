@@ -8,7 +8,6 @@ use kartik\grid\GridView;
 /* @var $searchModel app\models\BlogSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Blogs';
 $this->params['breadcrumbs'][] = $this->title;
 
 

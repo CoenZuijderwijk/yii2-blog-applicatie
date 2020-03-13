@@ -15,6 +15,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\UploadedFile;
+use yii\base\Security;
 
 /**
  * BlogController implements the CRUD actions for Blog model.
@@ -73,10 +74,13 @@ class BlogController extends Controller
         $comments = Comment::find()
             ->where(['blog_id' => $model->id])->all();
 
+        $attachments = Attachment::find()->where(['blog_id' => $id])->all();
+
         return $this->render('view', [
             'model' => $model,
             'model2' => $model2,
             'comments' => $comments,
+            'attachments' => $attachments,
         ]);
     }
 
@@ -184,22 +188,7 @@ class BlogController extends Controller
 
         $model = new Attachment();
 
-        if ( Yii::$app->request->post() ) {
-            $model->load( Yii::$app->request->post() );
-            $files = UploadedFile::getInstances($model, 'files');
-            foreach($files as $file) {
-                $attachment = new Attachment();
-                $attachment->file_extension = $file->extension;
-                $attachment->file_name = $file->getBaseName();
-                $attachment->file_full_name = $attachment->file_name . "." . $attachment->file_extension;
-                $attachment->blog_id = 3;
-                $save = $attachment->file_full_name;
-                $file->saveAs('uploads/' . $save);
-                $attachment->save();
-                die(var_dump($attachment));
-            }
-            $this->redirect("/blog/index");
-        }
+
         return $this->render('attachment', [
             'model' => $model,
         ]);
@@ -261,21 +250,55 @@ class BlogController extends Controller
     //action to download the attachment
     public function actionDownload($id)
     {
-        $model = Blog::findOne($id);
-        $file = $model->attachment;
-        if (file_exists($file)) {
-            Yii::$app->response->sendFile($file);
-        } else {
-            throw new \yii\web\HttpException(403);
-        }
+        $model = Attachment::findOne($id);
+        $file = $model->file_full_name;
+            Yii::$app->response->sendFile('uploads/' . $file);
     }
     //action to delete a comment
     public function actionDeleteComment($id)
     {
-        $this->findModel($id)->delete();
+        $comment = Comment::findone($id);
+        $comment->delete();
 
         return $this->redirect('/blog');
     }
+
+    public function actionDeleteAttachment($id) {
+
+        $attachment = Attachment::findOne($id);
+        $b_id = $attachment->blog_id;
+        $attachment->delete();
+        return $this->redirect('/blog/view?id=' . $b_id);
+    }
+
+    public function actionHandleAttachment() {
+        $this->handleAttachment();
+    }
+
+    public function handleAttachment() {
+        $model = new Attachment();
+        if ( Yii::$app->request->post() ) {
+            $model->load( Yii::$app->request->post() );
+            $files = UploadedFile::getInstances($model, 'files');
+            foreach($files as $file) {
+                $attachment = new Attachment();
+                $author = Blog::findOne($attachment->blog_id)->author_id;
+                $attachment->file_extension = $file->extension;
+                $attachment->file_name = $file->getBaseName() . $attachment->blog_id . $author;
+                $attachment->file_full_name = $attachment->file_name . "." . $attachment->file_extension;
+                $attachment->blog_id = 3;
+                $save = $attachment->file_full_name;
+                $file->saveAs('uploads/' . $save);
+                $attachment->files = "";
+                $attachment->save();
+                $this->redirect('/blog/index');
+            }
+
+
+        }
+
+    }
+
 
     public function getAuth()
     {
@@ -306,55 +329,4 @@ class BlogController extends Controller
                         break;
         }
     }
-    //saves the attachment
-    public function updateBlog($id)
-    {
-        $model = $this->findModel($id);
-
-        if (UploadedFile::getInstance($model, 'file' !== NULL)) {
-            $model->file = UploadedFile::getInstance($model, 'file');
-            $imageName = $model->file->getBaseName() . random_int(1, 100);
-            $model->attachment = 'uploads/' . $imageName . '.' . $model->file->extension;
-            $save = $model->attachment;
-
-            $model->file->saveAs($save);
-        }
-
-        $model->save();
-
-        return $this->redirect(['view', 'id' => $model->id]);
-
-    }
-        //saves the attachment
-    public function createBlog($model) {
-
-        if (UploadedFile::getInstance($model, 'file') !== NULL) {
-            $model->file = UploadedFile::getInstance($model, 'file');
-            $imageName = $model->file->getBaseName() . random_int(1, 100);
-            $model->attachment = 'uploads/' . $imageName . '.' . $model->file->extension;
-            $save = $model->attachment;
-
-            $model->file->saveAs($save);
-        }
-
-        $model->save();
-        return $this->redirect(['view', 'id' => $model->id]);
-
-    }
-
-    public function actionHandleAttachment() {
-        $this->handleAttachment();
-        }
-
-    public function handleAttachment() {
-        $model = new Attachment();
-        die(var_dump(UploadedFile::getInstance($model, 'files'), "dood"));
-        if(UploadedFile::getInstance($model, 'files')) {
-            $files = UploadedFile::getInstance($model, 'files[]');
-            die(var_dump($files, "dood"));
-        }
-
-    }
-
-
-        }
+ }

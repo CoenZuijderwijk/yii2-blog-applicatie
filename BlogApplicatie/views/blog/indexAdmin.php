@@ -63,7 +63,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 $gridColumns,
 
         ]);?>
-        <h1><?= Html::encode($this->title) ?></h1>
+
 
 
 

@@ -42,7 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
         echo "<div class='row'>";
         foreach($models as $model) { ?>
             <div class="col-12 g-blog-in">
-                <h3><?= "<a href='/blog/view>id=" . $model->id . "'>" . $model->title . "</a>"?></h3>
+                <h3><?= "<a href='/blog/view?id=" . $model->id . "'>" . $model->title . "</a>"?></h3>
                 <div class="article_border"></div>
                 <p class="p_article"> <?= $model->inleiding ?></p>
             </div>

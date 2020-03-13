@@ -59,7 +59,7 @@ $gridColumns = [
             $gridColumns,
 
     ]);?>
-    <h1><?= Html::encode($this->title) ?></h1>
+
 
 
 

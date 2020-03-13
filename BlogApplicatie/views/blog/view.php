@@ -19,6 +19,8 @@ $this->params['breadcrumbs'][] = ['label' => 'Blogs', 'url' => ['blog/']];
 $comment = new Comment();
 $blog_id = $model->id;
 $formatter = \Yii::$app->formatter;
+$user = User::findOne(Yii::$app->getUser()->id);
+
 
 
 
@@ -30,6 +32,16 @@ $formatter = \Yii::$app->formatter;
         <div class="col-12 article">
 
 
+            <?php
+                if($user === NULL) {
+
+                } elseif($user->getAccessLevel() >= 98) {
+                    echo Html::a('Attachment toevoegen', ['comment/index'], ['class' => 't_btn']);
+                } elseif($user->getAccessLevel() >= 16 && $model->author_id == $user->getId()) {
+                    echo Html::a('Attachment toevoegen', ['comment/index'], ['class' => 't_btn']);
+                }
+            ?>
+
 
             <h3 class="title"><?= $model->title?> </h3>
             <div class='article_border'></div>
@@ -37,10 +49,26 @@ $formatter = \Yii::$app->formatter;
             <div  class='slug'><?=$model->slug ?> </div>
 
             <div class="attachment">
+
                 <?php
-                if($model->attachment){
-                    echo Html::a('Attachment', Url::to("blog/download?id=" . $model->id, $model->id), ['style' => 'color: #337ab7;']);
+                if($user === NULL) {
+
+                } elseif($user->getAccessLevel() >= 98) {
+                    foreach ($attachments as $attachment) {
+                        echo Html::a('Attachment ' . $attachment->file_name, Url::to("blog/download?id=" . $attachment->id, $attachment->id), ['style' => 'color: #337ab7; margin-right: 1%;']);
+                        echo Html::a('Attachment verwijderen', Url::to("blog/delete-attachment?id=" . $attachment->id, $attachment->id), ['style' => 'color: #337ab7;']) . "<br>";
+                    }
+                } elseif($user->getAccessLevel() >= 16 && $model->author_id == $user->getId()) {
+                    foreach ($attachments as $attachment) {
+                        echo Html::a('Attachment ' . $attachment->file_name, Url::to("blog/download?id=" . $attachment->id, $attachment->id), ['style' => 'color: #337ab7; margin-right: 1%;']);
+                        echo Html::a('Attachment verwijderen', Url::to("blog/delete-attachment?id=" . $attachment->id, $attachment->id), ['style' => 'color: #337ab7;']) . "<br>";
+                    }
+                } else {
+                    foreach ($attachments as $attachment) {
+                        echo Html::a('Attachment' . $attachment->file_name, Url::to("blog/download?id=" . $attachment->id, $attachment->id), ['style' => 'color: #337ab7;']) . "<br>";
+                    }
                 }
+
 
                 ?>
             </div>

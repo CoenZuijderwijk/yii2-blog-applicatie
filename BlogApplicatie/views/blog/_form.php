@@ -36,15 +36,6 @@ use kartik\file\FileInput;
         ]
     ]); ?>
 
-    <?= $form->field($model, 'file')->fileInput( [
-            'maxSize' => 10240000000
-    ])->widget(FileInput::className([
-            'name' => 'Attachment',
-            'pluginOptions' => [
-                    // MW: werkt dit nu wel? Zie: https://plugins.krajee.com/file-input#ajax-uploads
-                    'uploadUrl' => '@web/uploads',
-            ],
-    ])); ?>
 
 
     <div class="form-group">
