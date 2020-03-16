@@ -36,9 +36,9 @@ $user = User::findOne(Yii::$app->getUser()->id);
                 if($user === NULL) {
 
                 } elseif($user->getAccessLevel() >= 98) {
-                    echo Html::a('Attachment toevoegen', ['comment/index'], ['class' => 't_btn']);
+                    echo Html::a('Attachment toevoegen', ['blog/attachment?id=' . $blog_id,], ['class' => 't_btn']);
                 } elseif($user->getAccessLevel() >= 16 && $model->author_id == $user->getId()) {
-                    echo Html::a('Attachment toevoegen', ['comment/index'], ['class' => 't_btn']);
+                    echo Html::a('Attachment toevoegen', ['blog/attachment?id=' . $blog_id], ['class' => 't_btn']);
                 }
             ?>
 
@@ -52,7 +52,9 @@ $user = User::findOne(Yii::$app->getUser()->id);
 
                 <?php
                 if($user === NULL) {
-
+                    foreach ($attachments as $attachment) {
+                        echo Html::a('Attachment ' . $attachment->file_name, Url::to("blog/download?id=" . $attachment->id, $attachment->id), ['style' => 'color: #337ab7;']) . "<br>";
+                    }
                 } elseif($user->getAccessLevel() >= 98) {
                     foreach ($attachments as $attachment) {
                         echo Html::a('Attachment ' . $attachment->file_name, Url::to("blog/download?id=" . $attachment->id, $attachment->id), ['style' => 'color: #337ab7; margin-right: 1%;']);

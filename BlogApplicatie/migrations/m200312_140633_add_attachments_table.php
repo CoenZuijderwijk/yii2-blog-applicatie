@@ -48,7 +48,7 @@ class m200312_140633_add_attachments_table extends Migration
     }
 
     public function down() {
-        $this->addColumn('blog', 'attachment', Schema::TYPE_TEXT);
+        $this->addColumn("blog", "attachment", Schema::TYPE_JSON);
         $this->dropTable('attachment');
         $this->dropForeignKey('fk-attachment-blog_id', 'attachment');
     }

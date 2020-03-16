@@ -183,16 +183,43 @@ class BlogController extends Controller
 
         }
     }
-//the attachment action commented it out just to save it
-   // public function actionAttachment() {
+//the attachment action
+    public function actionAttachment($id)
+    {
+        $model = new Attachment();
+        $blog = Blog::findOne($id);
+        $user = User::findOne(Yii::$app->getUser()->id);
 
-        //$model = new Attachment();
+        switch ($this->checkAuth()) {
+            //1 means that the user is a admin or super admin
+            case 1:
+
+                return $this->render('attachment', [
+                    'model' => $model,
+                    'id' => $id,
+                ]);
+                break;
+            //2 means that the user is an author
+            case 2:
+                if ($blog->author_id == $user->id) {
+                    return $this->render('attachment', [
+                        'model' => $model,
+                        'id' => $id,
+                    ]);
+                } else {
+                    throw new \yii\web\HttpException(403);
+                }
+                break;
+            //0 means that the user is neither a geust or author.
+            case 0:
+            {
+                throw new \yii\web\HttpException(403);
+                break;
+            }
 
 
-        //return $this->render('attachment', [
-         //   'model' => $model,
-        //]);
-    //}
+        }
+    }
 
 
                 /**
@@ -271,22 +298,21 @@ class BlogController extends Controller
         return $this->redirect('/blog/view?id=' . $b_id);
     }
         //action to handle an attachment
-    public function actionHandleAttachment() {
-        $this->handleAttachment();
+    public function actionHandleAttachment($id) {
+        $this->handleAttachment($id);
     }
 //method to handle an attachment
-    public function handleAttachment() {
+    public function handleAttachment($id) {
         $model = new Attachment();
         if ( Yii::$app->request->post() ) {
             $model->load( Yii::$app->request->post() );
             $files = UploadedFile::getInstances($model, 'files');
             foreach($files as $file) {
                 $attachment = new Attachment();
-                $author = Blog::findOne($attachment->blog_id)->author_id;
                 $attachment->file_extension = $file->extension;
-                $attachment->file_name = $file->getBaseName() . $attachment->blog_id . $author;
+                $attachment->file_name = $file->getBaseName() . $attachment->blog_id;
                 $attachment->file_full_name = $attachment->file_name . "." . $attachment->file_extension;
-                $attachment->blog_id = 3;
+                $attachment->blog_id = $id;
                 $save = $attachment->file_full_name;
                 $file->saveAs('uploads/' . $save);
                 $attachment->files = "";

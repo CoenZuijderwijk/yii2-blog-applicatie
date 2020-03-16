@@ -13,7 +13,7 @@ use Yii;
  * @property string $title
  * @property string $slug
  * @property string $inleiding
- * @property string $attachment
+ * @property array $attachment
  */
 class Blog extends \yii\db\ActiveRecord
 {

@@ -16,7 +16,7 @@ use yii\widgets\ActiveForm;
         'pluginOptions' => [
                 'previewFileType' => 'any',
                 'showUpload' => true,
-                'uploadUrl' => Url::to(['/blog/handle-attachment']),
+                'uploadUrl' => Url::to(['/blog/handle-attachment?id=' . $id]),
         ]
     ]);
     ?>
