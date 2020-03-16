@@ -11,7 +11,7 @@ $I->see("Username");
 //filling in the login form
 $I->fillField("#loginform-username" , "piet");
 $I->fillField("#loginform-password", "password");
-$I->click("Login", "button");
+$I->click("Login!");
 //checking if iam logged in as piet with id 12
 $I->amLoggedInAs(12);
 //going to the blog page

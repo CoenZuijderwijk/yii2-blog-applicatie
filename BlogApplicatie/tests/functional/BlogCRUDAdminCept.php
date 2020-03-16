@@ -11,7 +11,7 @@ $I->see("Username");
 //filling in the login form
 $I->fillField("#loginform-username" , "jan");
 $I->fillField("#loginform-password", "password");
-$I->click("Login", "button");
+$I->click("Login!");
 //checking if we succeed to login and got send back to the homepage
 $I->amOnPage("/index");
 //checking if iam logged in as admin jan

@@ -22,7 +22,7 @@ use kartik\file\FileInput;
     <?= $form->field($model, 'inleiding')->textInput(['maxlength' => 120]) ?>
        <div class="form-group">
 
-       </div>
+
     <?= $form->field($model, 'slug')->textarea(['rows' => 12])->widget(TinyMce::className(), [
         'options' => ['rows' => 12],
         'language' => 'en',
@@ -37,7 +37,7 @@ use kartik\file\FileInput;
     ]); ?>
 
 
-
+       </div>
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success js_button']) ?>
     </div>
