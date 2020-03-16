@@ -1,37 +1,52 @@
 <?php
 
-namespace tests\unit\models;
-
 use app\models\User;
 
 class UserTest extends \Codeception\Test\Unit
 {
-    public function testFindUserById()
-    {
-        expect_that($user = User::findIdentity(187));
-        expect($user->username)->equals('Coen');
-
-        expect_not(User::findIdentity(999));
-    }
-
-
-
-    public function testFindUserByUsername()
-    {
-        expect_that($user = User::findByUsername('piet'));
-        expect_not(User::findByUsername('not-admin'));
-    }
-
     /**
-     * @depends testFindUserByUsername
+     * @var \UnitTester
      */
-    public function testValidateUser($user)
-    {
-        $user = User::findByUsername('coen');
-        expect_that($user->validateAuthKey('coen'));
-        expect_not($user->validateAuthKey('piet'));
+    protected $tester;
 
-        expect_not($user->validatePassword('123456'));        
+    protected function _before()
+    {
+    }
+
+    protected function _after()
+    {
+    }
+
+    public function testCreateUser()
+    {
+        $m = new User();
+        $m->username = "Henk";
+        $m->password= "password";
+        $m->authKey = "gekke henkie";
+        $m->accessToken= "niet zo gekke henkie";
+        $m->accessLevel = 69;
+        $this->assertTrue($m->save());
+    }
+
+    public function testUpdateUser() {
+        $m = new User();
+        $m->username = "myuser2";
+        $m->password = "wachtwoord";
+        $m->authKey = "mu2";
+        $m->accessToken= "2um";
+        $m->accessLevel = 12;
+        $this->assertTrue($m->save());
+        $m = User::find()->where(['username' => "myuser2"])->one();
+        $m->username = "jantje";
+        $this->assertEquals("jantje", $m->username);
+    }
+
+    public function testDeleteUser() {
+        $m = User::find()->where(['username' => 'piet'])->one();
+        $this->assertNotNull($m);
+        User::deleteAll(['username' => $m->username]);
+        $m = User::findOne(['username' => 'piet']);
+        $this->assertNull($m);
     }
 
 }
