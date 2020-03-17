@@ -3,10 +3,9 @@ $I = new AcceptanceTester($scenario);
 $I->amOnPage("/");
 $I->wantTo('perform actions and see result');
 //going to login page
-$I->see("Login");
+$I->waitForText("Login", 5);
 $I->click("Login");
 //filling in the login form
-$I->see("Username");
 $I->wait(1);
 $I->fillField('input[id="loginform-username"]', 'coen');
 $I->fillField('input[name="LoginForm[password]"]', 'coen');
@@ -17,18 +16,18 @@ $I->wait(1);
 $I->amOnPage("/blog/view?id=49");
 
 //checking if we see the add attachment button
-$I->see("Attachment toevoegen");
+$I->waitForText("Attachment toevoegen",5);
 $I->click("Attachment toevoegen");
 //checking if we are on the right page
-$I->see("Files");
+$I->waitForText("Files", 5);
 //test completed logging in as a author
 $I->amOnPage("/blog");
 $I->click("Logout");
-$I->wait(2);
-$I->click("Login");
-$I->wait(5);
+$I->waitForText("Congratulations", 5);
+$I->amOnPage("/site/login");
+$I->wait(3);
+$I->see("Login");
 $I->fillField('input[id="loginform-username"]', 'piet');
-
 $I->wait(3);
 $I->fillField('input[name="LoginForm[password]"]', 'password');
 $I->click("Login!");
@@ -37,12 +36,12 @@ $I->wait(1);
 $I->amOnPage("/blog/view?id=3");
 //checking if we see the right things
 $I->dontSee("Attachment toevoegen");
-$I->see("Attachment");
+$I->waitForText("Attachment", 5);
 $I->wait(1);
 //going to a blog created by piet(user 13)
 $I->amOnPage("/blog/view?id=56");
 //checking if we see the right things
-$I->see("Attachment toevoegen");
+$I->waitForText("Attachment toevoegen", 5);
 $I->dontSee("Attachment smile");
 
 

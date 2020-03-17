@@ -3,11 +3,11 @@ $I = new AcceptanceTester($scenario);
 $I->wantTo('Check the blog functionality as a geust');
 $I->amOnPage("/");
 //does see the nav button to blog page
-$I->see('Blog');
+$I->waitForText("Blog", 5);
 
 $I->click("Blog");
 //is on the blog page
-$I->see("piet");
+$I->waitForText("piet", 5);
 //does see the page to go to a blog
 $I->amOnPage("/blog/view?id=3");
 //check to see comments
@@ -21,4 +21,4 @@ $I->wait(5);
 $I->click("Save");
 $I->wait(2);
 //see if he sees the changes
-$I->see("testTitle");
+$I->waitForText("testTitle", 5);

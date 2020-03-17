@@ -40,22 +40,26 @@ class UserController extends Controller
     {
         $user = User::findOne(Yii::$app->getUser()->id);
 
-        if(!$user){
-            throw new \yii\web\HttpException(403);
-        }  elseif($user->getAccessLevel() >= 98) {
+        switch ($this->checkAuth()) {
+            //1 means that the user is a admin or super admin
+            case 1:
+                $searchModel = new UserSearch();
+                $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-            $searchModel = new UserSearch();
-            $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-            return $this->render('index', [
-                'searchModel' => $searchModel,
-                'dataProvider' => $dataProvider,
-            ]);
-
-        } else {
-            throw new \yii\web\HttpException(403);
+                return $this->render('index', [
+                    'searchModel' => $searchModel,
+                    'dataProvider' => $dataProvider,
+                ]);
+            //2 means that the user is an author
+            case 2:
+                    throw new \yii\web\HttpException(403);
+                    break;
+            //0 means that the user is neither a geust or author.
+            case 0: {
+                throw new \yii\web\HttpException(403);
+                break;
+            }
         }
-
 
     }
 
@@ -193,5 +197,36 @@ class UserController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    //method to authenticate
+    public function getAuth()
+    {
+        $user = User::findOne(Yii::$app->getUser()->id);
+        if (!$user) {
+            return 1;
+        } elseif ($user->getAccessLevel() >= 98) {
+            return 2;
+        } elseif ($user->getAccessLevel() >= 16) {
+            return 3;
+        } else {
+            return 1;
+        }
+    }
+
+    //method to return an authentication
+    public function checkAuth()
+    {
+        switch ($this->getAuth()) {
+            case 1:
+                throw new \yii\web\HttpException(403);
+                break;
+            case 2:
+                return 1;
+                break;
+            case 3:
+                return 2;
+                break;
+        }
     }
 }

@@ -3,7 +3,7 @@ $I = new AcceptanceTester($scenario);
 $I->wantTo('perform actions and see result');
 $I->amOnPage("/");
 //check to see the login button
-$I->see("Login");
+$I->waitForText("Login", 5);
 //clicking the login button
 $I->click("Login");
 //making sure i am on the login page
@@ -16,7 +16,7 @@ $I->click("Login!");
 $I->wait(2);
 $I->amOnPage("/user");
 //make sure i am on the page
-$I->see("Create User");
+$I->waitForText("Create User", 5);
 //creating a user
 $I->click("Create User");
 $I->wait(2);
@@ -29,15 +29,25 @@ $I->wait(4);
 $I->click("Save");
 $I->wait(2);
 //checking if we see the filled in data
-$I->see("testUser");
+$I->waitForText("testUser", 5);
 $I->dontSee("testPassword");
 //trying to update a user
 $I->amOnPage("/user/update?id=12");
 $I->wait(2);
-$I->see("Update User");
+$I->waitForText("Update User", 5);
 $I->fillField("#user-username", "jantje");
 $I->wait(2);
 $I->click("Save");
 $I->wait(2);
-$I->see("jantje");
+$I->waitForText("jantje", 5);
 //user updated and viewed
+//restoring the changes
+$I->amOnPage("/user/update?id=12");
+$I->wait(2);
+$I->waitForText("Update User", 5);
+$I->fillField("#user-username", "jan");
+$I->fillField("#user-password", "password");
+$I->wait(2);
+$I->click("Save");
+$I->waitForText("jan", 15);
+$I->click("Logout");

@@ -3,33 +3,31 @@ $I = new AcceptanceTester($scenario);
 $I->wantTo('perform actions and see result');
 $I->amOnPage("/");
 //check to see the login button
-$I->see("Login");
+$I->waitForText("Login", 5);
 //clicking the login button
 $I->click("Login");
 //making sure i am on the login page
-$I->see("Username");
+$I->waitForText("Username", 5);
 
 $I->wait(1);
 //filling in the login form
 $I->fillField('input[id="loginform-username"]', 'jan');
 
-$I->wait(1);
+$I->wait(10);
 $I->fillField('input[name="LoginForm[password]"]', 'password');
 $I->click("Login!");
 //checking if we succeed to login and got send back to the homepage
 //going to blogpage
-$I->see("Blog");
+$I->waitForText("Blog", 5);
 
 $I->wait(3);
 $I->click("Blog");
 //checking if we are on the blog page
 //creating a blog
 
+$I->waitForText("Create Blog", 12);
 
-$I->wait(8);
-$I->see("Create Blog");
-$I->wait(8);
-$I->click("Create Blog");
+$I->click("Create Blog", );
 //creating a blog post
 $I->fillField('input[id="blog-title"]', 'testTitle');
 
@@ -43,9 +41,9 @@ $I->executeJS("console.log(tinymce.innerHTML);");
 
 $I->wait(10);
 $I->click("Save");
-$I->wait(3);
+$I->wait(5);
 $I->see("Commentaar toevoegen");
-$I->waitForText("even testen", 15 );
+$I->see("even testen");
 $I->amOnPage("/blog/update?id=46");
 //opening a blog post to edit
 $I->wait(2);
@@ -55,7 +53,7 @@ $I->wait(2);
 $I->click("Save");
 $I->wait(2);
 //checking to see if the changes have been saved.
-$I->see("twee");
+$I->waitForText("twee", 5);
 
 
 

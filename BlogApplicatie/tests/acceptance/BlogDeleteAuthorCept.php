@@ -3,7 +3,7 @@ $I = new AcceptanceTester($scenario);
 $I->wantTo('perform actions and see result');
 //check to see the login button
 $I->amOnPage("/");
-$I->see("Login");
+$I->waitForText("Login", 5);
 //clicking the login button
 $I->click("Login");
 //making sure i am on the login page
