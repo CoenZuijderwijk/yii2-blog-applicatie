@@ -43,6 +43,15 @@ $I->see('Create Blog');
 $I->see('File');
 $I->see("Edit");
 $I->see("Save");
+$I->wait(1);
+$I->executeJS("tinyMCE.activeEditor.setContent('<span>even testen</span> html');");
+$I->executeJS(" console.log('executed js');");
+$I->executeJS("console.log(tinymce.innerHTML);");
+$I->wait(10);
+$I->click("Save");
+$I->wait(3);
+$I->see("Commentaar toevoegen");
+$I->waitForText("even testen", 15 );
 $I->amOnPage("/blog/view?id=7");
 //adding a comment
 $I->see("Commentaar toevoegen");

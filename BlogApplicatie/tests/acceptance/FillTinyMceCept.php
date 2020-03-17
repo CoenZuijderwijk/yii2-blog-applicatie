@@ -1,4 +1,4 @@
-<?php
+<?php 
 $I = new AcceptanceTester($scenario);
 $I->wantTo('perform actions and see result');
 $I->amOnPage("/");
@@ -26,9 +26,9 @@ $I->click("Blog");
 //creating a blog
 
 
-$I->wait(8);
+$I->wait(3);
 $I->see("Create Blog");
-$I->wait(8);
+$I->wait(3);
 $I->click("Create Blog");
 //creating a blog post
 $I->fillField('input[id="blog-title"]', 'testTitle');
@@ -37,27 +37,10 @@ $I->wait(1);
 $I->fillField('input[id="blog-inleiding"]', 'testInleiding');
 
 $I->wait(1);
-$I->executeJS("tinyMCE.activeEditor.setContent('<span>even testen</span> html');");
-$I->executeJS(" console.log('executed js');");
-$I->executeJS("console.log(tinymce.innerHTML);");
+$I->see('Create Blog');
+$I->see('File');
+$I->see("Edit");
 
+$I->wait(1);
+$I->executeJS("tinymce.innerText = '<p>even testen toch</p>'");
 $I->wait(10);
-$I->click("Save");
-$I->wait(3);
-$I->see("Commentaar toevoegen");
-$I->waitForText("even testen", 15 );
-$I->amOnPage("/blog/update?id=46");
-//opening a blog post to edit
-$I->wait(2);
-$I->fillField("#blog-title" , "twee");
-//saving changes in blog post
-$I->wait(2);
-$I->click("Save");
-$I->wait(2);
-//checking to see if the changes have been saved.
-$I->see("twee");
-
-
-
-
-
