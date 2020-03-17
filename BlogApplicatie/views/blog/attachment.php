@@ -27,9 +27,6 @@ use yii\widgets\ActiveForm;
 
 <div class="form-group">
 
-
-
-    <button type="submit" class="btn btn-success js_button">Save</button>
 </div>
 
 <?php ActiveForm::end(); ?>
