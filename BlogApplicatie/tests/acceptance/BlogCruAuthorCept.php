@@ -46,7 +46,7 @@ $I->see("Save");
 $I->wait(3);
 $I->amOnPage("/blog/update?id=46");
 //opening a blog post to edit
-$I->see("php");
+$I->wait(2);
 $I->fillField("#blog-title" , "twee");
 //saving changes in blog post
 $I->wait(2);
