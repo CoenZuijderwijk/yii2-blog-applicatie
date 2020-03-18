@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\web\AssetManager;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Blog */
@@ -12,6 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="blog-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
+
 
     <?= $this->render('_form', [
         'model' => $model,

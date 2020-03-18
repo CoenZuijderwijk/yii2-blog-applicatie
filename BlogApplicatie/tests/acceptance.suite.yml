@@ -1,12 +1,13 @@
 class_name: AcceptanceTester
+
 modules:
     enabled:
         - WebDriver:
             url: http://localhost:8080/
-            window_size: false # disabled in ChromeDriver
             port: 9515
             browser: chrome
             wait: 2
+            restart: true
             capabilities:
                 "goog:chromeOptions": # additional chrome options
         - Yii2:
@@ -15,3 +16,9 @@ modules:
               transaction: false # don't wrap test in transaction
               cleanup: false # don't cleanup the fixtures
               entryScript: index-test.php
+extensions:
+    enabled:
+        - Codeception\Extension\RunProcess:
+              0: php -S localhost:8080 -t web
+              1: CD web-drivers & chromedriver.exe
+              sleep: 2

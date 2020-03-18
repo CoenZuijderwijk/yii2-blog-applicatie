@@ -1,4 +1,5 @@
 <?php
+
 $I = new AcceptanceTester($scenario);
 $I->amOnPage("/");
 $I->wantTo('perform actions and see result');

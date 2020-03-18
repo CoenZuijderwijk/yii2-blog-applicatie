@@ -42,7 +42,6 @@ $I->executeJS("console.log(tinymce.innerHTML);");
 $I->wait(10);
 $I->click("Save");
 $I->wait(5);
-$I->see("Commentaar toevoegen");
 $I->see("even testen");
 $I->amOnPage("/blog/update?id=46");
 //opening a blog post to edit
