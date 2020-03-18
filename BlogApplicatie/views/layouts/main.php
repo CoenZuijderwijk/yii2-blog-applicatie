@@ -25,7 +25,11 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-
+<?php
+$asset = new \yii\web\AssetManager();
+$asset->baseUrl;
+die(var_dump($asset->basePath, $asset->baseUrl));
+?>
 <div class="wrap">
     <?php
     $id = Yii::$app->user->id;
