@@ -111,8 +111,6 @@ class BlogController extends Controller
                 break;
                 //2 means that the user is an author
             case 2:
-                if ($model->author_id == $user->id) {
-
                     if ($model->load(Yii::$app->request->post()) && $model->save()) {
                         $this->redirect('/blog/view?id=' . $model->id);
                     }
@@ -121,10 +119,7 @@ class BlogController extends Controller
                         'model' => $model,
                         'user' => $user,
                     ]);
-                } else {
-                    throw new \yii\web\HttpException(403);
-                }
-                break;
+
                 //0 means that the user is neither a geust or author.
             case 0: {
                 throw new \yii\web\HttpException(403);

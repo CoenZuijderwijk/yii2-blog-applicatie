@@ -8,7 +8,7 @@ use yii\helpers\Html;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
-use app\assets\AppAsset;
+use app\web\assets\AppAsset;
 
 AppAsset::register($this);
 ?>
@@ -27,8 +27,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 <?php
 $asset = new \yii\web\AssetManager();
-$asset->baseUrl;
-die(var_dump($asset->basePath, $asset->baseUrl));
+$asset->baseUrl
 ?>
 <div class="wrap">
     <?php

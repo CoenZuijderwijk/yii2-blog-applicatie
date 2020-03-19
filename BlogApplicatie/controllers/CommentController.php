@@ -121,13 +121,10 @@ class CommentController extends Controller
         if(!$user){
             throw new \yii\web\HttpException(403);
         }  elseif($user->getAccessLevel() >= 98) {
+                $model =  $this->findModel($id);
+                $model->delete();
 
-            $this->findModel($id)->delete();
-
-            return $this->render('index', [
-                'searchModel' => $searchModel,
-                'dataProvider' => $dataProvider,
-            ]);
+            return $this->redirect("/comment/index");
 
         } else {
             throw new \yii\web\HttpException(403);

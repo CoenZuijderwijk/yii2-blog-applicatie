@@ -13,8 +13,8 @@ $config = [
     ],
     'components' => [
         'assetManager' => [
-            'basePath' => '@webroot/assets',
-            'baseUrl' => '@webroot/assets',
+            'basePath' => '@webroot/web/assets',
+            'baseUrl' => '@web/web/assets',
         ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation

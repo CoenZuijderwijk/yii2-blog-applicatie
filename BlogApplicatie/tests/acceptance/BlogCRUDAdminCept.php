@@ -62,7 +62,7 @@ $I->waitForText("gekkeTitle", 5);
 //we are going back to update a blogpost.
 $I->amOnPage("/blog/update?id=7");
 $I->wait(2);
-$I->waitForText("fefeas", 5);
+$I->waitForText("fefeas", 8);
 
 $I->fillField("#blog-title", "testTitle");
 $I->click("Save");
@@ -72,5 +72,7 @@ $I->amOnPage("/blog/update?id=7");
 $I->wait(2);
 $I->fillField("#blog-title", "fefeas");
 $I->click("Save");
+$I->amOnPage("/blog/view?id=7");
+$I->waitForText("fefeas", 5);
 
 

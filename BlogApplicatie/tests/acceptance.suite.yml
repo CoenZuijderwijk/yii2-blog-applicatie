@@ -20,5 +20,5 @@ extensions:
     enabled:
         - Codeception\Extension\RunProcess:
               0: php -S localhost:8080 -t web
-              1: CD web-drivers & chromedriver -url-base=/
+              1: CD web-drivers & chromedriver --url-base=/wd/hub
               sleep: 2
