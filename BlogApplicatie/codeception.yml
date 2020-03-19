@@ -12,6 +12,9 @@ modules:
     config:
         Yii2:
             configFile: 'config/test.php'
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
 
 
 # To enable code coverage:

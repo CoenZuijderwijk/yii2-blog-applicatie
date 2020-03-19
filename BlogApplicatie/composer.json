@@ -20,7 +20,8 @@
         "2amigos/yii2-tinymce-widget": "*",
         "kartik-v/yii2-grid": "dev-master",
         "yiisoft/yii2-bootstrap": "^2.0",
-        "kartik-v/yii2-widget-fileinput": "dev-master"
+        "kartik-v/yii2-widget-fileinput": "dev-master",
+        "browserstack/browserstack-local": "^1.1"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
