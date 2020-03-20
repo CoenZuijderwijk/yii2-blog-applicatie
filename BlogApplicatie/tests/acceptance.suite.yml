@@ -24,8 +24,8 @@ modules:
 extensions:
   enabled:
     - Codeception\Extension\RunProcess:
-        0: php -S localhost:8080 -t web
-        1: CD web-drivers & chromedriver --url-base=/wd/hub
+        0: CD web-drivers & BroswerStackLocal --key 8wzEZQxpdsKxphTHsjm5
+        1: php -S localhost:8080 -t web
         sleep: 2
 
 local:
