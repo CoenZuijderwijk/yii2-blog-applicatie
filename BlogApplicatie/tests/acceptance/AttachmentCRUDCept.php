@@ -19,7 +19,7 @@ $I->waitForText("Congratulations!", 10);
 $I->amOnPage("/blog/view?id=7");
 $I->waitForText("Attachment toevoegen", 5);
 $I->click("Attachment toevoegen");
-$I->attachFile('input[id="input-bla"]', 'price.jpg');
+$I->attachFile('input=[name="Attachment"]', 'price.jpg');
 $I->waitForText("Upload", 5);
 $I->click("Upload");
 $I->waitForText("Blogs", 5);
