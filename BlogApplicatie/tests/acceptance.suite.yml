@@ -37,6 +37,14 @@ env:
           capabilities:
             'name': 'local_test'
 
+extensions:
+  enabled:
+    - Codeception\Extension\RunProcess:
+        0: CD tests/bin & BrowserStackLocal.exe --key 8wzEZQxpdsKxphTHsjm5 --force-local
+        1: php -S localhost:8080 -t web
+        2: CD tests/bin & java jar selenium-server-standalone-3.141.59.jar
+        sleep: 2
+
 
 
 
