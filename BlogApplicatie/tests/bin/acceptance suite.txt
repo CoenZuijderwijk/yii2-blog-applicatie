@@ -1,0 +1,80 @@
+modules:
+    enabled:
+        - WebDriver:
+            url: http://localhost:8080/
+            port: 9515
+            browser: chrome
+            wait: 2
+            restart: true
+            capabilities:
+                "goog:chromeOptions": # additional chrome options
+        - Yii2:
+              configFile: 'config/test.php'
+              part: orm # allow to use AR methods
+              transaction: false # don't wrap test in transaction
+              cleanup: false # don't cleanup the fixtures
+              entryScript: index-test.php
+extensions:
+    enabled:
+        - Codeception\Extension\RunProcess:
+              0: php -S localhost:8080 -t web
+              1: CD web-drivers & chromedriver --url-base=/wd/hub
+              sleep: 2
+
+
+
+
+
+
+
+
+class_name: AcceptanceTester
+
+modules:
+  enabled:
+    - \BrowserStackWebDriver :
+    - Yii2:
+        configFile: 'config/test.php'
+        part: orm # allow to use AR methods
+        transaction: false # don't wrap test in transaction
+        cleanup: false # don't cleanup the fixtures
+        entryScript: index-test.php
+  config:
+    \BrowserStackWebDriver:
+      host: 'hub-cloud.browserstack.com'
+      port: 80
+      browser: chrome
+      url: 'http://bs-local.com:45691'
+      capabilities:
+        'browserstack.user': 'coenzuijderwijk1'
+        'browserstack.key': '8wzEZQxpdsKxphTHsjm5'
+        'browserstack.local': true
+        'name': 'Bstack-[Codeception] LocalTest'
+
+extensions:
+  enabled:
+    - Codeception\Extension\RunProcess:
+        0: CD web-drivers & BrowserStackLocal --key 8wzEZQxpdsKxphTHsjm5
+        1: php -S localhost:8080 -t web
+        2: CD web-drivers & chromedriver --url-base=/wd/hub
+        sleep: 2
+
+local:
+  modules:
+    config:
+      \BrowserStackWebDriver:
+        url: 'http://bs-local.com:45691'
+        capabilities:
+          'browserstack.local': true
+          'name': 'local_test'
+
+
+
+extensions:
+  enabled:
+    - Codeception\Extension\RunProcess:
+        0: CD web-drivers & BrowserStackLocal.exe --key 8wzEZQxpdsKxphTHsjm5 --force-local
+        1: php -S localhost:8080 -t web
+        2: CD web-drivers & java jar selenium-server-standalone-3.141.59.jar
+        sleep: 2
+
