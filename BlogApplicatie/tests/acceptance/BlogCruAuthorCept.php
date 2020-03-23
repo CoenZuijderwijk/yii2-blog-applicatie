@@ -13,22 +13,20 @@ $I->wait(1);
 //filling in the login form
 $I->fillField('input[id="loginform-username"]', 'jan');
 
-$I->wait(10);
+$I->wait(1);
 $I->fillField('input[name="LoginForm[password]"]', 'password');
 $I->click("Login!");
 //checking if we succeed to login and got send back to the homepage
 //going to blogpage
-$I->waitForText("Blog", 5);
-
-$I->wait(3);
-$I->click("Blog");
+$I->wait(2);
+$I->waitForText("Congratulations!", 10);
+$I->amOnPage("/blog");
 //checking if we are on the blog page
 //creating a blog
-
-$I->waitForText("Create Blog", 12);
-
-$I->click("Create Blog", );
+$I->click("Create Blog");
+$I->wait(2);
 //creating a blog post
+$I->waitForText("Title", 5);
 $I->fillField('input[id="blog-title"]', 'testTitle');
 
 $I->wait(1);
@@ -39,7 +37,7 @@ $I->executeJS("tinyMCE.activeEditor.setContent('<span>even testen</span> html');
 $I->executeJS(" console.log('executed js');");
 $I->executeJS("console.log(tinymce.innerHTML);");
 
-$I->wait(10);
+$I->wait(3);
 $I->click("Save");
 $I->wait(5);
 $I->see("even testen");

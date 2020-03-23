@@ -26,23 +26,21 @@ $I->amOnPage("/blog");
 $I->click("Logout");
 $I->waitForText("Congratulations", 5);
 $I->amOnPage("/site/login");
-$I->wait(3);
-$I->see("Login");
+$I->wait(2);
 $I->fillField('input[id="loginform-username"]', 'piet');
-$I->wait(3);
 $I->fillField('input[name="LoginForm[password]"]', 'password');
+//login in
 $I->click("Login!");
-$I->wait(1);
+$I->wait(2);
 //going to a different authors blog
 $I->amOnPage("/blog/view?id=3");
 //checking if we see the right things
 $I->dontSee("Attachment toevoegen");
 $I->waitForText("Attachment", 5);
-$I->wait(1);
 //going to a blog created by piet(user 13)
 $I->amOnPage("/blog/view?id=56");
 //checking if we see the right things
-$I->waitForText("Attachment toevoegen", 5);
+$I->waitForText("Attachment toevoegen", 10);
 $I->dontSee("Attachment smile");
 
 

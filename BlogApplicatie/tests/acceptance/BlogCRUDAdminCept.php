@@ -61,8 +61,7 @@ $I->waitForText("gekkeTitle", 5);
 //we can also delete comments because we are admins.
 //we are going back to update a blogpost.
 $I->amOnPage("/blog/update?id=7");
-$I->wait(2);
-$I->waitForText("fefeas", 8);
+$I->waitForText("Title",5);
 
 $I->fillField("#blog-title", "testTitle");
 $I->click("Save");
@@ -70,6 +69,7 @@ $I->click("Save");
 //setting all the edited stuff back to what it used to be
 $I->amOnPage("/blog/update?id=7");
 $I->wait(2);
+$I->waitForText("Update Blog", 10);
 $I->fillField("#blog-title", "fefeas");
 $I->click("Save");
 $I->amOnPage("/blog/view?id=7");

@@ -58,7 +58,7 @@ $user = User::findOne(Yii::$app->getUser()->id);
                 } elseif($user->getAccessLevel() >= 98) {
                     foreach ($attachments as $attachment) {
                         echo Html::a('Attachment ' . $attachment->file_name, Url::to("blog/download?id=" . $attachment->id, $attachment->id), ['style' => 'color: #337ab7; margin-right: 1%;']);
-                        echo Html::a('Attachment verwijderen', Url::to("blog/delete-attachment?id=" . $attachment->id, $attachment->id), ['style' => 'color: #337ab7;']) . "<br>";
+                        echo Html::a('Attachment '. $attachment->file_name .  ' verwijderen', Url::to("blog/delete-attachment?id=" . $attachment->id, $attachment->id), ['style' => 'color: #337ab7;']) . "<br>";
                     }
                 } elseif($user->getAccessLevel() >= 16 && $model->author_id == $user->getId()) {
                     foreach ($attachments as $attachment) {

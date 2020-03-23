@@ -1,49 +1,27 @@
 class_name: AcceptanceTester
-
 modules:
   enabled:
-    - \BrowserStackWebDriver
-    - Yii2
-  config:
-    Yii2:
-      configFile: 'config/test.php'
-      part: orm # allow to use AR methods
-      transaction: false # don't wrap test in transaction
-      cleanup: false # don't cleanup the fixtures
-      entryScript: index-test.php
-
-    \BrowserStackWebDriver:
-      host: 'hub-cloud.browserstack.com'
-      port: 80
-      browser: chrome
-      url: 'google.com'
-      capabilities:
-        'browserstack.user': 'coenzuijderwijk1'
-        'browserstack.key': '8wzEZQxpdsKxphTHsjm5'
-        'browserstack.local': true
-        'os': 'Windows'
-        'os_version': '10'
-        'browser': 'IE'
-        'browser_version': '11.0'
-        'resolution': '1024x768'
-
-
-env:
-  local:
-    modules:
-      config:
-        \BrowserStackWebDriver:
-          url: 'http://bs-local.com:45691'
-          capabilities:
-            'name': 'local_test'
-
+    - WebDriver:
+        url: http://localhost:8080/
+        port: 9515
+        browser: chrome
+        wait: 2
+        restart: true
+        capabilities:
+          "goog:chromeOptions": # additional chrome options
+    - Yii2:
+        configFile: 'config/test.php'
+        part: orm # allow to use AR methods
+        transaction: false # don't wrap test in transaction
+        cleanup: false # don't cleanup the fixtures
+        entryScript: index-test.php
 extensions:
   enabled:
     - Codeception\Extension\RunProcess:
-        0: CD tests/bin & BrowserStackLocal.exe --key 8wzEZQxpdsKxphTHsjm5 --force-local
-        1: php -S localhost:8080 -t web
-        2: CD tests/bin & java jar selenium-server-standalone-3.141.59.jar
+        0: php -S localhost:8080 -t web
+        1: CD tests/bin & chromedriver --url-base=/wd/hub
         sleep: 2
+
 
 
 
