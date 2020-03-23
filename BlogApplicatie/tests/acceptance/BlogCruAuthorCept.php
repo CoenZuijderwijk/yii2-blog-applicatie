@@ -41,6 +41,7 @@ $I->wait(3);
 $I->click("Save");
 $I->wait(5);
 $I->see("even testen");
+$I->waitForText("Delete");
 $I->amOnPage("/blog/update?id=46");
 //opening a blog post to edit
 $I->wait(2);

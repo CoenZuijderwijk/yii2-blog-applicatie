@@ -57,7 +57,6 @@ $I->click("Save");
 //checking to see if we see our comment
 $I->wait(2);
 $I->waitForText("gekkeTitle", 5);
-
 //we can also delete comments because we are admins.
 //we are going back to update a blogpost.
 $I->amOnPage("/blog/update?id=7");

@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\Attachment;
 use app\models\Comment;
+use app\models\CommentSearch;
 use app\models\User;
 use Codeception\PHPUnit\Constraint\Page;
 use PHPUnit\Framework\StaticAnalysis\HappyPath\AssertNotInstanceOf\B;
@@ -229,16 +230,18 @@ class BlogController extends Controller
     public function actionDelete($id)
     {
         $user = User::findOne(Yii::$app->getUser()->id);
+        $blog = Blog::findOne($id);
 
             switch ($this->checkAuth()) {
+
                 //1 means that the user is a admin or super admin
                 case 1:
-                    $this->findModel($id)->delete();
+                    $blog->delete();
                     return $this->redirect('/blog/index');
                 //2 means that the user is an author
                 case 2:
                     if ($this->findModel($id)->author_id == $user->id) {
-                        $this->findModel($id)->delete();
+                        $blog->delete();
                         return $this->redirect('/blog/index');
                     } else {
                         throw new \yii\web\HttpException(403);
@@ -284,6 +287,8 @@ class BlogController extends Controller
 
         return $this->redirect('/blog');
     }
+
+
     //action to delete an attachment
     public function actionDeleteAttachment($id) {
 

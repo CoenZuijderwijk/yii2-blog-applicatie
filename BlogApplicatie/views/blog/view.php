@@ -30,7 +30,27 @@ $user = User::findOne(Yii::$app->getUser()->id);
 
     <div class="row">
         <div class="col-12 article">
+            <?php
+            if($user === NULL) {
 
+            } elseif($user->getAccessLevel() >= 98) {
+               echo Html::a('Delete', ['delete', 'id' => $model->id], [
+                    'class' => 'd_btn',
+                    'data' => [
+                        'confirm' => 'Are you sure you want to delete this item?',
+                        'method' => 'post',
+                    ],
+                ]);
+            } elseif($user->getAccessLevel() >= 16 && $model->author_id == $user->getId()) {
+               echo Html::a('Delete', ['delete', 'id' => $model->id], [
+                    'class' => 'd_btn',
+                    'data' => [
+                        'confirm' => 'Are you sure you want to delete this item?',
+                        'method' => 'post',
+                    ],
+                ]);
+            }
+            ?>
 
             <?php
                 if($user === NULL) {
@@ -87,10 +107,14 @@ $user = User::findOne(Yii::$app->getUser()->id);
            <p><?= $comm->slug?></p>
                 <div> <?= $formatter->asDatetime($comm->publish_date, 'long') ?></div>
                 <?php
-            if(!Yii::$app->getUser()->isGuest) {
-                $user = User::findOne(Yii::$app->getUser()->getId());
+                if($user === NULL) {
 
-            }
+                } elseif($user->getAccessLevel() >= 98) {
+
+                    echo "<br>" . Html::a('Delete comment', ("/blog/delete-comment?id=" . $comm->id), ['class' => 'd_btn']);
+                } elseif($user->getAccessLevel() >= 16 && $model->author_id == $user->getId()) {
+                  echo "<br>" . Html::a('Delete comment', ("/blog/delete-comment?id=" . $comm->id), ['class' => 'd_btn']);
+                }
             echo "</div>";
             }
         ?>

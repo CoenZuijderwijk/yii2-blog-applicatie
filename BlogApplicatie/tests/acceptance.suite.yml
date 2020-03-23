@@ -1,6 +1,15 @@
+
 class_name: AcceptanceTester
+
 modules:
   enabled:
+    - Db:
+        dsn: 'mysql:host=localhost;port=3306;dbname=BlogApplicatie;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock'
+        user: 'root'
+        password:
+        dump: tests/_data/blogapplicatie.sql
+        cleanup: true # reload dump between tests
+        populate: true # load dump before all tests
     - WebDriver:
         url: http://localhost:8080/
         port: 9515
@@ -21,9 +30,3 @@ extensions:
         0: php -S localhost:8080 -t web
         1: CD tests/bin & chromedriver --url-base=/wd/hub
         sleep: 2
-
-
-
-
-
-

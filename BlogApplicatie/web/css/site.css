@@ -154,6 +154,21 @@ p {
     background-color: #f2f2f2;
 }
 
+.d_btn {
+    background-color: white;
+    border: 1px solid #003B6C;
+    margin: 1% 1% 3% 1%;
+    padding: 1%;
+    color: #003B6C;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.d_btn:hover {
+    background-color: red;
+    color: white;
+}
+
 .t_nav li a, .t_btn li button a, .navbar-brand  {
     color: black;
     font-weight: bold;
