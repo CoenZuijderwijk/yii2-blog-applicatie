@@ -3,7 +3,7 @@ $I = new AcceptanceTester($scenario);
 $I->wantTo('perform actions and see result');
 //check to see the login button
 $I->amOnPage("/");
-$I->waitForText("Login", 5);
+$I->waitForText("Login", 25);
 //clicking the login button
 $I->click("Login");
 //making sure i am on the login page
@@ -17,10 +17,15 @@ $I->wait(2);
 //going to the blog page
 $I->click("Blog");
 //going to the delete page for a blog
+$I->wait(5);
 $I->amOnPage("/blog/delete?id=57");
 //i dont get redirected back so i got back by my self
-$I->wait(1);
+$I->wait(5);
 $I->amOnPage("/blog");
 //checking if id 57 is still there
 $I->wait(1);
 $I->dontSee("57");
+$I->amOnPage("/");
+$I->waitForText("Logout", 25);
+$I->click("Logout");
+$I->waitForText("Congratulations!", 25);

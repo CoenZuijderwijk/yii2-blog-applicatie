@@ -14,9 +14,9 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'files[]')->widget(FileInput::classname(), [
         'options' => ['multiple' => true, 'id' => 'input-bla'],
         'pluginOptions' => [
-                'previewFileType' => 'any',
-                'showUpload' => true,
-                'uploadUrl' => Url::to(['/blog/handle-attachment?id=' . $id]),
+            'previewFileType' => 'any',
+            'showUpload' => true,
+            'uploadUrl' => Url::to(['/blog/handle-attachment?id=' . $id]),
         ]
     ]);
     ?>

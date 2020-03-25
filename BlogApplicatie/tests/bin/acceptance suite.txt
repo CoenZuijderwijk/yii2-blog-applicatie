@@ -20,7 +20,7 @@ extensions:
     enabled:
         - Codeception\Extension\RunProcess:
               0: php -S localhost:8080 -t web
-              1: CD web-drivers & chromedriver --url-base=/wd/hub
+              1: CD tests/bin & chromedriver --url-base=/wd/hub
               sleep: 2
 
 
@@ -80,5 +80,95 @@ extensions:
 
 
 
+
+Browserstack acceptance suite
+
+
+class_name: AcceptanceTester
+
+modules:
+  enabled:
+    - Db:
+        dsn: 'mysql:host=localhost;port=3306;dbname=BlogApplicatie;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock'
+        user: 'root'
+        password:
+        dump: tests/_data/blogapplicatie.sql
+        cleanup: true # reload dump between tests
+        populate: true # load dump before all tests
+    - WebDriver:
+        host: 'hub-cloud.browserstack.com'
+        port: 80
+        browser: chrome
+        url: 'localhost:8080'
+        capabilities:
+          'browserstack.user': 'coenzuijderwijk1'
+          'browserstack.key': '8wzEZQxpdsKxphTHsjm5'
+          'browserstack.local': true
+          'os': 'Windows'
+          'os_version': '10'
+          'browser': 'IE'
+          'browser_version': '11.0'
+          'resolution': '1024x768'
+          'name': "Bstack-[Codeception] Acceptance-Test"
+
+    - Yii2:
+        configFile: 'config/test.php'
+        part: orm # allow to use AR methods
+        transaction: false # don't wrap test in transaction
+        cleanup: false # don't cleanup the fixtures
+        entryScript: index-test.php
+extensions:
+  enabled:
+    - Codeception\Extension\RunProcess:
+        0: CD tests/bin & BrowserStackLocal.exe --key 8wzEZQxpdsKxphTHsjm5
+        sleep: 5
+
+
+
+
+
+
+
+
+
+
+class_name: AcceptanceTester
+
+modules:
+  enabled:
+    - Db:
+        dsn: 'mysql:host=localhost;port=3306;dbname=BlogApplicatie;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock'
+        user: 'root'
+        password:
+        dump: tests/_data/blogapplicatie.sql
+        cleanup: true # reload dump between tests
+        populate: true # load dump before all tests
+    - WebDriver:
+        host: 'hub-cloud.browserstack.com'
+        port: 80
+        browser: chrome
+        url: 'localhost:8080'
+        capabilities:
+          'browserstack.user': 'coenzuijderwijk1'
+          'browserstack.key': '8wzEZQxpdsKxphTHsjm5'
+          'browserstack.local': true
+          'os': 'Windows'
+          'os_version': '10'
+          'browser': 'IE'
+          'browser_version': '11.0'
+          'resolution': '1024x768'
+          'name': "Bstack-[Codeception] Acceptance-Test"
+
+    - Yii2:
+        configFile: 'config/test.php'
+        part: orm # allow to use AR methods
+        transaction: false # don't wrap test in transaction
+        cleanup: false # don't cleanup the fixtures
+        entryScript: index-test.php
+extensions:
+  enabled:
+    - Codeception\Extension\RunProcess:
+        0: CD tests/bin & BrowserStackLocal.exe --key 8wzEZQxpdsKxphTHsjm5
+        sleep: 5
 
 

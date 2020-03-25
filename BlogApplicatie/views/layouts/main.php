@@ -55,7 +55,7 @@ $asset->baseUrl
                 '<li style="color:#EB9200;">'
                 . Html::beginForm(['/site/logout'], 'post')
                 . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
+                    'Logout' ,
                     ['class' => 'btn btn-link logout t_nav']
                 )
                 . Html::endForm()
