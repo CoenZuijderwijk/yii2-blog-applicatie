@@ -3,20 +3,43 @@ class_name: AcceptanceTester
 
 modules:
   enabled:
-    - Db:
-        dsn: 'mysql:host=localhost;port=3306;dbname=BlogApplicatie;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock'
-        user: 'root'
-        password:
-        dump: tests/_data/blogapplicatie.sql
-        cleanup: true # reload dump between tests
-        populate: true # load dump before all tests
     - Yii2:
         configFile: 'config/test.php'
         part: orm # allow to use AR methods
         transaction: false # don't wrap test in transaction
         cleanup: false # don't cleanup the fixtures
         entryScript: index-test.php
+extensions:
+  enabled:
+    - Codeception\Extension\RunProcess:
+        0: CD C:\xampp\mysql\bin & mysqldump -u root blogapplicatie-test > ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/dump.sql
+        sleep: 10
+
 env:
+  IE:
+    modules:
+      enabled:
+        - WebDriver:
+            url: http://localhost:8080/
+            port: 4444
+            browser: internet explorer
+            wait: 2
+            restart: true
+            pageload_timeout: 30
+        - Yii2:
+            configFile: 'config/test.php'
+            part: orm # allow to use AR methods
+            transaction: false # don't wrap test in transaction
+            cleanup: false # don't cleanup the fixtures
+            entryScript: index-test.php
+    extensions:
+      enabled:
+        - Codeception\Extension\RunProcess:
+            0: CD C:\xampp\mysql\bin & mysqldump -u root blogapplicatie > ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql
+            1: php -S localhost:8080 -t web
+            2: CD tests/bin & java jar selenium-server-standalone-3.141.59.jar
+            3: CD tests/bin & IEDriverServer --url-base=/wd/hub/session
+            sleep: 20
   chrome:
     modules:
       enabled:
@@ -28,12 +51,14 @@ env:
             restart: true
             capabilities:
               "goog:chromeOptions": # additional chrome options
-        - Yii2:
-            configFile: 'config/test.php'
-            part: orm # allow to use AR methods
-            transaction: false # don't wrap test in transaction
-            cleanup: false # don't cleanup the fixtures
-            entryScript: index-test.php
+        - Db:
+            dsn: 'mysql:host=localhost;port=3306;dbname=BlogApplicatie;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock'
+            user: 'root'
+            password:
+            dump: tests/_data/dump.sql
+            cleanup: true # reload dump between tests
+            populate: true # load dump before all tests
+            populator: 'CD C:\xampp\mysql\bin & mysqldump -u root blogapplicatie < tests/_data/dump.sql'
     extensions:
       enabled:
         - Codeception\Extension\RunProcess:
@@ -43,6 +68,14 @@ env:
   browserstack-chrome:
     modules:
       enabled:
+        - Db:
+            dsn: 'mysql:host=localhost;port=3306;dbname=BlogApplicatie;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock'
+            user: 'root'
+            password:
+            dump: tests/_data/dump.sql
+            cleanup: true # reload dump between tests
+            populate: true # load dump before all tests
+            populator: 'CD C:\xampp\mysql\bin & mysqldump -u root blogapplicatie < tests/_data/dump.sql'
         - WebDriver:
             host: 'hub-cloud.browserstack.com'
             port: 80
@@ -68,6 +101,14 @@ env:
   browserstack-IE:
     modules:
       enabled:
+        - Db:
+            dsn: 'mysql:host=localhost;port=3306;dbname=BlogApplicatie;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock'
+            user: 'root'
+            password:
+            dump: tests/_data/dump.sql
+            cleanup: true # reload dump between tests
+            populate: true # load dump before all tests
+            populator: 'CD C:\xampp\mysql\bin & mysqldump -u root blogapplicatie < tests/_data/dump.sql'
         - WebDriver:
             host: 'hub-cloud.browserstack.com'
             port: 80

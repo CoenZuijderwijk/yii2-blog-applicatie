@@ -7,7 +7,6 @@ $I->waitForText("Login", 25);
 //clicking the login button
 $I->click("Login");
 //making sure i am on the login page
-$I->wait(2);
 
 //filling in the login form
 $I->fillField('input[id="loginform-username"]', 'coen');
@@ -25,6 +24,9 @@ $I->executeJS("document.getElementById('input-bla').style.opacity = 100;");
 $I->attachFile('input[id="input-bla"]', 'price.jpg');
 $I->waitForText("Upload", 25);
 $I->click("Upload");
+$I->wait(5);
+$I->amOnPage("/blog");
+$I->wait(5);
 $I->waitForText("Blogs", 25);
 $I->wait(5);
 $I->amOnPage("/blog/view?id=7");
