@@ -1,5 +1,6 @@
 <?php
 use kartik\file\FileInput;
+use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 
@@ -8,7 +9,6 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 
 ?>
-
 <div class="attachment-form">
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]);?>
     <?= $form->field($model, 'files[]')->widget(FileInput::classname(), [
@@ -27,6 +27,14 @@ use yii\widgets\ActiveForm;
 
 <div class="form-group">
 
+</div>
+
+<div>
+    <?php
+    echo Html::a('Terug', ['view?id=' . $id], [
+        'class' => 't_btn',
+    ]);
+    ?>
 </div>
 
 <?php ActiveForm::end(); ?>

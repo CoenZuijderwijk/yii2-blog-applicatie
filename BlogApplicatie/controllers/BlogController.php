@@ -12,6 +12,7 @@ use Yii;
 use app\models\Blog;
 use app\models\BlogSearch;
 use yii\data\Pagination;
+use yii\helpers\Json;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -299,7 +300,8 @@ class BlogController extends Controller
     }
         //action to handle an attachment
     public function actionHandleAttachment($id) {
-        $this->handleAttachment($id);
+       $var = $this->handleAttachment($id);
+        return $var;
     }
 //method to handle an attachment
     public function handleAttachment($id) {
@@ -317,10 +319,11 @@ class BlogController extends Controller
                 $file->saveAs('uploads/' . $save);
                 $attachment->files = "";
                 $attachment->save();
-                $this->redirect('/blog/index');
+               // $this->redirect('/blog/index');
+                $object = array(['error' => 'error message']);
+                $json = Json::encode($object);
+                return $json;
             }
-
-
         }
 
     }
