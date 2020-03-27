@@ -36,6 +36,53 @@ class AcceptanceTester extends \Codeception\Actor
         exec("CD C:\xampp\mysql\bin & mysqldump -u root blogapplicatie < ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql");
     }
 
+    public function loginAdmin($scenario) {
+        $username = '#loginform-username';
+        $password = '#loginform-password';
+        $I = new AcceptanceTester($scenario);
+        $I->amOnPage("/");
+        //check to see the login button
+        $I->waitForText("Login", 50);
+        //clicking the login button
+        $I->click("Login");
+        $I->waitForText("Username", 50);
+        //making sure i am on the login page
+        //filling in the login form
+        $I->fillField($username, 'coen');
+        $I->wait(1);
+        $I->fillField($password, 'coen');
+        $I->click("Login!");
+        $I->waitForText("Congratulations!", 50);
+    }
+
+    public function loginAuthor($scenario) {
+        $username = '#loginform-username';
+        $password = '#loginform-password';
+        $I = new AcceptanceTester($scenario);
+        $I->amOnPage("/");
+        //check to see the login button
+        $I->waitForText("Login", 50);
+        //clicking the login button
+        $I->click("Login");
+        //making sure i am on the login page
+        $I->waitForText("Username", 50);
+        //filling in the login form
+        $I->fillField($username, 'piet');
+        $I->wait(1);
+        $I->fillField($password, 'password');
+        $I->click("Login!");
+        //checking if we succeed to login and got send back to the homepage
+        $I->waitForText("Congratulations!", 50);
+    }
+
+    public function logout($scenario) {
+        $I = new AcceptanceTester($scenario);
+        $I->amOnPage("/");
+        $I->waitForText("Logout", 50);
+        $I->click("Logout");
+        $I->waitForText("Congratulations!", 50);
+    }
+
    /**
     * Define custom actions here
     */

@@ -4,7 +4,7 @@ $I->wantTo('perform actions and see result');
 //we dont log in because we want to be a geust/user
 //we are going to the blog index first
 $I->amOnPage("/blog");
-$I->waitForText("Blogs", 1025);
+$I->waitForText("Blogs", 25);
 //then we check it by looking for a blog with lorem ipsum in it
 $I->waitForText("lorem ipsum", 5);
 //we will view this blog

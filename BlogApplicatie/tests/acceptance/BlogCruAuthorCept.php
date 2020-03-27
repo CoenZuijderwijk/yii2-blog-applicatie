@@ -1,21 +1,7 @@
 <?php
 $I = new AcceptanceTester($scenario);
+$I->loginAuthor($scenario);
 $I->wantTo('perform actions and see result');
-$I->amOnPage("/");
-//check to see the login button
-$I->waitForText("Login", 25);
-//clicking the login button
-$I->click("Login");
-//making sure i am on the login page
-$I->waitForText("Username", 25);
-$I->wait(1);
-//filling in the login form
-$I->fillField('input[id="loginform-username"]', 'jan');
-$I->wait(1);
-$I->fillField('input[name="LoginForm[password]"]', 'password');
-$I->click("Login!");
-//checking if we succeed to login and got send back to the homepage
-$I->waitForText("Congratulations!", 25);
 $I->amOnPage("/blog");
 //checking if we are on the blog page
 //creating a blog
@@ -47,9 +33,6 @@ $I->wait(2);
 $I->waitForText("twee", 25);
 $I->wait(2);
 $I->amOnPage("/blog");
-$I->amOnPage("/");
-$I->waitForText("Logout", 25);
-$I->click("Logout");
-$I->waitForText("Congratulations!", 25);
+$I->logout($scenario);
 
 

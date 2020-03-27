@@ -9,12 +9,6 @@ modules:
         transaction: false # don't wrap test in transaction
         cleanup: false # don't cleanup the fixtures
         entryScript: index-test.php
-extensions:
-  enabled:
-    - Codeception\Extension\RunProcess:
-        0: CD C:\xampp\mysql\bin & mysqldump -u root blogapplicatie-test > ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/dump.sql
-        sleep: 10
-
 env:
   IE:
     modules:
@@ -37,7 +31,7 @@ env:
         - Codeception\Extension\RunProcess:
             0: CD C:\xampp\mysql\bin & mysqldump -u root blogapplicatie > ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql
             1: php -S localhost:8080 -t web
-            2: CD tests/bin & java jar selenium-server-standalone-3.141.59.jar
+            2: CD tests/bin & selenium-server-standalone-3.141.59.jar
             3: CD tests/bin & IEDriverServer --url-base=/wd/hub/session
             sleep: 20
   chrome:

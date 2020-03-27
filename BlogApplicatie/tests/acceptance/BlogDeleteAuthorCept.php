@@ -2,30 +2,17 @@
 $I = new AcceptanceTester($scenario);
 $I->wantTo('perform actions and see result');
 //check to see the login button
-$I->amOnPage("/");
-$I->waitForText("Login", 25);
-//clicking the login button
-$I->click("Login");
-//making sure i am on the login page
-$I->wait(1);
-//filling in the login form
-$I->fillField('input[id="loginform-username"]', 'piet');
-$I->wait(1);
-$I->fillField('input[name="LoginForm[password]"]', 'password');
-$I->click("Login!");
-$I->wait(2);
+$I->loginAuthor($scenario);
 //going to the blog page
 $I->click("Blog");
 //going to the delete page for a blog
 $I->wait(5);
-$I->amOnPage("/blog/delete?id=57");
+$I->amOnPage("/blog/view?id=56");
+$I->waitForText("Delete", 25);
+$I->click("Delete");
+$I->waitForText("Blogs", 25);
 //i dont get redirected back so i got back by my self
-$I->wait(5);
-$I->amOnPage("/blog");
 //checking if id 57 is still there
 $I->wait(1);
-$I->dontSee("57");
-$I->amOnPage("/");
-$I->waitForText("Logout", 25);
-$I->click("Logout");
-$I->waitForText("Congratulations!", 25);
+$I->dontSee("56");
+$I->logout($scenario);

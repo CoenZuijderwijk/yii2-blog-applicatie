@@ -37,7 +37,6 @@ $user = User::findOne(Yii::$app->getUser()->id);
                echo Html::a('Delete', ['delete', 'id' => $model->id], [
                     'class' => 'd_btn',
                     'data' => [
-                        'confirm' => 'Are you sure you want to delete this item?',
                         'method' => 'post',
                     ],
                 ]);
@@ -45,7 +44,6 @@ $user = User::findOne(Yii::$app->getUser()->id);
                echo Html::a('Delete', ['delete', 'id' => $model->id], [
                     'class' => 'd_btn',
                     'data' => [
-                        'confirm' => 'Are you sure you want to delete this item?',
                         'method' => 'post',
                     ],
                 ]);

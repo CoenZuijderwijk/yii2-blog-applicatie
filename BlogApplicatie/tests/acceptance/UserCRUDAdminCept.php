@@ -1,27 +1,14 @@
 <?php 
 $I = new AcceptanceTester($scenario);
+$I->loginAdmin($scenario);
 $I->wantTo('perform actions and see result');
-$I->amOnPage("/");
-//check to see the login button
-$I->waitForText("Login", 25);
-//clicking the login button
-$I->click("Login");
-//making sure i am on the login page
-$I->wait(1);
-//filling in the login form
-$I->fillField('input[id="loginform-username"]', 'coen');
-$I->wait(1);
-$I->fillField('input[name="LoginForm[password]"]', 'coen');
-$I->click("Login!");
-$I->wait(5);
-$I->see("Congratulations!");
 $I->wait(5);
 $I->amOnPage("/user");
 //make sure i am on the page
 $I->waitForText("Create User", 25);
 //creating a user
 $I->click("Create User");
-$I->wait(2);
+$I->waitForText("Username", 25);
 $I->fillField("#user-username", "testUser");
 $I->fillField("#user-password", "testPassword");
 $I->fillField("#user-authkey", "testAuthKey");
@@ -54,7 +41,4 @@ $I->fillField("#user-password", "password");
 $I->wait(2);
 $I->click("Save");
 $I->waitForText("jan", 25);
-$I->amOnPage("/");
-$I->waitForText("Logout", 25);
-$I->click("Logout");
-$I->waitForText("Congratulations!", 25);
+$I->logout($scenario);
