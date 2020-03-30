@@ -33,7 +33,11 @@ class AcceptanceTester extends \Codeception\Actor
     use _generated\AcceptanceTesterActions;
 
     public function afterTest(\Codeception\Event\TestEvent $e) {
-        exec("CD C:\xampp\mysql\bin & mysqldump -u root blogapplicatie < ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql");
+        exec("CD C:\xampp\mysql\bin & mysql -u root blogapplicatie < ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql");
+    }
+
+    public function testFailed(\Codeception\Event\TestEvent $e) {
+        exec("CD C:\xampp\mysql\bin & mysql -u root blogapplicatie < ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql");
     }
 
     public function loginAdmin($I) {
@@ -69,8 +73,6 @@ class AcceptanceTester extends \Codeception\Actor
         $I->waitForText("Logout", 50);
         $I->click("Logout");
         $I->waitForText("Congratulations!", 50);
-        $I->wait(5);
-        $I->dontsee("Logout");
         $I->wait(5);
     }
 

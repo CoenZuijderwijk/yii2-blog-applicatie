@@ -28,8 +28,9 @@ class BlogCruAuthorCest
         $I->executeJS("console.log(tinymce.innerHTML);");
         $I->wait(3);
         $I->click("Save");
+        $I->wait(3);
         $I->waitForText("testTitle", 25);
-        $I->wait(2);
+        $I->wait(3);
         $I->waitForText("Delete", 25);
     }
 
