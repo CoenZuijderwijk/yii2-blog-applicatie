@@ -29,5 +29,8 @@ phpunit.phar
 tests/_output/*
 tests/_support/_generated
 
+# the asset folder
+web/assets
+
 #vagrant folder
 /.vagrant

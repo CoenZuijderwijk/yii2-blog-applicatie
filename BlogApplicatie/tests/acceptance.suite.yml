@@ -33,7 +33,7 @@ env:
             1: php -S localhost:8080 -t web
             2: CD tests/bin & selenium-server-standalone-3.141.59.jar
             3: CD tests/bin & IEDriverServer --url-base=/wd/hub/session
-            sleep: 20
+            sleep: 5
   chrome:
     modules:
       enabled:
