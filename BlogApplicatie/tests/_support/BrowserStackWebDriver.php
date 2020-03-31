@@ -1,5 +1,5 @@
 <?php
-
+namespace app\tests\_support;
 require 'vendor/autoload.php';
 use BrowserStack\Local;
 

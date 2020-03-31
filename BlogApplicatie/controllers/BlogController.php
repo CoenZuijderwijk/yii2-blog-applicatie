@@ -20,7 +20,8 @@ use yii\web\UploadedFile;
 use yii\base\Security;
 
 /**
- * BlogController implements the CRUD actions for Blog model.
+ * Class BlogController
+ * @package app\controllers
  */
 class BlogController extends Controller
 {

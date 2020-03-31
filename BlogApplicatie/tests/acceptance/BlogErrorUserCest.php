@@ -1,5 +1,5 @@
-<?php 
-
+<?php
+namespace app\tests\acceptance;
 class BlogErrorUserCest
 {
     public function _before(AcceptanceTester $I)

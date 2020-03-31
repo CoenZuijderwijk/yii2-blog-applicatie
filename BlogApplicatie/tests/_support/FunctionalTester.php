@@ -1,6 +1,6 @@
 <?php
 
-
+namespace app\tests\_support;
 /**
  * Inherited Methods
  * @method void wantToTest($text)

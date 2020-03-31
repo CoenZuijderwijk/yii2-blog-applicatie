@@ -45,19 +45,12 @@ env:
             restart: true
             capabilities:
               "goog:chromeOptions": # additional chrome options
-        - Db:
-            dsn: 'mysql:host=localhost;port=3306;dbname=BlogApplicatie;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock'
-            user: 'root'
-            password:
-            dump: tests/_data/dump.sql
-            cleanup: true # reload dump between tests
-            populate: true # load dump before all tests
-            populator: 'CD C:\xampp\mysql\bin & mysqldump -u root blogapplicatie < tests/_data/dump.sql'
     extensions:
       enabled:
         - Codeception\Extension\RunProcess:
-            0: php -S localhost:8080 -t web
-            1: CD tests/bin & chromedriver --url-base=/wd/hub
+            0: CD C:\xampp\mysql\bin & mysqldump -u root blogapplicatie > ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql
+            1: php -S localhost:8080 -t web
+            2: CD tests/bin & chromedriver --url-base=/wd/hub
             sleep: 2
   browserstack-chrome:
     modules:

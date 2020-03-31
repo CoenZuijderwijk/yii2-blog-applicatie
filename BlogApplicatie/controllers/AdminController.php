@@ -1,7 +1,6 @@
 <?php
 namespace app\controllers;
 
-use app\components\WebUser;
 use app\models\Blog;
 use app\models\BlogSearch;
 use yii\web\Controller;
@@ -9,8 +8,14 @@ use app\models\user;
 use Yii;
 use yii\web\NotFoundHttpException;
 
+/**
+ * Class AdminController
+ * @package app\controllers
+ * @inheritDoc
+ */
 class AdminController extends Controller
 {
+
 
     function accessRules()
     {
@@ -27,6 +32,11 @@ class AdminController extends Controller
         );
     }
 
+    /**
+     * @return string
+     * @throws \yii\web\HttpException
+     * @uses \app\models\User
+     */
     public function actionHome() {
         $user = User::findOne(Yii::$app->getUser()->id);
         if($user->accessLevel >= 98) {

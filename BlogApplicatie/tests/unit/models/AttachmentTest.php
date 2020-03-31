@@ -1,4 +1,5 @@
 <?php
+namespace app\tests\unit\models;
 use app\models\Attachment;
 
 class AttachmentTest extends \Codeception\Test\Unit

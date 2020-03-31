@@ -1,5 +1,5 @@
-<?php 
-
+<?php
+namespace app\tests\acceptance;
 class BlogIndexAndCommentGeustCest
 {
     public function _before(AcceptanceTester $I)

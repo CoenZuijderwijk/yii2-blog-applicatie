@@ -1,5 +1,5 @@
-<?php 
-
+<?php
+namespace app\tests\acceptance;
 class AttachmentCRUDCest
 {
     public function _before(AcceptanceTester $I)
@@ -16,7 +16,8 @@ class AttachmentCRUDCest
         $I->amOnPage("/blog/view?id=7");
         $I->waitForText("Attachment toevoegen", 25);
         $I->click("Attachment toevoegen");
-        $I->waitForText("files");
+        $I->waitForText("files", 25);
+        $I->wait(2);
         $I->see("Browse");
         $I->executeJS("document.getElementById('input-bla').style.opacity = 100;");
         $I->attachFile('input[id="input-bla"]', 'price.jpg');

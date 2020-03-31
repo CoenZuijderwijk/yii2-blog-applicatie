@@ -7,7 +7,9 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model app\models\Attachment */
 /* @var $form yii\widgets\ActiveForm */
-
+/**
+ * view for the attachment
+ */
 ?>
 <div class="attachment-form">
     <?php $form = ActiveForm::begin(['options' => ['enctype' => 'multipart/form-data']]);?>

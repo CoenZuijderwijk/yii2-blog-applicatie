@@ -8,6 +8,9 @@ use kartik\file\FileInput;
 /* @var $this yii\web\View */
 /* @var $model app\models\Blog */
 /* @var $form yii\widgets\ActiveForm */
+/**
+ * view for the blog form
+ */
 ?>
 
 <div class="blog-form">

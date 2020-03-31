@@ -9,7 +9,9 @@ use yii\widgets\DetailView;
 /* @var $form yii\widgets\ActiveForm */
 /* @var $model app\models\Blog */
 
-
+/**
+ * view for the comment form
+ */
 $form = ActiveForm::begin(['options' => ['encypte' => 'multipart/form-date']]);
 ?>
 

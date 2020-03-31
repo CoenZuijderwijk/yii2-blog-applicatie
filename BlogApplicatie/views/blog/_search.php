@@ -6,6 +6,9 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model app\models\BlogSearch */
 /* @var $form yii\widgets\ActiveForm */
+/**
+ * view for the blog search bar
+ */
 ?>
 
 <div class="blog-search">

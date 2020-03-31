@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use app\components\WebUser;
+
 use app\models\User;
 use Codeception\PHPUnit\Constraint\Page;
 use Yii;
@@ -13,7 +13,8 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * CommentController implements the CRUD actions for Comment model.
+ * Class CommentController
+ * @package app\controllers
  */
 class CommentController extends Controller
 {

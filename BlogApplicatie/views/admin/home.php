@@ -2,7 +2,9 @@
 use yii\helpers\Html;
 use app\models\User;
 
-
+/**
+ * View for the admin homepage
+ */
 ?>
 
 <div class="container-fluid" >

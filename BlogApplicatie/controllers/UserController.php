@@ -12,7 +12,8 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * UserController implements the CRUD actions for User model.
+ * Class UserController
+ * @package app\controllers
  */
 class UserController extends Controller
 {
