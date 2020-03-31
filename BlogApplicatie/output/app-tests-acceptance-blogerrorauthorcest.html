@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        
+<link href="./assets/d9271254/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/45a8504d/solarized_light.css" rel="stylesheet">
+<link href="./assets/3f03279d/style.css" rel="stylesheet">
+<script src="./assets/9d94f5f5/jquery.js"></script>
+<script src="./assets/d9271254/js/bootstrap.js"></script>
+<script src="./assets/28e47a7c/jssearch.js"></script>    <title>BlogErrorAuthorCest, app\tests\acceptance\BlogErrorAuthorCest - Yii Framework 2.0 API Documentation</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w284" class="navbar-inverse navbar-fixed-top navbar"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w284-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w284-collapse" class="collapse navbar-collapse"><ul id="w285" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-3">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-273" data-toggle="collapse" data-parent="#navigation">app\assets <b class="caret"></b></a><div id="navigation-273" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-assets-appasset.html">AppAsset</a></div>
+<a class="list-group-item" href="#navigation-274" data-toggle="collapse" data-parent="#navigation">app\commands <b class="caret"></b></a><div id="navigation-274" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-commands-hellocontroller.html">HelloController</a></div>
+<a class="list-group-item" href="#navigation-275" data-toggle="collapse" data-parent="#navigation">app\components <b class="caret"></b></a><div id="navigation-275" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-components-usersearch.html">UserSearch</a></div>
+<a class="list-group-item" href="#navigation-276" data-toggle="collapse" data-parent="#navigation">app\controllers <b class="caret"></b></a><div id="navigation-276" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-controllers-admincontroller.html">AdminController</a>
+<a class="list-group-item" href="./app-controllers-blogcontroller.html">BlogController</a>
+<a class="list-group-item" href="./app-controllers-commentcontroller.html">CommentController</a>
+<a class="list-group-item" href="./app-controllers-sitecontroller.html">SiteController</a>
+<a class="list-group-item" href="./app-controllers-usercontroller.html">UserController</a></div>
+<a class="list-group-item" href="#navigation-277" data-toggle="collapse" data-parent="#navigation">app\models <b class="caret"></b></a><div id="navigation-277" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-models-attachment.html">Attachment</a>
+<a class="list-group-item" href="./app-models-blog.html">Blog</a>
+<a class="list-group-item" href="./app-models-blogsearch.html">BlogSearch</a>
+<a class="list-group-item" href="./app-models-comment.html">Comment</a>
+<a class="list-group-item" href="./app-models-commentsearch.html">CommentSearch</a>
+<a class="list-group-item" href="./app-models-loginform.html">LoginForm</a>
+<a class="list-group-item" href="./app-models-user.html">User</a></div>
+<a class="list-group-item" href="#navigation-278" data-toggle="collapse" data-parent="#navigation">app\tests\_support <b class="caret"></b></a><div id="navigation-278" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-tests-_support-acceptancetester.html">AcceptanceTester</a>
+<a class="list-group-item" href="./app-tests-_support-browserstackwebdriver.html">BrowserStackWebDriver</a>
+<a class="list-group-item" href="./app-tests-_support-functionaltester.html">FunctionalTester</a>
+<a class="list-group-item" href="./app-tests-_support-unittester.html">UnitTester</a></div>
+<a class="list-group-item" href="#navigation-279" data-toggle="collapse" data-parent="#navigation">app\tests\_support\_generated <b class="caret"></b></a><div id="navigation-279" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-tests-_support-_generated-acceptancetesteractions.html">AcceptanceTesterActions</a>
+<a class="list-group-item" href="./app-tests-_support-_generated-functionaltesteractions.html">FunctionalTesterActions</a>
+<a class="list-group-item" href="./app-tests-_support-_generated-unittesteractions.html">UnitTesterActions</a></div>
+<a class="list-group-item active" href="#navigation-280" data-toggle="collapse" data-parent="#navigation">app\tests\acceptance <b class="caret"></b></a><div id="navigation-280" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./app-tests-acceptance-attachmentcrudcest.html">AttachmentCRUDCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-authoradminattachmenttestcest.html">AuthorAdminAttachmentTestCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-blogcrudadmincest.html">BlogCRUDAdminCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-blogcruauthorcest.html">BlogCruAuthorCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-blogdeleteauthorcest.html">BlogDeleteAuthorCest</a>
+<a class="list-group-item active" href="./app-tests-acceptance-blogerrorauthorcest.html">BlogErrorAuthorCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-blogerrorusercest.html">BlogErrorUserCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-blogindexandcommentgeustcest.html">BlogIndexAndCommentGeustCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-userattachmenttestcest.html">UserAttachmentTestCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-usercrudadmincest.html">UserCRUDAdminCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-usererrorauthorcest.html">UserErrorAuthorCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-usererrorgeustcest.html">UserErrorGeustCest</a></div>
+<a class="list-group-item" href="#navigation-281" data-toggle="collapse" data-parent="#navigation">app\tests\fixtures <b class="caret"></b></a><div id="navigation-281" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-tests-fixtures-fixture.html">Fixture</a></div>
+<a class="list-group-item" href="#navigation-282" data-toggle="collapse" data-parent="#navigation">app\tests\unit\models <b class="caret"></b></a><div id="navigation-282" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-tests-unit-models-attachmenttest.html">AttachmentTest</a>
+<a class="list-group-item" href="./app-tests-unit-models-blogtest.html">BlogTest</a>
+<a class="list-group-item" href="./app-tests-unit-models-commenttest.html">CommentTest</a>
+<a class="list-group-item" href="./app-tests-unit-models-loginformtest.html">LoginFormTest</a>
+<a class="list-group-item" href="./app-tests-unit-models-usertest.html">UserTest</a></div>
+<a class="list-group-item" href="#navigation-283" data-toggle="collapse" data-parent="#navigation">app\widgets <b class="caret"></b></a><div id="navigation-283" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-widgets-alert.html">Alert</a></div></div>    </div>
+    <div class="col-md-9 api-content" role="main">
+        <h1>Class app\tests\acceptance\BlogErrorAuthorCest</h1>
+<div class="top-nav">
+    <a href="index.html">All Classes</a>
+                | <a href="#methods">Methods</a>
+            </div>
+
+<table class="summaryTable docClass table table-bordered">
+    <colgroup>
+        <col class="col-name" />
+        <col class="col-value" />
+    </colgroup>
+            <tr><th>Inheritance</th><td><a href="app-tests-acceptance-blogerrorauthorcest.html">app\tests\acceptance\BlogErrorAuthorCest</a></td></tr>
+                                        </table>
+
+<div class="class-description">
+    <p><strong></strong></p>
+    
+    </div>
+
+<a id="properties"></a>
+
+<a id="methods"></a>
+
+<div class="summary doc-method">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr id="_before()">
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html#_before()-detail">_before()</a></td>
+        <td></td>
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html">app\tests\acceptance\BlogErrorAuthorCest</a></td>
+    </tr>
+            <tr id="authorLogin()">
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html#authorLogin()-detail">authorLogin()</a></td>
+        <td></td>
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html">app\tests\acceptance\BlogErrorAuthorCest</a></td>
+    </tr>
+            <tr id="blogDeleteError()">
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html#blogDeleteError()-detail">blogDeleteError()</a></td>
+        <td></td>
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html">app\tests\acceptance\BlogErrorAuthorCest</a></td>
+    </tr>
+            <tr id="blogUpdateError()">
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html#blogUpdateError()-detail">blogUpdateError()</a></td>
+        <td></td>
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html">app\tests\acceptance\BlogErrorAuthorCest</a></td>
+    </tr>
+            <tr id="commentDeleteError()">
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html#commentDeleteError()-detail">commentDeleteError()</a></td>
+        <td></td>
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html">app\tests\acceptance\BlogErrorAuthorCest</a></td>
+    </tr>
+            <tr id="commentEditError()">
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html#commentEditError()-detail">commentEditError()</a></td>
+        <td></td>
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html">app\tests\acceptance\BlogErrorAuthorCest</a></td>
+    </tr>
+            <tr id="commentIndexError()">
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html#commentIndexError()-detail">commentIndexError()</a></td>
+        <td></td>
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html">app\tests\acceptance\BlogErrorAuthorCest</a></td>
+    </tr>
+            <tr id="commentViewError()">
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html#commentViewError()-detail">commentViewError()</a></td>
+        <td></td>
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html">app\tests\acceptance\BlogErrorAuthorCest</a></td>
+    </tr>
+            <tr id="logout()">
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html#logout()-detail">logout()</a></td>
+        <td></td>
+        <td><a href="app-tests-acceptance-blogerrorauthorcest.html">app\tests\acceptance\BlogErrorAuthorCest</a></td>
+    </tr>
+    </table>
+</div>
+
+<a id="events"></a>
+
+<a id="constants"></a>
+
+<h2>Method Details</h2>
+
+<div class="method-doc">
+
+    <div class="detail-header h3" id="_before()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-acceptance-blogerrorauthorcest.html#_before()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        _before()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-acceptance-blogerrorauthorcest.html#_before()-detail">_before</a></strong> ( <span class="signature-type">\app\tests\acceptance\AcceptanceTester</span> <span style="color: #0000BB">$I</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$I</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="authorLogin()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-acceptance-blogerrorauthorcest.html#authorLogin()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        authorLogin()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-acceptance-blogerrorauthorcest.html#authorLogin()-detail">authorLogin</a></strong> ( <span class="signature-type">\app\tests\acceptance\AcceptanceTester</span> <span style="color: #0000BB">$I</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$I</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="blogDeleteError()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-acceptance-blogerrorauthorcest.html#blogDeleteError()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        blogDeleteError()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-acceptance-blogerrorauthorcest.html#blogDeleteError()-detail">blogDeleteError</a></strong> ( <span class="signature-type">\app\tests\acceptance\AcceptanceTester</span> <span style="color: #0000BB">$I</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$I</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="blogUpdateError()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-acceptance-blogerrorauthorcest.html#blogUpdateError()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        blogUpdateError()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-acceptance-blogerrorauthorcest.html#blogUpdateError()-detail">blogUpdateError</a></strong> ( <span class="signature-type">\app\tests\acceptance\AcceptanceTester</span> <span style="color: #0000BB">$I</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$I</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="commentDeleteError()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-acceptance-blogerrorauthorcest.html#commentDeleteError()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        commentDeleteError()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-acceptance-blogerrorauthorcest.html#commentDeleteError()-detail">commentDeleteError</a></strong> ( <span class="signature-type">\app\tests\acceptance\AcceptanceTester</span> <span style="color: #0000BB">$I</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$I</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="commentEditError()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-acceptance-blogerrorauthorcest.html#commentEditError()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        commentEditError()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-acceptance-blogerrorauthorcest.html#commentEditError()-detail">commentEditError</a></strong> ( <span class="signature-type">\app\tests\acceptance\AcceptanceTester</span> <span style="color: #0000BB">$I</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$I</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="commentIndexError()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-acceptance-blogerrorauthorcest.html#commentIndexError()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        commentIndexError()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-acceptance-blogerrorauthorcest.html#commentIndexError()-detail">commentIndexError</a></strong> ( <span class="signature-type">\app\tests\acceptance\AcceptanceTester</span> <span style="color: #0000BB">$I</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$I</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="commentViewError()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-acceptance-blogerrorauthorcest.html#commentViewError()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        commentViewError()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-acceptance-blogerrorauthorcest.html#commentViewError()-detail">commentViewError</a></strong> ( <span class="signature-type">\app\tests\acceptance\AcceptanceTester</span> <span style="color: #0000BB">$I</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$I</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="logout()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-acceptance-blogerrorauthorcest.html#logout()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        logout()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-acceptance-blogerrorauthorcest.html#logout()-detail">logout</a></strong> ( <span class="signature-type">\app\tests\acceptance\AcceptanceTester</span> <span style="color: #0000BB">$I</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$I</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+</div>
+        </div>
+</div>
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    $("a.toggle").on('click', function () {
+        var $this = $(this);
+        if ($this.hasClass('properties-hidden')) {
+            $this.text($this.text().replace(/Show/,'Hide'));
+            $this.parents(".summary").find(".inherited").show();
+            $this.removeClass('properties-hidden');
+        } else {
+            $this.text($this.text().replace(/Hide/,'Show'));
+            $this.parents(".summary").find(".inherited").hide();
+            $this.addClass('properties-hidden');
+        }
+
+        return false;
+    });
+    /*
+     $(".sourceCode a.show").toggle(function () {
+     $(this).text($(this).text().replace(/show/,'hide'));
+     $(this).parents(".sourceCode").find("div.code").show();
+     },function () {
+     $(this).text($(this).text().replace(/hide/,'show'));
+     $(this).parents(".sourceCode").find("div.code").hide();
+     });
+     $("a.sourceLink").click(function () {
+     $(this).attr('target','_blank');
+     });
+     */
+    /*]]>*/
+</script>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Tue, 31 Mar 2020 14:03:01 +0200</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

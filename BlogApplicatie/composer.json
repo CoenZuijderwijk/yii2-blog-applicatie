@@ -21,7 +21,15 @@
         "kartik-v/yii2-grid": "dev-master",
         "yiisoft/yii2-bootstrap": "^2.0",
         "kartik-v/yii2-widget-fileinput": "dev-master",
-        "browserstack/browserstack-local": "^1.1"
+        "browserstack/browserstack-local": "^1.1",
+        "phpdocumentor/reflection": "^3.0.1",
+        "phpdocumentor/reflection-docblock": "^2.0.4",
+        "nikic/php-parser": "^1.0",
+        "cebe/js-search": "~0.9.3",
+        "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
+        "cebe/markdown-latex": "~1.0",
+        "scrivo/highlight.php": "~9.13",
+        "yiisoft/yii2-apidoc": "^2.1"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

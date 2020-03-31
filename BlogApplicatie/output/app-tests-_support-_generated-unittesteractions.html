@@ -1,0 +1,3133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        
+<link href="./assets/d9271254/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/45a8504d/solarized_light.css" rel="stylesheet">
+<link href="./assets/3f03279d/style.css" rel="stylesheet">
+<script src="./assets/9d94f5f5/jquery.js"></script>
+<script src="./assets/d9271254/js/bootstrap.js"></script>
+<script src="./assets/28e47a7c/jssearch.js"></script>    <title>UnitTesterActions, app\tests\_support\_generated\UnitTesterActions - Yii Framework 2.0 API Documentation</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w531" class="navbar-inverse navbar-fixed-top navbar"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w531-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w531-collapse" class="collapse navbar-collapse"><ul id="w532" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-3">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-520" data-toggle="collapse" data-parent="#navigation">app\assets <b class="caret"></b></a><div id="navigation-520" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-assets-appasset.html">AppAsset</a></div>
+<a class="list-group-item" href="#navigation-521" data-toggle="collapse" data-parent="#navigation">app\commands <b class="caret"></b></a><div id="navigation-521" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-commands-hellocontroller.html">HelloController</a></div>
+<a class="list-group-item" href="#navigation-522" data-toggle="collapse" data-parent="#navigation">app\components <b class="caret"></b></a><div id="navigation-522" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-components-usersearch.html">UserSearch</a></div>
+<a class="list-group-item" href="#navigation-523" data-toggle="collapse" data-parent="#navigation">app\controllers <b class="caret"></b></a><div id="navigation-523" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-controllers-admincontroller.html">AdminController</a>
+<a class="list-group-item" href="./app-controllers-blogcontroller.html">BlogController</a>
+<a class="list-group-item" href="./app-controllers-commentcontroller.html">CommentController</a>
+<a class="list-group-item" href="./app-controllers-sitecontroller.html">SiteController</a>
+<a class="list-group-item" href="./app-controllers-usercontroller.html">UserController</a></div>
+<a class="list-group-item" href="#navigation-524" data-toggle="collapse" data-parent="#navigation">app\models <b class="caret"></b></a><div id="navigation-524" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-models-attachment.html">Attachment</a>
+<a class="list-group-item" href="./app-models-blog.html">Blog</a>
+<a class="list-group-item" href="./app-models-blogsearch.html">BlogSearch</a>
+<a class="list-group-item" href="./app-models-comment.html">Comment</a>
+<a class="list-group-item" href="./app-models-commentsearch.html">CommentSearch</a>
+<a class="list-group-item" href="./app-models-loginform.html">LoginForm</a>
+<a class="list-group-item" href="./app-models-user.html">User</a></div>
+<a class="list-group-item" href="#navigation-525" data-toggle="collapse" data-parent="#navigation">app\tests\_support <b class="caret"></b></a><div id="navigation-525" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-tests-_support-acceptancetester.html">AcceptanceTester</a>
+<a class="list-group-item" href="./app-tests-_support-browserstackwebdriver.html">BrowserStackWebDriver</a>
+<a class="list-group-item" href="./app-tests-_support-functionaltester.html">FunctionalTester</a>
+<a class="list-group-item" href="./app-tests-_support-unittester.html">UnitTester</a></div>
+<a class="list-group-item active" href="#navigation-526" data-toggle="collapse" data-parent="#navigation">app\tests\_support\_generated <b class="caret"></b></a><div id="navigation-526" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./app-tests-_support-_generated-acceptancetesteractions.html">AcceptanceTesterActions</a>
+<a class="list-group-item" href="./app-tests-_support-_generated-functionaltesteractions.html">FunctionalTesterActions</a>
+<a class="list-group-item active" href="./app-tests-_support-_generated-unittesteractions.html">UnitTesterActions</a></div>
+<a class="list-group-item" href="#navigation-527" data-toggle="collapse" data-parent="#navigation">app\tests\acceptance <b class="caret"></b></a><div id="navigation-527" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-tests-acceptance-attachmentcrudcest.html">AttachmentCRUDCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-authoradminattachmenttestcest.html">AuthorAdminAttachmentTestCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-blogcrudadmincest.html">BlogCRUDAdminCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-blogcruauthorcest.html">BlogCruAuthorCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-blogdeleteauthorcest.html">BlogDeleteAuthorCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-blogerrorauthorcest.html">BlogErrorAuthorCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-blogerrorusercest.html">BlogErrorUserCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-blogindexandcommentgeustcest.html">BlogIndexAndCommentGeustCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-userattachmenttestcest.html">UserAttachmentTestCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-usercrudadmincest.html">UserCRUDAdminCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-usererrorauthorcest.html">UserErrorAuthorCest</a>
+<a class="list-group-item" href="./app-tests-acceptance-usererrorgeustcest.html">UserErrorGeustCest</a></div>
+<a class="list-group-item" href="#navigation-528" data-toggle="collapse" data-parent="#navigation">app\tests\fixtures <b class="caret"></b></a><div id="navigation-528" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-tests-fixtures-fixture.html">Fixture</a></div>
+<a class="list-group-item" href="#navigation-529" data-toggle="collapse" data-parent="#navigation">app\tests\unit\models <b class="caret"></b></a><div id="navigation-529" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-tests-unit-models-attachmenttest.html">AttachmentTest</a>
+<a class="list-group-item" href="./app-tests-unit-models-blogtest.html">BlogTest</a>
+<a class="list-group-item" href="./app-tests-unit-models-commenttest.html">CommentTest</a>
+<a class="list-group-item" href="./app-tests-unit-models-loginformtest.html">LoginFormTest</a>
+<a class="list-group-item" href="./app-tests-unit-models-usertest.html">UserTest</a></div>
+<a class="list-group-item" href="#navigation-530" data-toggle="collapse" data-parent="#navigation">app\widgets <b class="caret"></b></a><div id="navigation-530" class="submenu panel-collapse collapse"><a class="list-group-item" href="./app-widgets-alert.html">Alert</a></div></div>    </div>
+    <div class="col-md-9 api-content" role="main">
+        <h1>Trait app\tests\_support\_generated\UnitTesterActions</h1>
+<div class="top-nav">
+    <a href="index.html">All Classes</a>
+                | <a href="#methods">Methods</a>
+            </div>
+
+<table class="summaryTable docClass table table-bordered">
+    <colgroup>
+        <col class="col-name" />
+        <col class="col-value" />
+    </colgroup>
+                                    <tr><th>Implemented by</th><td><a href="app-tests-_support-unittester.html">app\tests\_support\UnitTester</a></td></tr>
+                </table>
+
+<div class="class-description">
+    <p><strong></strong></p>
+    
+    </div>
+
+<a id="properties"></a>
+
+<a id="methods"></a>
+
+<div class="summary doc-method">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr id="assertArrayHasKey()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertArrayHasKey()-detail">assertArrayHasKey()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertArrayNotHasKey()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertArrayNotHasKey()-detail">assertArrayNotHasKey()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertContains()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertContains()-detail">assertContains()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertCount()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertCount()-detail">assertCount()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertEmpty()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertEmpty()-detail">assertEmpty()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertEquals()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertEquals()-detail">assertEquals()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertEqualsCanonicalizing()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertEqualsCanonicalizing()-detail">assertEqualsCanonicalizing()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertEqualsIgnoringCase()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertEqualsIgnoringCase()-detail">assertEqualsIgnoringCase()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertEqualsWithDelta()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertEqualsWithDelta()-detail">assertEqualsWithDelta()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertFalse()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertFalse()-detail">assertFalse()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertFileExists()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertFileExists()-detail">assertFileExists()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertFileNotExists()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertFileNotExists()-detail">assertFileNotExists()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertGreaterOrEquals()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertGreaterOrEquals()-detail">assertGreaterOrEquals()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertGreaterThan()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertGreaterThan()-detail">assertGreaterThan()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertGreaterThanOrEqual()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertGreaterThanOrEqual()-detail">assertGreaterThanOrEqual()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertInstanceOf()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertInstanceOf()-detail">assertInstanceOf()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertInternalType()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertInternalType()-detail">assertInternalType()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsArray()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsArray()-detail">assertIsArray()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsBool()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsBool()-detail">assertIsBool()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsCallable()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsCallable()-detail">assertIsCallable()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsEmpty()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsEmpty()-detail">assertIsEmpty()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsFloat()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsFloat()-detail">assertIsFloat()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsInt()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsInt()-detail">assertIsInt()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsNotArray()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotArray()-detail">assertIsNotArray()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsNotBool()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotBool()-detail">assertIsNotBool()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsNotCallable()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotCallable()-detail">assertIsNotCallable()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsNotFloat()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotFloat()-detail">assertIsNotFloat()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsNotInt()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotInt()-detail">assertIsNotInt()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsNotNumeric()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotNumeric()-detail">assertIsNotNumeric()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsNotObject()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotObject()-detail">assertIsNotObject()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsNotResource()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotResource()-detail">assertIsNotResource()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsNotScalar()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotScalar()-detail">assertIsNotScalar()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsNotString()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotString()-detail">assertIsNotString()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsNumeric()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNumeric()-detail">assertIsNumeric()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsObject()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsObject()-detail">assertIsObject()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsResource()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsResource()-detail">assertIsResource()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsScalar()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsScalar()-detail">assertIsScalar()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertIsString()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertIsString()-detail">assertIsString()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertLessOrEquals()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertLessOrEquals()-detail">assertLessOrEquals()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertLessThan()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertLessThan()-detail">assertLessThan()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertLessThanOrEqual()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertLessThanOrEqual()-detail">assertLessThanOrEqual()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNotContains()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNotContains()-detail">assertNotContains()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNotEmpty()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNotEmpty()-detail">assertNotEmpty()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNotEquals()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNotEquals()-detail">assertNotEquals()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNotEqualsCanonicalizing()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNotEqualsCanonicalizing()-detail">assertNotEqualsCanonicalizing()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNotEqualsIgnoringCase()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNotEqualsIgnoringCase()-detail">assertNotEqualsIgnoringCase()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNotEqualsWithDelta()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNotEqualsWithDelta()-detail">assertNotEqualsWithDelta()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNotFalse()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNotFalse()-detail">assertNotFalse()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNotInstanceOf()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNotInstanceOf()-detail">assertNotInstanceOf()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNotNull()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNotNull()-detail">assertNotNull()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNotRegExp()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNotRegExp()-detail">assertNotRegExp()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNotSame()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNotSame()-detail">assertNotSame()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNotTrue()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNotTrue()-detail">assertNotTrue()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertNull()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertNull()-detail">assertNull()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertRegExp()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertRegExp()-detail">assertRegExp()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertSame()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertSame()-detail">assertSame()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertStringContainsString()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertStringContainsString()-detail">assertStringContainsString()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertStringContainsStringIgnoringCase()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertStringContainsStringIgnoringCase()-detail">assertStringContainsStringIgnoringCase()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertStringEndsNotWith()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertStringEndsNotWith()-detail">assertStringEndsNotWith()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertStringEndsWith()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertStringEndsWith()-detail">assertStringEndsWith()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertStringNotContainsString()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertStringNotContainsString()-detail">assertStringNotContainsString()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertStringNotContainsStringIgnoringCase()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertStringNotContainsStringIgnoringCase()-detail">assertStringNotContainsStringIgnoringCase()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertStringStartsNotWith()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertStringStartsNotWith()-detail">assertStringStartsNotWith()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertStringStartsWith()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertStringStartsWith()-detail">assertStringStartsWith()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="assertTrue()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#assertTrue()-detail">assertTrue()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="expectException()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#expectException()-detail">expectException()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="expectThrowable()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#expectThrowable()-detail">expectThrowable()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+            <tr id="fail()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#fail()-detail">fail()</a></td>
+        <td>[!] Method is generated. Documentation taken from corresponding module.</td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+        </table>
+</div>
+
+<div class="summary doc-method">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+                                                                                                                                                                                                                                                                                        <tr id="getScenario()">
+        <td><a href="app-tests-_support-_generated-unittesteractions.html#getScenario()-detail">getScenario()</a></td>
+        <td></td>
+        <td><a href="app-tests-_support-_generated-unittesteractions.html">app\tests\_support\_generated\UnitTesterActions</a></td>
+    </tr>
+    </table>
+</div>
+
+<a id="events"></a>
+
+<a id="constants"></a>
+
+<h2>Method Details</h2>
+
+<div class="method-doc">
+
+    <div class="detail-header h3" id="assertArrayHasKey()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertArrayHasKey()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertArrayHasKey()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertArrayHasKey()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertArrayHasKey()-detail">assertArrayHasKey</a></strong> ( <span style="color: #0000BB">$key</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$key</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$description</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertArrayNotHasKey()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertArrayNotHasKey()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertArrayNotHasKey()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertArrayNotHasKey()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertArrayNotHasKey()-detail">assertArrayNotHasKey</a></strong> ( <span style="color: #0000BB">$key</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$key</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$description</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertContains()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertContains()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertContains()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that haystack contains needle</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertContains()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertContains()-detail">assertContains</a></strong> ( <span style="color: #0000BB">$needle</span>, <span style="color: #0000BB">$haystack</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$needle</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$haystack</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertCount()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertCount()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertCount()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertCount()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertCount()-detail">assertCount</a></strong> ( <span style="color: #0000BB">$expectedCount</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expectedCount</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$description</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertEmpty()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertEmpty()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertEmpty()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that variable is empty.</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertEmpty()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertEmpty()-detail">assertEmpty</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertEquals()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertEquals()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertEquals()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that two variables are equal.</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertEquals()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertEquals()-detail">assertEquals</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span>, <span style="color: #0000BB">$delta&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$delta</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.float">float</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertEqualsCanonicalizing()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertEqualsCanonicalizing()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertEqualsCanonicalizing()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertEqualsCanonicalizing()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertEqualsCanonicalizing()-detail">assertEqualsCanonicalizing</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertEqualsIgnoringCase()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertEqualsIgnoringCase()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertEqualsIgnoringCase()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertEqualsIgnoringCase()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertEqualsIgnoringCase()-detail">assertEqualsIgnoringCase</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertEqualsWithDelta()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertEqualsWithDelta()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertEqualsWithDelta()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertEqualsWithDelta()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertEqualsWithDelta()-detail">assertEqualsWithDelta</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$delta</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$delta</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertFalse()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertFalse()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertFalse()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that condition is negative.</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertFalse()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertFalse()-detail">assertFalse</a></strong> ( <span style="color: #0000BB">$condition</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$condition</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertFileExists()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertFileExists()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertFileExists()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks if file exists</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertFileExists()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertFileExists()-detail">assertFileExists</a></strong> ( <span style="color: #0000BB">$filename</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$filename</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertFileNotExists()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertFileNotExists()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertFileNotExists()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks if file doesn't exist</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertFileNotExists()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertFileNotExists()-detail">assertFileNotExists</a></strong> ( <span style="color: #0000BB">$filename</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$filename</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertGreaterOrEquals()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertGreaterOrEquals()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertGreaterOrEquals()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertGreaterOrEquals()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertGreaterOrEquals()-detail">assertGreaterOrEquals</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$description</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertGreaterThan()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertGreaterThan()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertGreaterThan()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that actual is greater than expected</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertGreaterThan()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertGreaterThan()-detail">assertGreaterThan</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertGreaterThanOrEqual()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertGreaterThanOrEqual()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertGreaterThanOrEqual()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that actual is greater or equal than expected</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertGreaterThanOrEqual()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertGreaterThanOrEqual()-detail">assertGreaterThanOrEqual</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertInstanceOf()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertInstanceOf()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertInstanceOf()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertInstanceOf()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertInstanceOf()-detail">assertInstanceOf</a></strong> ( <span style="color: #0000BB">$class</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$class</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$description</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertInternalType()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertInternalType()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertInternalType()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertInternalType()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertInternalType()-detail">assertInternalType</a></strong> ( <span style="color: #0000BB">$type</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$type</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$description</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsArray()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsArray()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsArray()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsArray()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsArray()-detail">assertIsArray</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsBool()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsBool()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsBool()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsBool()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsBool()-detail">assertIsBool</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsCallable()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsCallable()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsCallable()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsCallable()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsCallable()-detail">assertIsCallable</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsEmpty()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsEmpty()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsEmpty()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsEmpty()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsEmpty()-detail">assertIsEmpty</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$description</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsFloat()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsFloat()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsFloat()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsFloat()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsFloat()-detail">assertIsFloat</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsInt()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsInt()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsInt()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsInt()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsInt()-detail">assertIsInt</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsNotArray()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsNotArray()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsNotArray()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsNotArray()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotArray()-detail">assertIsNotArray</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsNotBool()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsNotBool()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsNotBool()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsNotBool()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotBool()-detail">assertIsNotBool</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsNotCallable()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsNotCallable()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsNotCallable()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsNotCallable()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotCallable()-detail">assertIsNotCallable</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsNotFloat()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsNotFloat()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsNotFloat()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsNotFloat()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotFloat()-detail">assertIsNotFloat</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsNotInt()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsNotInt()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsNotInt()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsNotInt()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotInt()-detail">assertIsNotInt</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsNotNumeric()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsNotNumeric()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsNotNumeric()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsNotNumeric()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotNumeric()-detail">assertIsNotNumeric</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsNotObject()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsNotObject()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsNotObject()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsNotObject()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotObject()-detail">assertIsNotObject</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsNotResource()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsNotResource()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsNotResource()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsNotResource()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotResource()-detail">assertIsNotResource</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsNotScalar()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsNotScalar()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsNotScalar()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsNotScalar()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotScalar()-detail">assertIsNotScalar</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsNotString()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsNotString()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsNotString()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsNotString()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNotString()-detail">assertIsNotString</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsNumeric()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsNumeric()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsNumeric()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsNumeric()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsNumeric()-detail">assertIsNumeric</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsObject()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsObject()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsObject()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsObject()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsObject()-detail">assertIsObject</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsResource()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsResource()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsResource()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsResource()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsResource()-detail">assertIsResource</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsScalar()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsScalar()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsScalar()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsScalar()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsScalar()-detail">assertIsScalar</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertIsString()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertIsString()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertIsString()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertIsString()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertIsString()-detail">assertIsString</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertLessOrEquals()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertLessOrEquals()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertLessOrEquals()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertLessOrEquals()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertLessOrEquals()-detail">assertLessOrEquals</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$description</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertLessThan()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertLessThan()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertLessThan()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that actual is less than expected</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertLessThan()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertLessThan()-detail">assertLessThan</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertLessThanOrEqual()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertLessThanOrEqual()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertLessThanOrEqual()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that actual is less or equal than expected</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertLessThanOrEqual()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertLessThanOrEqual()-detail">assertLessThanOrEqual</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNotContains()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNotContains()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNotContains()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that haystack doesn't contain needle.</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNotContains()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNotContains()-detail">assertNotContains</a></strong> ( <span style="color: #0000BB">$needle</span>, <span style="color: #0000BB">$haystack</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$needle</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$haystack</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNotEmpty()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNotEmpty()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNotEmpty()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that variable is not empty.</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNotEmpty()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNotEmpty()-detail">assertNotEmpty</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNotEquals()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNotEquals()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNotEquals()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that two variables are not equal</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNotEquals()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNotEquals()-detail">assertNotEquals</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span>, <span style="color: #0000BB">$delta&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$delta</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.float">float</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNotEqualsCanonicalizing()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNotEqualsCanonicalizing()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNotEqualsCanonicalizing()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNotEqualsCanonicalizing()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNotEqualsCanonicalizing()-detail">assertNotEqualsCanonicalizing</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNotEqualsIgnoringCase()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNotEqualsIgnoringCase()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNotEqualsIgnoringCase()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNotEqualsIgnoringCase()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNotEqualsIgnoringCase()-detail">assertNotEqualsIgnoringCase</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNotEqualsWithDelta()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNotEqualsWithDelta()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNotEqualsWithDelta()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNotEqualsWithDelta()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNotEqualsWithDelta()-detail">assertNotEqualsWithDelta</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$delta</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$delta</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNotFalse()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNotFalse()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNotFalse()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that the condition is NOT false (everything but false)</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNotFalse()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNotFalse()-detail">assertNotFalse</a></strong> ( <span style="color: #0000BB">$condition</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$condition</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNotInstanceOf()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNotInstanceOf()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNotInstanceOf()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNotInstanceOf()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNotInstanceOf()-detail">assertNotInstanceOf</a></strong> ( <span style="color: #0000BB">$class</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$class</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$description</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNotNull()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNotNull()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNotNull()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that variable is not NULL</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNotNull()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNotNull()-detail">assertNotNull</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNotRegExp()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNotRegExp()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNotRegExp()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that string not match with pattern</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNotRegExp()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNotRegExp()-detail">assertNotRegExp</a></strong> ( <span style="color: #0000BB">$pattern</span>, <span style="color: #0000BB">$string</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$pattern</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$string</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNotSame()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNotSame()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNotSame()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that two variables are not same</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNotSame()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNotSame()-detail">assertNotSame</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNotTrue()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNotTrue()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNotTrue()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that the condition is NOT true (everything but true)</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNotTrue()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNotTrue()-detail">assertNotTrue</a></strong> ( <span style="color: #0000BB">$condition</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$condition</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertNull()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertNull()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertNull()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that variable is NULL</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertNull()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertNull()-detail">assertNull</a></strong> ( <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertRegExp()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertRegExp()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertRegExp()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that string match with pattern</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertRegExp()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertRegExp()-detail">assertRegExp</a></strong> ( <span style="color: #0000BB">$pattern</span>, <span style="color: #0000BB">$string</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$pattern</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$string</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertSame()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertSame()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertSame()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that two variables are same</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertSame()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertSame()-detail">assertSame</a></strong> ( <span style="color: #0000BB">$expected</span>, <span style="color: #0000BB">$actual</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$expected</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$actual</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertStringContainsString()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertStringContainsString()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertStringContainsString()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertStringContainsString()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertStringContainsString()-detail">assertStringContainsString</a></strong> ( <span style="color: #0000BB">$needle</span>, <span style="color: #0000BB">$haystack</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$needle</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$haystack</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertStringContainsStringIgnoringCase()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertStringContainsStringIgnoringCase()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertStringContainsStringIgnoringCase()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertStringContainsStringIgnoringCase()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertStringContainsStringIgnoringCase()-detail">assertStringContainsStringIgnoringCase</a></strong> ( <span style="color: #0000BB">$needle</span>, <span style="color: #0000BB">$haystack</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$needle</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$haystack</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertStringEndsNotWith()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertStringEndsNotWith()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertStringEndsNotWith()
+        <span class="detail-header-tag small">
+            public                                    method
+                            (available since version 1.1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertStringEndsNotWith()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertStringEndsNotWith()-detail">assertStringEndsNotWith</a></strong> ( <span style="color: #0000BB">$suffix</span>, <span style="color: #0000BB">$string</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$suffix</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$string</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertStringEndsWith()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertStringEndsWith()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertStringEndsWith()
+        <span class="detail-header-tag small">
+            public                                    method
+                            (available since version 1.1.0)
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertStringEndsWith()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertStringEndsWith()-detail">assertStringEndsWith</a></strong> ( <span style="color: #0000BB">$suffix</span>, <span style="color: #0000BB">$string</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$suffix</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$string</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertStringNotContainsString()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertStringNotContainsString()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertStringNotContainsString()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertStringNotContainsString()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertStringNotContainsString()-detail">assertStringNotContainsString</a></strong> ( <span style="color: #0000BB">$needle</span>, <span style="color: #0000BB">$haystack</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$needle</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$haystack</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertStringNotContainsStringIgnoringCase()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertStringNotContainsStringIgnoringCase()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertStringNotContainsStringIgnoringCase()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertStringNotContainsStringIgnoringCase()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertStringNotContainsStringIgnoringCase()-detail">assertStringNotContainsStringIgnoringCase</a></strong> ( <span style="color: #0000BB">$needle</span>, <span style="color: #0000BB">$haystack</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$needle</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$haystack</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertStringStartsNotWith()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertStringStartsNotWith()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertStringStartsNotWith()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that a string doesn't start with the given prefix.</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertStringStartsNotWith()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertStringStartsNotWith()-detail">assertStringStartsNotWith</a></strong> ( <span style="color: #0000BB">$prefix</span>, <span style="color: #0000BB">$string</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$prefix</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$string</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertStringStartsWith()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertStringStartsWith()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertStringStartsWith()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that a string starts with the given prefix.</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertStringStartsWith()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertStringStartsWith()-detail">assertStringStartsWith</a></strong> ( <span style="color: #0000BB">$prefix</span>, <span style="color: #0000BB">$string</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$prefix</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$string</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="assertTrue()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#assertTrue()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        assertTrue()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Checks that condition is positive.</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::assertTrue()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#assertTrue()-detail">assertTrue</a></strong> ( <span style="color: #0000BB">$condition</span>, <span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$condition</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"><a href="https://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="expectException()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#expectException()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        expectException()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+            <div class="doc-description deprecated">
+            <strong>Deprecated Use expectThrowable() instead</strong>
+        </div>
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Handles and checks exception called inside callback function.
+Either exception class name or exception instance should be provided.</p>
+<pre><code class="hljs php language-php"><span class="hljs-meta">&lt;?php</span>
+$I-&gt;expectException(MyException::class, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">$this</span>-&gt;doSomethingBad();
+});
+
+$I-&gt;expectException(<span class="hljs-keyword">new</span> MyException(), <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">$this</span>-&gt;doSomethingBad();
+});
+</code></pre>
+<p>If you want to check message or exception code, you can pass them with exception instance:
+<code>`</code>php
+&lt;?php
+// will check that exception MyException is thrown with "Don't do bad things" message
+$I-&gt;expectException(new MyException("Don't do bad things"), function() {</p>
+<pre><code class="hljs php"><span class="hljs-keyword">$this</span>-&gt;doSomethingBad();
+</code></pre>
+<p>});
+<code>`</code></p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::expectException()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#expectException()-detail">expectException</a></strong> ( <span style="color: #0000BB">$exception</span>, <span style="color: #0000BB">$callback</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$exception</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>String or \Exception</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$callback</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="expectThrowable()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#expectThrowable()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        expectThrowable()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Handles and checks throwables (Exceptions/Errors) called inside the callback function.
+Either throwable class name or throwable instance should be provided.</p>
+<pre><code class="hljs php language-php"><span class="hljs-meta">&lt;?php</span>
+$I-&gt;expectThrowable(MyThrowable::class, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">$this</span>-&gt;doSomethingBad();
+});
+
+$I-&gt;expectThrowable(<span class="hljs-keyword">new</span> MyException(), <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">$this</span>-&gt;doSomethingBad();
+});
+</code></pre>
+<p>If you want to check message or throwable code, you can pass them with throwable instance:
+<code>`</code>php
+&lt;?php
+// will check that throwable MyError is thrown with "Don't do bad things" message
+$I-&gt;expectThrowable(new MyError("Don't do bad things"), function() {</p>
+<pre><code class="hljs php"><span class="hljs-keyword">$this</span>-&gt;doSomethingBad();
+</code></pre>
+<p>});
+<code>`</code></p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::expectThrowable()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#expectThrowable()-detail">expectThrowable</a></strong> ( <span style="color: #0000BB">$throwable</span>, <span style="color: #0000BB">$callback</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$throwable</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"><p>String or \Throwable</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$callback</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="fail()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#fail()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        fail()
+        <span class="detail-header-tag small">
+            public                                    method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong>[!] Method is generated. Documentation taken from corresponding module.</strong></p>
+
+        <p>Fails the test with message.</p>
+
+        <p>See also <span class="broken-link">\Codeception\Module\Asserts::fail()</span>.</p>    </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">public</span> <span class="signature-type">void</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#fail()-detail">fail</a></strong> ( <span style="color: #0000BB">$message</span> )</td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$message</span></td>
+                  <td class="param-type-col"></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getScenario()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="app-tests-_support-_generated-unittesteractions.html#getScenario()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        getScenario()
+        <span class="detail-header-tag small">
+            protected            abstract                        method
+                    </span>
+    </div>
+
+    
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><span class="signature-defs">protected abstract</span> <span class="signature-type">\Codeception\Scenario</span> <strong><a href="app-tests-_support-_generated-unittesteractions.html#getScenario()-detail">getScenario</a></strong> ( )</td></tr>
+            </table>
+
+<!--	-->
+</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    /*<![CDATA[*/
+    $("a.toggle").on('click', function () {
+        var $this = $(this);
+        if ($this.hasClass('properties-hidden')) {
+            $this.text($this.text().replace(/Show/,'Hide'));
+            $this.parents(".summary").find(".inherited").show();
+            $this.removeClass('properties-hidden');
+        } else {
+            $this.text($this.text().replace(/Hide/,'Show'));
+            $this.parents(".summary").find(".inherited").hide();
+            $this.addClass('properties-hidden');
+        }
+
+        return false;
+    });
+    /*
+     $(".sourceCode a.show").toggle(function () {
+     $(this).text($(this).text().replace(/show/,'hide'));
+     $(this).parents(".sourceCode").find("div.code").show();
+     },function () {
+     $(this).text($(this).text().replace(/hide/,'show'));
+     $(this).parents(".sourceCode").find("div.code").hide();
+     });
+     $("a.sourceLink").click(function () {
+     $(this).attr('target','_blank');
+     });
+     */
+    /*]]>*/
+</script>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Tue, 31 Mar 2020 14:03:03 +0200</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>
