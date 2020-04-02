@@ -108,3 +108,16 @@
 [0324/153403.166:ERROR:exception_snapshot_win.cc(98)] thread ID 18688 not found in process
 [0324/153403.219:ERROR:process_reader_win.cc(123)] NtOpenThread: {Toegang geweigerd} Een proces heeft toegang tot een object aangevraagd, maar heeft deze toegangsrechten niet gekregen. (0xc0000022)
 [0324/153403.219:ERROR:exception_snapshot_win.cc(98)] thread ID 19312 not found in process
+[0331/195145.130:ERROR:process_reader_win.cc(151)] SuspendThread: Toegang geweigerd. (0x5)
+[0331/195145.134:ERROR:process_reader_win.cc(151)] SuspendThread: Toegang geweigerd. (0x5)
+[0331/195145.134:ERROR:process_reader_win.cc(123)] NtOpenThread: {Toegang geweigerd} Een proces heeft toegang tot een object aangevraagd, maar heeft deze toegangsrechten niet gekregen. (0xc0000022)
+[0331/195145.135:ERROR:exception_snapshot_win.cc(98)] thread ID 13860 not found in process
+[0331/195145.150:ERROR:process_reader_win.cc(151)] SuspendThread: Toegang geweigerd. (0x5)
+[0331/195145.150:ERROR:process_reader_win.cc(123)] NtOpenThread: {Toegang geweigerd} Een proces heeft toegang tot een object aangevraagd, maar heeft deze toegangsrechten niet gekregen. (0xc0000022)
+[0331/195145.150:ERROR:exception_snapshot_win.cc(98)] thread ID 19872 not found in process
+[0331/195145.212:ERROR:process_reader_win.cc(151)] SuspendThread: Toegang geweigerd. (0x5)
+[0331/195145.212:ERROR:process_reader_win.cc(151)] SuspendThread: Toegang geweigerd. (0x5)
+[0331/195145.213:ERROR:process_reader_win.cc(151)] SuspendThread: Toegang geweigerd. (0x5)
+[0331/195145.213:ERROR:process_reader_win.cc(151)] SuspendThread: Toegang geweigerd. (0x5)
+[0331/195145.213:ERROR:process_reader_win.cc(123)] NtOpenThread: {Toegang geweigerd} Een proces heeft toegang tot een object aangevraagd, maar heeft deze toegangsrechten niet gekregen. (0xc0000022)
+[0331/195145.213:ERROR:exception_snapshot_win.cc(98)] thread ID 5328 not found in process

@@ -1,5 +1,5 @@
 <?php
-namespace app\tests\acceptance;
+
 class BlogDeleteAuthorCest
 {
     public function _before(AcceptanceTester $I)

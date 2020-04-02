@@ -1,5 +1,4 @@
 <?php
-namespace app\tests\acceptance;
 class UserCRUDAdminCest
 {
     public function _before(AcceptanceTester $I)

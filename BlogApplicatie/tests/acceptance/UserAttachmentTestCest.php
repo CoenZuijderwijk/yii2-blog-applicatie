@@ -1,5 +1,5 @@
 <?php
-namespace app\tests\acceptance;
+
 class UserAttachmentTestCest
 {
     public function _before(AcceptanceTester $I)

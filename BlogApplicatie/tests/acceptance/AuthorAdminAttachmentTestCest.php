@@ -1,5 +1,5 @@
 <?php
-namespace app\tests\acceptance;
+
 class AuthorAdminAttachmentTestCest
 {
     public function _before(AcceptanceTester $I)
@@ -18,6 +18,7 @@ class AuthorAdminAttachmentTestCest
         $I->wait(5);
         $I->click("Attachment toevoegen");
         $I->waitForText("Files", 25);
+        $I->wait(5);
     }
 
     public function adminLogout(AcceptanceTester $I) {

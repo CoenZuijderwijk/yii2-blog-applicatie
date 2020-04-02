@@ -1,6 +1,5 @@
 <?php
 
-namespace app\tests\_support;
 
 /**
  * Inherited Methods
@@ -16,7 +15,7 @@ namespace app\tests\_support;
  * @method \Codeception\Lib\Friend haveFriend($name, $actorClass = NULL)
  *
  * @SuppressWarnings(PHPMD)
-*/
+ */
 
 use \Codeception\Events;
 
@@ -29,11 +28,20 @@ class AcceptanceTester extends \Codeception\Actor
         Events::TEST_FAIL => 'testFailed',
         Events::RESULT_PRINT_AFTER => 'print',
         Events::TEST_AFTER => 'afterTest',
+        Events::TEST_SUCCESS => 'testSucces',
     );
 
     use _generated\AcceptanceTesterActions;
 
+    public function beforeTest(\Codeception\Event\TestEvent $e) {
+        exec('CD C:\xampp\mysql\bin & mysqldump -u root blogapplicatie > ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql');
+    }
+
     public function afterTest(\Codeception\Event\TestEvent $e) {
+        exec("CD C:\xampp\mysql\bin & mysql -u root blogapplicatie < ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql");
+    }
+
+    public function testSucces(\Codeception\Event\TestEvent $e) {
         exec("CD C:\xampp\mysql\bin & mysql -u root blogapplicatie < ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql");
     }
 
@@ -77,7 +85,7 @@ class AcceptanceTester extends \Codeception\Actor
         $I->wait(5);
     }
 
-   /**
-    * Define custom actions here
-    */
+    /**
+     * Define custom actions here
+     */
 }
