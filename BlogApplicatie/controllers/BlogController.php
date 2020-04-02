@@ -43,9 +43,9 @@ class BlogController extends Controller
 
     /**
      * Lists all Blog models.
+     * action to run the blog index page
      * @return mixed
      */
-    //action to run the blog index page
     public function actionIndex()
     {
         $searchModel = new BlogSearch();
@@ -62,11 +62,13 @@ class BlogController extends Controller
 
     /**
      * Displays a single Blog model.
+     *
      * @param integer $id
+     *
      * @return mixed
+     *
      * @throws NotFoundHttpException if the model cannot be found
      */
-    //action to run the page to view a blog individual
     public function actionView($id)
     {
         $model = Blog::findOne($id);
@@ -93,7 +95,6 @@ class BlogController extends Controller
      * @return mixed
      * @throws \yii\web\UnauthorizedHttpException
      */
-    //action to run the page to create a blog
     public function actionCreate()
     {
         $model = new Blog();
@@ -138,7 +139,6 @@ class BlogController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    //action to run the page to update a blog
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
@@ -181,7 +181,14 @@ class BlogController extends Controller
 
         }
     }
-//the attachment action
+
+    /**
+     * Function to add a attachment
+     *
+     * @param $id
+     * @return mixed
+     * @throws \yii\web\HttpException
+     */
     public function actionAttachment($id)
     {
         $model = new Attachment();
@@ -227,7 +234,6 @@ class BlogController extends Controller
                  * @return mixed
                  * @throws NotFoundHttpException if the model cannot be found
                  */
-                //action to run the page to delete a blog
 
     public function actionDelete($id)
     {
@@ -264,7 +270,6 @@ class BlogController extends Controller
                  * @return Blog the loaded model
                  * @throws NotFoundHttpException if the model cannot be found
                  */
-                //method to find a model
     protected function findModel($id)
     {
                     // MW: Wat vergelijk je nu precies in deze if, klopt dat wel (maw: wordt dit ooit wel eens null)?
@@ -274,14 +279,26 @@ class BlogController extends Controller
         }
         throw new NotFoundHttpException('The requested page does not exist.');
     }
-    //action to download the attachment
+
+    /**
+     * function to download an attachment
+     *
+     * @param $id
+     */
     public function actionDownload($id)
     {
         $model = Attachment::findOne($id);
         $file = $model->file_full_name;
             Yii::$app->response->sendFile('uploads/' . $file);
     }
-    //action to delete a comment
+
+    /**
+     * Action to delete a comment
+     * @param $id
+     * @return mixed
+     * @throws \Throwable
+     * @throws \yii\db\StaleObjectException
+     */
     public function actionDeleteComment($id)
     {
         $comment = Comment::findone($id);
@@ -291,7 +308,14 @@ class BlogController extends Controller
     }
 
 
-    //action to delete an attachment
+    /**
+     * Action to delete an attachment
+     *
+     * @param $id
+     * @return mixed
+     * @throws \Throwable
+     * @throws \yii\db\StaleObjectException
+     */
     public function actionDeleteAttachment($id) {
 
         $attachment = Attachment::findOne($id);
@@ -299,12 +323,24 @@ class BlogController extends Controller
         $attachment->delete();
         return $this->redirect('/blog/view?id=' . $b_id);
     }
-        //action to handle an attachment
+
+    /**
+     * Action to handle an attachment
+     *
+     * @param $id
+     * @return string
+     */
     public function actionHandleAttachment($id) {
        $var = $this->handleAttachment($id);
         return $var;
     }
-//method to handle an attachment
+
+    /**
+     * method to handle an attachment
+     *
+     * @param $id
+     * @return string
+     */
     public function handleAttachment($id) {
         $model = new Attachment();
         if ( Yii::$app->request->post() ) {
@@ -329,7 +365,11 @@ class BlogController extends Controller
 
     }
 
-    //method to authenticate
+    /**
+     * method to authenticate
+     *
+     * @return int
+     */
     public function getAuth()
     {
         $user = User::findOne(Yii::$app->getUser()->id);
@@ -346,6 +386,12 @@ class BlogController extends Controller
     // MW: Dit (en getAuth()) zijn meer zaken die naar het Blog-model kunnen, toch?
     // CZ: naar mijn idee niet. Ze zouden wel naar het user-model kunnen, maar met get en check auth vraag je op of user de rechten heeft om iets uit te voeren of niet.
     //method to return an authentication
+    /**
+     * Method to return an authentication
+     *
+     * @return int
+     * @throws \yii\web\HttpException
+     */
     public function checkAuth()
     {
         switch ($this->getAuth()) {

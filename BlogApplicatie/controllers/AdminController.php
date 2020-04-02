@@ -16,7 +16,9 @@ use yii\web\NotFoundHttpException;
 class AdminController extends Controller
 {
 
-
+    /**
+     * @return array
+     */
     function accessRules()
     {
         return array(

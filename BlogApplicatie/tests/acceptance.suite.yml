@@ -9,6 +9,7 @@ modules:
         transaction: false # don't wrap test in transaction
         cleanup: false # don't cleanup the fixtures
         entryScript: index-test.php
+
 env:
   IE:
     modules:
@@ -20,6 +21,7 @@ env:
             wait: 2
             restart: true
             pageload_timeout: 30
+
     extensions:
       enabled:
         - Codeception\Extension\RunProcess:

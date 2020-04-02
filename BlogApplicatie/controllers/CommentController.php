@@ -37,7 +37,6 @@ class CommentController extends Controller
      * Lists all Comment models.
      * @return mixed
      */
-    //action to run the index page for comments
     public function actionIndex()
     {
         $searchModel = new CommentSearch();
@@ -66,7 +65,6 @@ class CommentController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    //action to run the page to view individual comments
     public function actionView($id)
     {
         $user = User::findOne(Yii::$app->getUser()->id);
@@ -89,7 +87,6 @@ class CommentController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    //action to run the page to create a comment
     public function actionCreate()
     {
         $model = new Comment();
@@ -112,7 +109,6 @@ class CommentController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    //action to run the page to delete a comment
     public function actionDelete($id)
     {
         $searchModel = new CommentSearch();
@@ -139,7 +135,6 @@ class CommentController extends Controller
      * @return Comment the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    //method to find a model
     protected function findModel($id)
     {
         if (($model = Comment::findOne($id)) !== null) {

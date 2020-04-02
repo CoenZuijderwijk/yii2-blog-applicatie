@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use app\components\WebUser;
+
 use Yii;
 use app\models\User;
 use app\components\UserSearch;
@@ -36,7 +36,6 @@ class UserController extends Controller
      * Lists all User models.
      * @return mixed
      */
-    //action to run the user index page
     public function actionIndex()
     {
         $user = User::findOne(Yii::$app->getUser()->id);
@@ -70,7 +69,6 @@ class UserController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    //action to run the user view page
     public function actionView($id)
     {
 
@@ -94,7 +92,6 @@ class UserController extends Controller
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    //action to run the user create page
     public function actionCreate()
     {
         $user = User::findOne(Yii::$app->getUser()->id);
@@ -131,7 +128,6 @@ class UserController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    //action to run the user update page
     public function actionUpdate($id)
     {
         $user = User::findOne(Yii::$app->getUser()->id);
@@ -166,7 +162,6 @@ class UserController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    //action to run the user delete page
     public function actionDelete($id)
     {
         $user = User::findOne(Yii::$app->getUser()->id);
@@ -190,7 +185,6 @@ class UserController extends Controller
      * @return User the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    //method to find a user by id
     protected function findModel($id)
     {
         if (($model = User::findOne($id)) !== null) {
@@ -200,7 +194,11 @@ class UserController extends Controller
         throw new NotFoundHttpException('The requested page does not exist.');
     }
 
-    //method to authenticate
+    /**
+     * Method to authenticate
+     *
+     * @return int
+     */
     public function getAuth()
     {
         $user = User::findOne(Yii::$app->getUser()->id);
@@ -215,7 +213,12 @@ class UserController extends Controller
         }
     }
 
-    //method to return an authentication
+    /**
+     * Method to return an authentication
+     *
+     * @return int
+     * @throws \yii\web\HttpException
+     */
     public function checkAuth()
     {
         switch ($this->getAuth()) {

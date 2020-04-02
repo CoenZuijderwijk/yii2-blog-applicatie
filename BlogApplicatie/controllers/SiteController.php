@@ -63,7 +63,6 @@ class SiteController extends Controller
      *
      * @return string
      */
-    //action to run the index page for the site
     public function actionIndex()
     {
         $cache = Yii::$app->cache;
@@ -76,7 +75,6 @@ class SiteController extends Controller
      *
      * @return Response|string
      */
-    //action to run the login page
     public function actionLogin()
     {
 
@@ -100,7 +98,6 @@ class SiteController extends Controller
      *
      * @return Response
      */
-    //action to run the logout page
     public function actionLogout()
     {
         Yii::$app->user->logout();

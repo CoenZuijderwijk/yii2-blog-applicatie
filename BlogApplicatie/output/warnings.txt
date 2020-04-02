@@ -72,1283 +72,660 @@ Array
 
     [10] => Array
         (
+            [line] => 26
+            [file] => .\assets\AppAsset.php
+            [message] => No docblock for element '$basePath'
+        )
+
+    [11] => Array
+        (
+            [line] => 26
+            [file] => .\assets\AppAsset.php
+            [message] => No short description for element '$basePath'
+        )
+
+    [12] => Array
+        (
+            [line] => 27
+            [file] => .\assets\AppAsset.php
+            [message] => No docblock for element '$baseUrl'
+        )
+
+    [13] => Array
+        (
+            [line] => 27
+            [file] => .\assets\AppAsset.php
+            [message] => No short description for element '$baseUrl'
+        )
+
+    [14] => Array
+        (
+            [line] => 28
+            [file] => .\assets\AppAsset.php
+            [message] => No docblock for element '$css'
+        )
+
+    [15] => Array
+        (
+            [line] => 28
+            [file] => .\assets\AppAsset.php
+            [message] => No short description for element '$css'
+        )
+
+    [16] => Array
+        (
+            [line] => 31
+            [file] => .\assets\AppAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [17] => Array
+        (
+            [line] => 31
+            [file] => .\assets\AppAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [18] => Array
+        (
+            [line] => 34
+            [file] => .\assets\AppAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [19] => Array
+        (
+            [line] => 34
+            [file] => .\assets\AppAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [20] => Array
+        (
             [line] => 20
             [file] => .\controllers\AdminController.php
             [message] => No docblock for element 'accessRules'
         )
 
-    [11] => Array
+    [21] => Array
         (
-            [line] => 49
+            [line] => 50
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'actionIndex'
         )
 
-    [12] => Array
+    [22] => Array
         (
-            [line] => 70
+            [line] => 72
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'actionView'
         )
 
-    [13] => Array
+    [23] => Array
         (
-            [line] => 97
+            [line] => 99
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'actionCreate'
         )
 
-    [14] => Array
+    [24] => Array
         (
-            [line] => 142
+            [line] => 144
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'actionUpdate'
         )
 
-    [15] => Array
+    [25] => Array
         (
-            [line] => 185
+            [line] => 187
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'actionAttachment'
         )
 
-    [16] => Array
+    [26] => Array
         (
-            [line] => 232
+            [line] => 234
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'actionDelete'
         )
 
-    [17] => Array
+    [27] => Array
         (
-            [line] => 268
+            [line] => 270
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'findModel'
         )
 
-    [18] => Array
+    [28] => Array
         (
-            [line] => 278
+            [line] => 280
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'actionDownload'
         )
 
-    [19] => Array
+    [29] => Array
         (
-            [line] => 285
+            [line] => 287
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'actionDeleteComment'
         )
 
-    [20] => Array
+    [30] => Array
         (
-            [line] => 295
+            [line] => 297
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'actionDeleteAttachment'
         )
 
-    [21] => Array
+    [31] => Array
         (
-            [line] => 303
+            [line] => 305
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'actionHandleAttachment'
         )
 
-    [22] => Array
+    [32] => Array
         (
-            [line] => 308
+            [line] => 310
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'handleAttachment'
         )
 
-    [23] => Array
+    [33] => Array
         (
-            [line] => 333
+            [line] => 335
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'getAuth'
         )
 
-    [24] => Array
+    [34] => Array
         (
-            [line] => 349
+            [line] => 351
             [file] => .\controllers\BlogController.php
             [message] => No docblock for element 'checkAuth'
         )
 
-    [25] => Array
+    [35] => Array
+        (
+            [line] => 50
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [36] => Array
+        (
+            [line] => 74
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionView'
+        )
+
+    [37] => Array
+        (
+            [line] => 101
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionCreate'
+        )
+
+    [38] => Array
+        (
+            [line] => 146
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionUpdate'
+        )
+
+    [39] => Array
+        (
+            [line] => 189
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionAttachment'
+        )
+
+    [40] => Array
+        (
+            [line] => 236
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionDelete'
+        )
+
+    [41] => Array
+        (
+            [line] => 272
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'findModel'
+        )
+
+    [42] => Array
+        (
+            [line] => 282
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionDownload'
+        )
+
+    [43] => Array
+        (
+            [line] => 289
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionDeleteComment'
+        )
+
+    [44] => Array
+        (
+            [line] => 299
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionDeleteAttachment'
+        )
+
+    [45] => Array
+        (
+            [line] => 307
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionHandleAttachment'
+        )
+
+    [46] => Array
+        (
+            [line] => 312
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'handleAttachment'
+        )
+
+    [47] => Array
+        (
+            [line] => 337
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'getAuth'
+        )
+
+    [48] => Array
+        (
+            [line] => 353
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'checkAuth'
+        )
+
+    [49] => Array
+        (
+            [line] => 50
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [50] => Array
+        (
+            [line] => 100
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionCreate'
+        )
+
+    [51] => Array
+        (
+            [line] => 145
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionUpdate'
+        )
+
+    [52] => Array
+        (
+            [line] => 188
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionAttachment'
+        )
+
+    [53] => Array
+        (
+            [line] => 235
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionDelete'
+        )
+
+    [54] => Array
+        (
+            [line] => 271
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'findModel'
+        )
+
+    [55] => Array
+        (
+            [line] => 281
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionDownload'
+        )
+
+    [56] => Array
+        (
+            [line] => 288
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionDeleteComment'
+        )
+
+    [57] => Array
+        (
+            [line] => 298
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionDeleteAttachment'
+        )
+
+    [58] => Array
+        (
+            [line] => 306
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'actionHandleAttachment'
+        )
+
+    [59] => Array
+        (
+            [line] => 311
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'handleAttachment'
+        )
+
+    [60] => Array
+        (
+            [line] => 336
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'getAuth'
+        )
+
+    [61] => Array
+        (
+            [line] => 352
+            [file] => .\controllers\BlogController.php
+            [message] => No docblock for element 'checkAuth'
+        )
+
+    [62] => Array
         (
             [line] => 41
             [file] => .\controllers\CommentController.php
             [message] => No docblock for element 'actionIndex'
         )
 
-    [26] => Array
+    [63] => Array
         (
             [line] => 70
             [file] => .\controllers\CommentController.php
             [message] => No docblock for element 'actionView'
         )
 
-    [27] => Array
+    [64] => Array
         (
             [line] => 93
             [file] => .\controllers\CommentController.php
             [message] => No docblock for element 'actionCreate'
         )
 
-    [28] => Array
+    [65] => Array
         (
             [line] => 116
             [file] => .\controllers\CommentController.php
             [message] => No docblock for element 'actionDelete'
         )
 
-    [29] => Array
+    [66] => Array
         (
             [line] => 143
             [file] => .\controllers\CommentController.php
             [message] => No docblock for element 'findModel'
         )
 
-    [30] => Array
+    [67] => Array
         (
             [line] => 67
             [file] => .\controllers\SiteController.php
             [message] => No docblock for element 'actionIndex'
         )
 
-    [31] => Array
+    [68] => Array
         (
             [line] => 80
             [file] => .\controllers\SiteController.php
             [message] => No docblock for element 'actionLogin'
         )
 
-    [32] => Array
+    [69] => Array
         (
             [line] => 104
             [file] => .\controllers\SiteController.php
             [message] => No docblock for element 'actionLogout'
         )
 
-    [33] => Array
+    [70] => Array
         (
             [line] => 40
             [file] => .\controllers\UserController.php
             [message] => No docblock for element 'actionIndex'
         )
 
-    [34] => Array
+    [71] => Array
         (
             [line] => 74
             [file] => .\controllers\UserController.php
             [message] => No docblock for element 'actionView'
         )
 
-    [35] => Array
+    [72] => Array
         (
             [line] => 98
             [file] => .\controllers\UserController.php
             [message] => No docblock for element 'actionCreate'
         )
 
-    [36] => Array
+    [73] => Array
         (
             [line] => 135
             [file] => .\controllers\UserController.php
             [message] => No docblock for element 'actionUpdate'
         )
 
-    [37] => Array
+    [74] => Array
         (
             [line] => 170
             [file] => .\controllers\UserController.php
             [message] => No docblock for element 'actionDelete'
         )
 
-    [38] => Array
+    [75] => Array
         (
             [line] => 194
             [file] => .\controllers\UserController.php
             [message] => No docblock for element 'findModel'
         )
 
-    [39] => Array
+    [76] => Array
         (
             [line] => 204
             [file] => .\controllers\UserController.php
             [message] => No docblock for element 'getAuth'
         )
 
-    [40] => Array
+    [77] => Array
         (
             [line] => 219
             [file] => .\controllers\UserController.php
             [message] => No docblock for element 'checkAuth'
         )
 
-    [41] => Array
+    [78] => Array
         (
             [line] => 20
             [file] => .\models\Attachment.php
             [message] => No docblock for element '$files'
         )
 
-    [42] => Array
+    [79] => Array
         (
             [line] => 20
             [file] => .\models\Attachment.php
             [message] => No short description for element '$files'
         )
 
-    [43] => Array
+    [80] => Array
         (
             [line] => 21
             [file] => .\models\Blog.php
             [message] => No docblock for element '$file'
         )
 
-    [44] => Array
+    [81] => Array
         (
             [line] => 21
             [file] => .\models\Blog.php
             [message] => No short description for element '$file'
         )
 
-    [45] => Array
+    [82] => Array
         (
             [line] => 70
             [file] => .\models\Blog.php
             [message] => No docblock for element 'setDate'
         )
 
-    [46] => Array
+    [83] => Array
         (
             [line] => 16
             [file] => .\models\BlogSearch.php
             [message] => No docblock for element '$author'
         )
 
-    [47] => Array
+    [84] => Array
         (
             [line] => 16
             [file] => .\models\BlogSearch.php
             [message] => No short description for element '$author'
         )
 
-    [48] => Array
+    [85] => Array
         (
             [line] => 104
             [file] => .\models\BlogSearch.php
             [message] => No docblock for element 'standardQuery'
         )
 
-    [49] => Array
+    [86] => Array
         (
             [line] => 121
             [file] => .\models\BlogSearch.php
             [message] => No docblock for element 'standardDataProvider'
         )
 
-    [50] => Array
+    [87] => Array
         (
             [line] => 14
             [file] => .\models\CommentSearch.php
             [message] => No docblock for element '$blogSearch'
         )
 
-    [51] => Array
+    [88] => Array
         (
             [line] => 14
             [file] => .\models\CommentSearch.php
             [message] => No short description for element '$blogSearch'
         )
 
-    [52] => Array
+    [89] => Array
         (
             [line] => 16
             [file] => .\models\LoginForm.php
             [message] => No docblock for element '$username'
         )
 
-    [53] => Array
+    [90] => Array
         (
             [line] => 16
             [file] => .\models\LoginForm.php
             [message] => No short description for element '$username'
         )
 
-    [54] => Array
+    [91] => Array
         (
             [line] => 17
             [file] => .\models\LoginForm.php
             [message] => No docblock for element '$password'
         )
 
-    [55] => Array
+    [92] => Array
         (
             [line] => 17
             [file] => .\models\LoginForm.php
             [message] => No short description for element '$password'
         )
 
-    [56] => Array
+    [93] => Array
         (
             [line] => 18
             [file] => .\models\LoginForm.php
             [message] => No docblock for element '$rememberMe'
         )
 
-    [57] => Array
+    [94] => Array
         (
             [line] => 18
             [file] => .\models\LoginForm.php
             [message] => No short description for element '$rememberMe'
         )
 
-    [58] => Array
+    [95] => Array
         (
             [line] => 25
             [file] => .\models\User.php
             [message] => No docblock for element 'getAccessLevelList'
         )
 
-    [59] => Array
+    [96] => Array
         (
             [line] => 93
             [file] => .\models\User.php
             [message] => No docblock for element 'getUsername'
         )
 
-    [60] => Array
+    [97] => Array
         (
             [line] => 97
             [file] => .\models\User.php
             [message] => No docblock for element 'getPassword'
         )
 
-    [61] => Array
+    [98] => Array
         (
             [line] => 120
             [file] => .\models\User.php
             [message] => No docblock for element 'fields'
         )
 
-    [62] => Array
+    [99] => Array
         (
             [line] => 131
             [file] => .\models\User.php
             [message] => No docblock for element 'tableName'
         )
 
-    [63] => Array
+    [100] => Array
         (
             [line] => 135
             [file] => .\models\User.php
             [message] => No docblock for element 'attributeLabels'
         )
 
-    [64] => Array
+    [101] => Array
         (
             [line] => 142
             [file] => .\models\User.php
             [message] => No docblock for element 'getAccessLevel'
         )
 
-    [65] => Array
+    [102] => Array
         (
             [line] => 146
             [file] => .\models\User.php
             [message] => No docblock for element 'rules'
         )
 
-    [66] => Array
+    [103] => Array
         (
             [line] => 169
             [file] => .\models\User.php
             [message] => No docblock for element 'getIsGeust'
-        )
-
-    [67] => Array
-        (
-            [line] => 23
-            [file] => tests\_support\AcceptanceTester.php
-            [message] => No docblock for element 'app\tests\_support\AcceptanceTester'
-        )
-
-    [68] => Array
-        (
-            [line] => 25
-            [file] => tests\_support\AcceptanceTester.php
-            [message] => No docblock for element '$events'
-        )
-
-    [69] => Array
-        (
-            [line] => 25
-            [file] => tests\_support\AcceptanceTester.php
-            [message] => No short description for element '$events'
-        )
-
-    [70] => Array
-        (
-            [line] => 36
-            [file] => tests\_support\AcceptanceTester.php
-            [message] => No docblock for element 'afterTest'
-        )
-
-    [71] => Array
-        (
-            [line] => 40
-            [file] => tests\_support\AcceptanceTester.php
-            [message] => No docblock for element 'testFailed'
-        )
-
-    [72] => Array
-        (
-            [line] => 44
-            [file] => tests\_support\AcceptanceTester.php
-            [message] => No docblock for element 'loginAdmin'
-        )
-
-    [73] => Array
-        (
-            [line] => 58
-            [file] => tests\_support\AcceptanceTester.php
-            [message] => No docblock for element 'loginAuthor'
-        )
-
-    [74] => Array
-        (
-            [line] => 72
-            [file] => tests\_support\AcceptanceTester.php
-            [message] => No docblock for element 'logout'
-        )
-
-    [75] => Array
-        (
-            [line] => 9
-            [file] => tests\_support\BrowserStackWebDriver.php
-            [message] => No docblock for element 'app\tests\_support\BrowserStackWebDriver'
-        )
-
-    [76] => Array
-        (
-            [line] => 13
-            [file] => tests\_support\BrowserStackWebDriver.php
-            [message] => No docblock for element '_initialize'
-        )
-
-    [77] => Array
-        (
-            [line] => 29
-            [file] => tests\_support\BrowserStackWebDriver.php
-            [message] => No docblock for element '_afterSuite'
-        )
-
-    [78] => Array
-        (
-            [line] => 8
-            [file] => tests\_support\_generated\AcceptanceTesterActions.php
-            [message] => No docblock for element 'app\tests\_support\_generated\AcceptanceTesterActions'
-        )
-
-    [79] => Array
-        (
-            [line] => 8
-            [file] => tests\_support\_generated\FunctionalTesterActions.php
-            [message] => No docblock for element 'app\tests\_support\_generated\FunctionalTesterActions'
-        )
-
-    [80] => Array
-        (
-            [line] => 8
-            [file] => tests\_support\_generated\UnitTesterActions.php
-            [message] => No docblock for element 'app\tests\_support\_generated\UnitTesterActions'
-        )
-
-    [81] => Array
-        (
-            [line] => 3
-            [file] => tests\acceptance\AttachmentCRUDCest.php
-            [message] => No docblock for element 'app\tests\acceptance\AttachmentCRUDCest'
-        )
-
-    [82] => Array
-        (
-            [line] => 5
-            [file] => tests\acceptance\AttachmentCRUDCest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [83] => Array
-        (
-            [line] => 10
-            [file] => tests\acceptance\AttachmentCRUDCest.php
-            [message] => No docblock for element 'adminLogin'
-        )
-
-    [84] => Array
-        (
-            [line] => 15
-            [file] => tests\acceptance\AttachmentCRUDCest.php
-            [message] => No docblock for element 'uploadAttachment'
-        )
-
-    [85] => Array
-        (
-            [line] => 30
-            [file] => tests\acceptance\AttachmentCRUDCest.php
-            [message] => No docblock for element 'deleteAttachment'
-        )
-
-    [86] => Array
-        (
-            [line] => 38
-            [file] => tests\acceptance\AttachmentCRUDCest.php
-            [message] => No docblock for element 'logout'
-        )
-
-    [87] => Array
-        (
-            [line] => 3
-            [file] => tests\acceptance\AuthorAdminAttachmentTestCest.php
-            [message] => No docblock for element 'app\tests\acceptance\AuthorAdminAttachmentTestCest'
-        )
-
-    [88] => Array
-        (
-            [line] => 5
-            [file] => tests\acceptance\AuthorAdminAttachmentTestCest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [89] => Array
-        (
-            [line] => 10
-            [file] => tests\acceptance\AuthorAdminAttachmentTestCest.php
-            [message] => No docblock for element 'AdminLogin'
-        )
-
-    [90] => Array
-        (
-            [line] => 15
-            [file] => tests\acceptance\AuthorAdminAttachmentTestCest.php
-            [message] => No docblock for element 'attachmentTestAdmin'
-        )
-
-    [91] => Array
-        (
-            [line] => 23
-            [file] => tests\acceptance\AuthorAdminAttachmentTestCest.php
-            [message] => No docblock for element 'adminLogout'
-        )
-
-    [92] => Array
-        (
-            [line] => 27
-            [file] => tests\acceptance\AuthorAdminAttachmentTestCest.php
-            [message] => No docblock for element 'authorLogin'
-        )
-
-    [93] => Array
-        (
-            [line] => 31
-            [file] => tests\acceptance\AuthorAdminAttachmentTestCest.php
-            [message] => No docblock for element 'attachmentTestAuthor'
-        )
-
-    [94] => Array
-        (
-            [line] => 43
-            [file] => tests\acceptance\AuthorAdminAttachmentTestCest.php
-            [message] => No docblock for element 'authorLogout'
-        )
-
-    [95] => Array
-        (
-            [line] => 3
-            [file] => tests\acceptance\BlogCRUDAdminCest.php
-            [message] => No docblock for element 'app\tests\acceptance\BlogCRUDAdminCest'
-        )
-
-    [96] => Array
-        (
-            [line] => 5
-            [file] => tests\acceptance\BlogCRUDAdminCest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [97] => Array
-        (
-            [line] => 10
-            [file] => tests\acceptance\BlogCRUDAdminCest.php
-            [message] => No docblock for element 'adminLogin'
-        )
-
-    [98] => Array
-        (
-            [line] => 15
-            [file] => tests\acceptance\BlogCRUDAdminCest.php
-            [message] => No docblock for element 'indexOverview'
-        )
-
-    [99] => Array
-        (
-            [line] => 26
-            [file] => tests\acceptance\BlogCRUDAdminCest.php
-            [message] => No docblock for element 'comment'
-        )
-
-    [100] => Array
-        (
-            [line] => 34
-            [file] => tests\acceptance\BlogCRUDAdminCest.php
-            [message] => No docblock for element 'createBlog'
-        )
-
-    [101] => Array
-        (
-            [line] => 52
-            [file] => tests\acceptance\BlogCRUDAdminCest.php
-            [message] => No docblock for element 'createComment'
-        )
-
-    [102] => Array
-        (
-            [line] => 62
-            [file] => tests\acceptance\BlogCRUDAdminCest.php
-            [message] => No docblock for element 'editComment'
-        )
-
-    [103] => Array
-        (
-            [line] => 77
-            [file] => tests\acceptance\BlogCRUDAdminCest.php
-            [message] => No docblock for element 'adminLogout'
-        )
-
-    [104] => Array
-        (
-            [line] => 3
-            [file] => tests\acceptance\BlogCruAuthorCest.php
-            [message] => No docblock for element 'app\tests\acceptance\BlogCruAuthorCest'
-        )
-
-    [105] => Array
-        (
-            [line] => 5
-            [file] => tests\acceptance\BlogCruAuthorCest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [106] => Array
-        (
-            [line] => 10
-            [file] => tests\acceptance\BlogCruAuthorCest.php
-            [message] => No docblock for element 'authorLogin'
-        )
-
-    [107] => Array
-        (
-            [line] => 15
-            [file] => tests\acceptance\BlogCruAuthorCest.php
-            [message] => No docblock for element 'createBlog'
-        )
-
-    [108] => Array
-        (
-            [line] => 37
-            [file] => tests\acceptance\BlogCruAuthorCest.php
-            [message] => No docblock for element 'editBlog'
-        )
-
-    [109] => Array
-        (
-            [line] => 48
-            [file] => tests\acceptance\BlogCruAuthorCest.php
-            [message] => No docblock for element 'authorLogout'
-        )
-
-    [110] => Array
-        (
-            [line] => 3
-            [file] => tests\acceptance\BlogDeleteAuthorCest.php
-            [message] => No docblock for element 'app\tests\acceptance\BlogDeleteAuthorCest'
-        )
-
-    [111] => Array
-        (
-            [line] => 5
-            [file] => tests\acceptance\BlogDeleteAuthorCest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [112] => Array
-        (
-            [line] => 9
-            [file] => tests\acceptance\BlogDeleteAuthorCest.php
-            [message] => No docblock for element 'authorLogin'
-        )
-
-    [113] => Array
-        (
-            [line] => 14
-            [file] => tests\acceptance\BlogDeleteAuthorCest.php
-            [message] => No docblock for element 'deleteBlog'
-        )
-
-    [114] => Array
-        (
-            [line] => 23
-            [file] => tests\acceptance\BlogDeleteAuthorCest.php
-            [message] => No docblock for element 'logout'
-        )
-
-    [115] => Array
-        (
-            [line] => 3
-            [file] => tests\acceptance\BlogErrorAuthorCest.php
-            [message] => No docblock for element 'app\tests\acceptance\BlogErrorAuthorCest'
-        )
-
-    [116] => Array
-        (
-            [line] => 5
-            [file] => tests\acceptance\BlogErrorAuthorCest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [117] => Array
-        (
-            [line] => 10
-            [file] => tests\acceptance\BlogErrorAuthorCest.php
-            [message] => No docblock for element 'authorLogin'
-        )
-
-    [118] => Array
-        (
-            [line] => 14
-            [file] => tests\acceptance\BlogErrorAuthorCest.php
-            [message] => No docblock for element 'blogUpdateError'
-        )
-
-    [119] => Array
-        (
-            [line] => 21
-            [file] => tests\acceptance\BlogErrorAuthorCest.php
-            [message] => No docblock for element 'blogDeleteError'
-        )
-
-    [120] => Array
-        (
-            [line] => 26
-            [file] => tests\acceptance\BlogErrorAuthorCest.php
-            [message] => No docblock for element 'commentIndexError'
-        )
-
-    [121] => Array
-        (
-            [line] => 31
-            [file] => tests\acceptance\BlogErrorAuthorCest.php
-            [message] => No docblock for element 'commentViewError'
-        )
-
-    [122] => Array
-        (
-            [line] => 36
-            [file] => tests\acceptance\BlogErrorAuthorCest.php
-            [message] => No docblock for element 'commentEditError'
-        )
-
-    [123] => Array
-        (
-            [line] => 41
-            [file] => tests\acceptance\BlogErrorAuthorCest.php
-            [message] => No docblock for element 'commentDeleteError'
-        )
-
-    [124] => Array
-        (
-            [line] => 46
-            [file] => tests\acceptance\BlogErrorAuthorCest.php
-            [message] => No docblock for element 'logout'
-        )
-
-    [125] => Array
-        (
-            [line] => 3
-            [file] => tests\acceptance\BlogErrorUserCest.php
-            [message] => No docblock for element 'app\tests\acceptance\BlogErrorUserCest'
-        )
-
-    [126] => Array
-        (
-            [line] => 5
-            [file] => tests\acceptance\BlogErrorUserCest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [127] => Array
-        (
-            [line] => 10
-            [file] => tests\acceptance\BlogErrorUserCest.php
-            [message] => No docblock for element 'blogEditError'
-        )
-
-    [128] => Array
-        (
-            [line] => 15
-            [file] => tests\acceptance\BlogErrorUserCest.php
-            [message] => No docblock for element 'blogCreateError'
-        )
-
-    [129] => Array
-        (
-            [line] => 20
-            [file] => tests\acceptance\BlogErrorUserCest.php
-            [message] => No docblock for element 'blogDeleteError'
-        )
-
-    [130] => Array
-        (
-            [line] => 25
-            [file] => tests\acceptance\BlogErrorUserCest.php
-            [message] => No docblock for element 'commentIndexError'
-        )
-
-    [131] => Array
-        (
-            [line] => 30
-            [file] => tests\acceptance\BlogErrorUserCest.php
-            [message] => No docblock for element 'commentViewError'
-        )
-
-    [132] => Array
-        (
-            [line] => 35
-            [file] => tests\acceptance\BlogErrorUserCest.php
-            [message] => No docblock for element 'commentDeleteError'
-        )
-
-    [133] => Array
-        (
-            [line] => 3
-            [file] => tests\acceptance\BlogIndexAndCommentGeustCest.php
-            [message] => No docblock for element 'app\tests\acceptance\BlogIndexAndCommentGeustCest'
-        )
-
-    [134] => Array
-        (
-            [line] => 5
-            [file] => tests\acceptance\BlogIndexAndCommentGeustCest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [135] => Array
-        (
-            [line] => 10
-            [file] => tests\acceptance\BlogIndexAndCommentGeustCest.php
-            [message] => No docblock for element 'seeBlog'
-        )
-
-    [136] => Array
-        (
-            [line] => 18
-            [file] => tests\acceptance\BlogIndexAndCommentGeustCest.php
-            [message] => No docblock for element 'createComment'
-        )
-
-    [137] => Array
-        (
-            [line] => 3
-            [file] => tests\acceptance\UserAttachmentTestCest.php
-            [message] => No docblock for element 'app\tests\acceptance\UserAttachmentTestCest'
-        )
-
-    [138] => Array
-        (
-            [line] => 5
-            [file] => tests\acceptance\UserAttachmentTestCest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [139] => Array
-        (
-            [line] => 10
-            [file] => tests\acceptance\UserAttachmentTestCest.php
-            [message] => No docblock for element 'seeAttachment'
-        )
-
-    [140] => Array
-        (
-            [line] => 3
-            [file] => tests\acceptance\UserCRUDAdminCest.php
-            [message] => No docblock for element 'app\tests\acceptance\UserCRUDAdminCest'
-        )
-
-    [141] => Array
-        (
-            [line] => 5
-            [file] => tests\acceptance\UserCRUDAdminCest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [142] => Array
-        (
-            [line] => 9
-            [file] => tests\acceptance\UserCRUDAdminCest.php
-            [message] => No docblock for element 'loginAdmin'
-        )
-
-    [143] => Array
-        (
-            [line] => 14
-            [file] => tests\acceptance\UserCRUDAdminCest.php
-            [message] => No docblock for element 'createUser'
-        )
-
-    [144] => Array
-        (
-            [line] => 32
-            [file] => tests\acceptance\UserCRUDAdminCest.php
-            [message] => No docblock for element 'updateUser'
-        )
-
-    [145] => Array
-        (
-            [line] => 44
-            [file] => tests\acceptance\UserCRUDAdminCest.php
-            [message] => No docblock for element 'logout'
-        )
-
-    [146] => Array
-        (
-            [line] => 3
-            [file] => tests\acceptance\UserErrorAuthorCest.php
-            [message] => No docblock for element 'app\tests\acceptance\UserErrorAuthorCest'
-        )
-
-    [147] => Array
-        (
-            [line] => 5
-            [file] => tests\acceptance\UserErrorAuthorCest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [148] => Array
-        (
-            [line] => 9
-            [file] => tests\acceptance\UserErrorAuthorCest.php
-            [message] => No docblock for element 'authorLogin'
-        )
-
-    [149] => Array
-        (
-            [line] => 14
-            [file] => tests\acceptance\UserErrorAuthorCest.php
-            [message] => No docblock for element 'userIndexError'
-        )
-
-    [150] => Array
-        (
-            [line] => 19
-            [file] => tests\acceptance\UserErrorAuthorCest.php
-            [message] => No docblock for element 'userEditError'
-        )
-
-    [151] => Array
-        (
-            [line] => 24
-            [file] => tests\acceptance\UserErrorAuthorCest.php
-            [message] => No docblock for element 'userViewError'
-        )
-
-    [152] => Array
-        (
-            [line] => 29
-            [file] => tests\acceptance\UserErrorAuthorCest.php
-            [message] => No docblock for element 'userCreateError'
-        )
-
-    [153] => Array
-        (
-            [line] => 34
-            [file] => tests\acceptance\UserErrorAuthorCest.php
-            [message] => No docblock for element 'logout'
-        )
-
-    [154] => Array
-        (
-            [line] => 3
-            [file] => tests\acceptance\UserErrorGeustCest.php
-            [message] => No docblock for element 'app\tests\acceptance\UserErrorGeustCest'
-        )
-
-    [155] => Array
-        (
-            [line] => 5
-            [file] => tests\acceptance\UserErrorGeustCest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [156] => Array
-        (
-            [line] => 9
-            [file] => tests\acceptance\UserErrorGeustCest.php
-            [message] => No docblock for element 'userIndexError'
-        )
-
-    [157] => Array
-        (
-            [line] => 14
-            [file] => tests\acceptance\UserErrorGeustCest.php
-            [message] => No docblock for element 'userEditError'
-        )
-
-    [158] => Array
-        (
-            [line] => 19
-            [file] => tests\acceptance\UserErrorGeustCest.php
-            [message] => No docblock for element 'userViewError'
-        )
-
-    [159] => Array
-        (
-            [line] => 24
-            [file] => tests\acceptance\UserErrorGeustCest.php
-            [message] => No docblock for element 'userCreateError'
-        )
-
-    [160] => Array
-        (
-            [line] => 5
-            [file] => tests\fixtures\Fixture.php
-            [message] => No docblock for element 'app\tests\fixtures\Fixture'
-        )
-
-    [161] => Array
-        (
-            [line] => 6
-            [file] => tests\fixtures\Fixture.php
-            [message] => No docblock for element 'createUser'
-        )
-
-    [162] => Array
-        (
-            [line] => 5
-            [file] => tests\unit\models\AttachmentTest.php
-            [message] => No docblock for element 'app\tests\unit\models\AttachmentTest'
-        )
-
-    [163] => Array
-        (
-            [line] => 10
-            [file] => tests\unit\models\AttachmentTest.php
-            [message] => No short description for element '$tester'
-        )
-
-    [164] => Array
-        (
-            [line] => 12
-            [file] => tests\unit\models\AttachmentTest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [165] => Array
-        (
-            [line] => 16
-            [file] => tests\unit\models\AttachmentTest.php
-            [message] => No docblock for element '_after'
-        )
-
-    [166] => Array
-        (
-            [line] => 21
-            [file] => tests\unit\models\AttachmentTest.php
-            [message] => No docblock for element 'testCreateAttachment'
-        )
-
-    [167] => Array
-        (
-            [line] => 31
-            [file] => tests\unit\models\AttachmentTest.php
-            [message] => No docblock for element 'testDeleteAttachment'
-        )
-
-    [168] => Array
-        (
-            [line] => 6
-            [file] => tests\unit\models\BlogTest.php
-            [message] => No docblock for element 'app\tests\unit\models\BlogTest'
-        )
-
-    [169] => Array
-        (
-            [line] => 11
-            [file] => tests\unit\models\BlogTest.php
-            [message] => No short description for element '$tester'
-        )
-
-    [170] => Array
-        (
-            [line] => 13
-            [file] => tests\unit\models\BlogTest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [171] => Array
-        (
-            [line] => 17
-            [file] => tests\unit\models\BlogTest.php
-            [message] => No docblock for element '_after'
-        )
-
-    [172] => Array
-        (
-            [line] => 22
-            [file] => tests\unit\models\BlogTest.php
-            [message] => No docblock for element 'testCreateBlog'
-        )
-
-    [173] => Array
-        (
-            [line] => 33
-            [file] => tests\unit\models\BlogTest.php
-            [message] => No docblock for element 'testUpdateBlog'
-        )
-
-    [174] => Array
-        (
-            [line] => 47
-            [file] => tests\unit\models\BlogTest.php
-            [message] => No docblock for element 'testDeleteBlog'
-        )
-
-    [175] => Array
-        (
-            [line] => 6
-            [file] => tests\unit\models\CommentTest.php
-            [message] => No docblock for element 'app\tests\unit\models\CommentTest'
-        )
-
-    [176] => Array
-        (
-            [line] => 11
-            [file] => tests\unit\models\CommentTest.php
-            [message] => No short description for element '$tester'
-        )
-
-    [177] => Array
-        (
-            [line] => 13
-            [file] => tests\unit\models\CommentTest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [178] => Array
-        (
-            [line] => 17
-            [file] => tests\unit\models\CommentTest.php
-            [message] => No docblock for element '_after'
-        )
-
-    [179] => Array
-        (
-            [line] => 22
-            [file] => tests\unit\models\CommentTest.php
-            [message] => No docblock for element 'testCreateComment'
-        )
-
-    [180] => Array
-        (
-            [line] => 32
-            [file] => tests\unit\models\CommentTest.php
-            [message] => No docblock for element 'testDeleteComment'
-        )
-
-    [181] => Array
-        (
-            [line] => 7
-            [file] => tests\unit\models\LoginFormTest.php
-            [message] => No docblock for element 'app\tests\unit\models\LoginFormTest'
-        )
-
-    [182] => Array
-        (
-            [line] => 11
-            [file] => tests\unit\models\LoginFormTest.php
-            [message] => No docblock for element '_after'
-        )
-
-    [183] => Array
-        (
-            [line] => 16
-            [file] => tests\unit\models\LoginFormTest.php
-            [message] => No docblock for element 'testLoginNoUser'
-        )
-
-    [184] => Array
-        (
-            [line] => 27
-            [file] => tests\unit\models\LoginFormTest.php
-            [message] => No docblock for element 'testLoginWrongPassword'
-        )
-
-    [185] => Array
-        (
-            [line] => 39
-            [file] => tests\unit\models\LoginFormTest.php
-            [message] => No docblock for element 'testLoginCorrect'
-        )
-
-    [186] => Array
-        (
-            [line] => 6
-            [file] => tests\unit\models\UserTest.php
-            [message] => No docblock for element 'app\tests\unit\models\UserTest'
-        )
-
-    [187] => Array
-        (
-            [line] => 11
-            [file] => tests\unit\models\UserTest.php
-            [message] => No short description for element '$tester'
-        )
-
-    [188] => Array
-        (
-            [line] => 13
-            [file] => tests\unit\models\UserTest.php
-            [message] => No docblock for element '_before'
-        )
-
-    [189] => Array
-        (
-            [line] => 17
-            [file] => tests\unit\models\UserTest.php
-            [message] => No docblock for element '_after'
-        )
-
-    [190] => Array
-        (
-            [line] => 21
-            [file] => tests\unit\models\UserTest.php
-            [message] => No docblock for element 'testCreateUser'
-        )
-
-    [191] => Array
-        (
-            [line] => 32
-            [file] => tests\unit\models\UserTest.php
-            [message] => No docblock for element 'testUpdateUser'
-        )
-
-    [192] => Array
-        (
-            [line] => 45
-            [file] => tests\unit\models\UserTest.php
-            [message] => No docblock for element 'testDeleteUser'
         )
 
 )
