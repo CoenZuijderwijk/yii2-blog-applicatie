@@ -29,9 +29,20 @@ class AcceptanceTester extends \Codeception\Actor
         Events::RESULT_PRINT_AFTER => 'print',
         Events::TEST_AFTER => 'afterTestt',
         Events::TEST_SUCCESS => 'testSuccess',
+        Events::SUITE_BEFORE => 'beforeSuite',
+
     );
 
     use _generated\AcceptanceTesterActions;
+    public function afterSuite(\Codeception\Event\SuiteEvent $e) {
+        exec('CD C:/xampp/mysql/bin & mysql -u root blogapplicatie < ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql');
+        echo "afterSuite";
+    }
+
+    public function beforeSuite(\Codeception\Event\SuiteEvent $e) {
+        exec('CD C:/xampp/mysql/bin & mysqldump -u root blogapplicatie > ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql');
+        echo "beforeSuite";
+    }
 
     public function beforeTest() {
         exec('CD C:/xampp/mysql/bin & mysqldump -u root blogapplicatie > ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql');

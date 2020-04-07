@@ -31,7 +31,7 @@ CREATE TABLE `attachment` (
   PRIMARY KEY (`id`),
   KEY `fk-attachment-blog_id` (`blog_id`),
   CONSTRAINT `fk-attachment-blog_id` FOREIGN KEY (`blog_id`) REFERENCES `blog` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `attachment` (
 
 LOCK TABLES `attachment` WRITE;
 /*!40000 ALTER TABLE `attachment` DISABLE KEYS */;
-INSERT INTO `attachment` VALUES (1,3,'smile','png','smile.png'),(2,44,'WhatsApp Image 2020-03-16 at 09.29.23','jpeg','WhatsApp Image 2020-03-16 at 09.29.23.jpeg'),(3,3,'WhatsApp Image 2020-03-16 at 09.29.23 _1_','jpeg','WhatsApp Image 2020-03-16 at 09.29.23 _1_.jpeg'),(6,168,'WhatsApp Image 2020-03-16 at 09.29.23','jpeg','WhatsApp Image 2020-03-16 at 09.29.23.jpeg'),(7,3,'WhatsApp Image 2020-03-16 at 09.29.23','jpeg','WhatsApp Image 2020-03-16 at 09.29.23.jpeg'),(22,7,'WhatsApp Image 2020-03-16 at 09.29.23 _2_','jpeg','WhatsApp Image 2020-03-16 at 09.29.23 _2_.jpeg');
+INSERT INTO `attachment` VALUES (1,3,'smile','png','smile.png'),(2,44,'WhatsApp Image 2020-03-16 at 09.29.23','jpeg','WhatsApp Image 2020-03-16 at 09.29.23.jpeg'),(3,3,'WhatsApp Image 2020-03-16 at 09.29.23 _1_','jpeg','WhatsApp Image 2020-03-16 at 09.29.23 _1_.jpeg'),(6,168,'WhatsApp Image 2020-03-16 at 09.29.23','jpeg','WhatsApp Image 2020-03-16 at 09.29.23.jpeg'),(7,3,'WhatsApp Image 2020-03-16 at 09.29.23','jpeg','WhatsApp Image 2020-03-16 at 09.29.23.jpeg'),(22,7,'WhatsApp Image 2020-03-16 at 09.29.23 _2_','jpeg','WhatsApp Image 2020-03-16 at 09.29.23 _2_.jpeg'),(49,7,'price','jpg','price.jpg');
 /*!40000 ALTER TABLE `attachment` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -90,7 +90,7 @@ CREATE TABLE `comment` (
   PRIMARY KEY (`id`),
   KEY `fk-comment-blog_id` (`blog_id`),
   CONSTRAINT `fk-comment-blog_id` FOREIGN KEY (`blog_id`) REFERENCES `blog` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=298 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=302 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -99,7 +99,7 @@ CREATE TABLE `comment` (
 
 LOCK TABLES `comment` WRITE;
 /*!40000 ALTER TABLE `comment` DISABLE KEYS */;
-INSERT INTO `comment` VALUES (13,3,'2020-03-09 09:25:53','hh','hh'),(14,51,'2020-03-09 11:20:11','f','5'),(15,3,'2020-03-09 11:32:32','pietje toch','ja dat was pietje dit is een heel goed verhaal. Ik luister best veel muziek. Naya rivera is best een mooie vrouw, toch vind ik heather morris knapper. Zij heeft een meer natuurlijke look, geen van deze beide vrouwen kunnen op tegen piet hoor'),(16,7,'2020-03-09 11:34:26','??','leer typen man\r\n'),(46,46,'2020-03-09 11:34:37','php','jatoch php'),(97,7,'2020-03-17 09:03:03','gekkeTitle','gekkeSlug'),(98,7,'2020-03-17 09:04:28','gekkeTitle','gekkeSlug'),(99,7,'2020-03-17 09:05:29','gekkeTitle','gekkeSlug'),(100,3,'2020-03-17 09:34:21','testTitle','testSlug'),(101,168,'2020-03-17 09:47:18','Wow mooi verhaal','Jij bent echt super retarted'),(102,7,'2020-03-17 10:14:35','gekkeTitle','gekkeSlug'),(103,3,'2020-03-17 10:15:19','testTitle','testSlug'),(108,7,'2020-03-17 10:31:11','gekkeTitle','gekkeSlug'),(109,3,'2020-03-17 10:31:53','testTitle','testSlug'),(110,7,'2020-03-17 10:39:48','gekkeTitle','gekkeSlug'),(111,3,'2020-03-17 10:40:57','testTitle','testSlug'),(115,7,'2020-03-17 10:52:04','gekkeTitle','gekkeSlug'),(116,3,'2020-03-17 10:52:46','testTitle','testSlug'),(128,7,'2020-03-17 11:38:45','gekkeTitle','gekkeSlug'),(129,3,'2020-03-17 11:40:02','testTitle','testSlug'),(130,7,'2020-03-17 13:44:31','gekkeTitle','gekkeSlug'),(131,7,'2020-03-17 14:00:01','gekkeTitle','gekkeSlug'),(132,3,'2020-03-17 14:01:18','testTitle','testSlug'),(133,7,'2020-03-17 14:03:27','gekkeTitle','gekkeSlug'),(284,7,'2020-03-23 14:21:04','gekkeTitle','gekkeSlug'),(285,3,'2020-03-23 14:22:37','testTitle','testSlug'),(286,7,'2020-03-23 14:37:05','gekkeTitle','gekkeSlug'),(287,3,'2020-03-23 14:38:40','testTitle','testSlug'),(288,7,'2020-04-06 11:15:53','gekkeTitle','gekkeSlug'),(289,3,'2020-04-06 11:34:12','testTitle','testSlug'),(290,7,'2020-04-06 12:18:26','gekkeTitle','gekkeSlug'),(291,7,'2020-04-06 13:20:32','gekkeTitle','gekkeSlug'),(292,3,'2020-04-06 13:26:24','testTitle','testSlug'),(293,3,'2020-04-06 13:50:07','testTitle','testSlug'),(294,3,'2020-04-06 14:10:48','testTitle','testSlug'),(295,3,'2020-04-06 14:39:50','testTitle','testSlug'),(296,3,'2020-04-06 14:56:11','testTitle','testSlug'),(297,3,'2020-04-06 15:14:28','testTitle','testSlug');
+INSERT INTO `comment` VALUES (13,3,'2020-03-09 09:25:53','hh','hh'),(14,51,'2020-03-09 11:20:11','f','5'),(15,3,'2020-03-09 11:32:32','pietje toch','ja dat was pietje dit is een heel goed verhaal. Ik luister best veel muziek. Naya rivera is best een mooie vrouw, toch vind ik heather morris knapper. Zij heeft een meer natuurlijke look, geen van deze beide vrouwen kunnen op tegen piet hoor'),(16,7,'2020-03-09 11:34:26','??','leer typen man\r\n'),(46,46,'2020-03-09 11:34:37','php','jatoch php'),(97,7,'2020-03-17 09:03:03','gekkeTitle','gekkeSlug'),(98,7,'2020-03-17 09:04:28','gekkeTitle','gekkeSlug'),(99,7,'2020-03-17 09:05:29','gekkeTitle','gekkeSlug'),(100,3,'2020-03-17 09:34:21','testTitle','testSlug'),(101,168,'2020-03-17 09:47:18','Wow mooi verhaal','Jij bent echt super retarted'),(102,7,'2020-03-17 10:14:35','gekkeTitle','gekkeSlug'),(103,3,'2020-03-17 10:15:19','testTitle','testSlug'),(108,7,'2020-03-17 10:31:11','gekkeTitle','gekkeSlug'),(109,3,'2020-03-17 10:31:53','testTitle','testSlug'),(110,7,'2020-03-17 10:39:48','gekkeTitle','gekkeSlug'),(111,3,'2020-03-17 10:40:57','testTitle','testSlug'),(115,7,'2020-03-17 10:52:04','gekkeTitle','gekkeSlug'),(116,3,'2020-03-17 10:52:46','testTitle','testSlug'),(128,7,'2020-03-17 11:38:45','gekkeTitle','gekkeSlug'),(129,3,'2020-03-17 11:40:02','testTitle','testSlug'),(130,7,'2020-03-17 13:44:31','gekkeTitle','gekkeSlug'),(131,7,'2020-03-17 14:00:01','gekkeTitle','gekkeSlug'),(132,3,'2020-03-17 14:01:18','testTitle','testSlug'),(133,7,'2020-03-17 14:03:27','gekkeTitle','gekkeSlug'),(284,7,'2020-03-23 14:21:04','gekkeTitle','gekkeSlug'),(285,3,'2020-03-23 14:22:37','testTitle','testSlug'),(286,7,'2020-03-23 14:37:05','gekkeTitle','gekkeSlug'),(287,3,'2020-03-23 14:38:40','testTitle','testSlug'),(288,7,'2020-04-06 11:15:53','gekkeTitle','gekkeSlug'),(289,3,'2020-04-06 11:34:12','testTitle','testSlug'),(290,7,'2020-04-06 12:18:26','gekkeTitle','gekkeSlug'),(291,7,'2020-04-06 13:20:32','gekkeTitle','gekkeSlug'),(292,3,'2020-04-06 13:26:24','testTitle','testSlug'),(293,3,'2020-04-06 13:50:07','testTitle','testSlug'),(294,3,'2020-04-06 14:10:48','testTitle','testSlug'),(295,3,'2020-04-06 14:39:50','testTitle','testSlug'),(296,3,'2020-04-06 14:56:11','testTitle','testSlug'),(297,3,'2020-04-06 15:14:28','testTitle','testSlug'),(298,3,'2020-04-07 08:55:26','testTitle','testSlug'),(299,3,'2020-04-07 09:22:57','testTitle','testSlug'),(300,3,'2020-04-07 09:39:16','testTitle','testSlug'),(301,3,'2020-04-07 09:56:35','testTitle','testSlug');
 /*!40000 ALTER TABLE `comment` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -164,4 +164,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-04-06 15:15:18
+-- Dump completed on 2020-04-07  9:57:25

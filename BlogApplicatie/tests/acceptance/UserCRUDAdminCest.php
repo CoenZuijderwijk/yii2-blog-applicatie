@@ -1,15 +1,17 @@
 <?php
 class UserCRUDAdminCest
 {
-    public function _before(AcceptanceTester $I)
+    public function beforeTest(AcceptanceTester $I)
     {
         $I->beforeTest();
     }
 
-    public function userCRUDAdminTest(AcceptanceTester $I)
+    public function loginAdmin(AcceptanceTester $I)
     {
         $I->loginAdmin($I);
+    }
 
+    public function createUser(AcceptanceTester $I) {
         $I->amOnPage("/user/create");
         $I->waitForText("Username", 25);
         $I->wait(3);
@@ -25,7 +27,9 @@ class UserCRUDAdminCest
         $I->see("testUser");
         $I->wait(3);
         $I->dontSee("testPassword");
+    }
 
+    public function updateUser(AcceptanceTester $I) {
         $I->amOnPage("/user/update?id=12");
         $I->wait(2);
         $I->waitForText("Update User", 25);
@@ -35,12 +39,13 @@ class UserCRUDAdminCest
         $I->wait(2);
         $I->waitForText("jantje", 25);
         $I->wait(2);
-
-        $I->logout($I);
-
     }
 
-    public function _after(AcceptanceTester $I)
+    public function logout(AcceptanceTester $I) {
+        $I->logout($I);
+    }
+
+    public function afterTest(AcceptanceTester $I)
     {
         $I->afterTest();
     }

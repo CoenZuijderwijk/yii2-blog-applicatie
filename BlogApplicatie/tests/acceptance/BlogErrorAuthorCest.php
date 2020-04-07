@@ -7,8 +7,13 @@ class BlogErrorAuthorCest
     }
 
 
-    public function blogErrorAuthor(AcceptanceTester $I) {
+
+    public function authorLogin(AcceptanceTester $I) {
         $I->loginAuthor($I);
+    }
+
+
+    public function blogErrorAuthor(AcceptanceTester $I) {
 
         $I->amOnPage('/blog');
         $I->waitForText("Create Blog", 25);
@@ -30,6 +35,9 @@ class BlogErrorAuthorCest
         $I->amOnPage("/comment/delete?id=13");
         $I->waitForText("(#403)", 25);
 
+    }
+
+    public function authorLogout(AcceptanceTester $I) {
         $I->logout($I);
     }
 

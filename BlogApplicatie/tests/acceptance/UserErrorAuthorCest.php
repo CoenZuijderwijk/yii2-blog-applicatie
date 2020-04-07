@@ -6,9 +6,12 @@ class UserErrorAuthorCest
     {
     }
 
+    public function authorLogin(AcceptanceTester $I) {
+        $I->loginAuthor($I);
+    }
+
     public function userErrorAuthor(AcceptanceTester $I)
     {
-        $I->loginAuthor($I);
 
         $I->amOnPage("/user");
         $I->waitForText("(#403)",25);
@@ -22,6 +25,9 @@ class UserErrorAuthorCest
         $I->amOnPage("/user/create");
         $I->waitForText("(#403)", 25);
 
+    }
+
+    public function logout(AcceptanceTester $I) {
         $I->logout($I);
     }
 }

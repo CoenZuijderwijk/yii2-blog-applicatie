@@ -2,16 +2,17 @@
 
 class BlogCruAuthorCest
 {
-    public function _before(AcceptanceTester $I)
+    public function beforeTest(AcceptanceTester $I)
     {
         $I->beforeTest();
     }
 
-    // tests
-    public function blogCruAuthor(AcceptanceTester $I)
+    public function authorLogin(AcceptanceTester $I)
     {
         $I->loginAuthor($I);
+    }
 
+    public function createBlog(AcceptanceTester $I) {
         $I->amOnPage("/blog");
         $I->waitForText("Blogs", 25);
         $I->wait(2);
@@ -31,7 +32,9 @@ class BlogCruAuthorCest
         $I->waitForText("testTitle", 25);
         $I->wait(3);
         $I->waitForText("Delete", 25);
+    }
 
+    public function editBlog(AcceptanceTester $I) {
         $I->amOnPage("/blog/update?id=46");
         $I->wait(2);
         $I->fillField("#blog-title" , "twee");
@@ -40,12 +43,13 @@ class BlogCruAuthorCest
         $I->wait(2);
         $I->waitForText("twee", 25);
         $I->wait(2);
-
-        $I->logout($I);
-
     }
 
-    public function _after(AcceptanceTester $I)
+    public function authorLogout(AcceptanceTester $I) {
+        $I->logout($I);
+    }
+
+    public function afterTest(AcceptanceTester $I)
     {
         $I->afterTest();
     }
