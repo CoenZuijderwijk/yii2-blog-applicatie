@@ -1025,3 +1025,1907 @@
 15:17:24.735 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
 15:17:24.737 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 805f296e-3e37-4fbe-abe8-4279f0776ac7 (org.openqa.selenium.ie.InternetExplorerDriverService)
 15:17:36.005 INFO [ActiveSessions$1.onStop] - Removing session 805f296e-3e37-4fbe-abe8-4279f0776ac7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:42:47.459 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+08:42:47.565 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+08:42:47.931 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+08:42:48.235 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+08:42:52.259 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:42:52.260 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:42:54.132 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:42:54.166 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d6d0c39b-2173-4810-bcc3-4f59b74b3025 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:43:29.523 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:43:29.523 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:43:30.842 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:43:30.844 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 32e40e31-5d0c-4764-8d9e-311afa5198ce (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:43:48.597 INFO [ActiveSessions$1.onStop] - Removing session 32e40e31-5d0c-4764-8d9e-311afa5198ce (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:43:48.599 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:43:48.600 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:43:50.315 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:43:50.317 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4179a809-145e-4784-89ad-c6bbae5e10dc (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:44:24.335 INFO [ActiveSessions$1.onStop] - Removing session 4179a809-145e-4784-89ad-c6bbae5e10dc (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:44:24.349 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:44:24.349 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:44:26.230 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:44:26.231 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c9910d3f-f1c9-4d07-ad49-6c3f28096dc3 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:44:34.573 INFO [ActiveSessions$1.onStop] - Removing session c9910d3f-f1c9-4d07-ad49-6c3f28096dc3 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:44:34.582 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:44:34.582 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:44:36.200 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:44:36.201 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 47bd0e17-7d3d-4db8-bded-8c360cad41ce (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:44:50.251 INFO [ActiveSessions$1.onStop] - Removing session 47bd0e17-7d3d-4db8-bded-8c360cad41ce (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:44:50.259 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:44:50.260 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:44:51.806 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:44:51.808 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 37109fb6-c46a-44a3-9a9e-05ac6ff9a57e (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:45:07.963 INFO [ActiveSessions$1.onStop] - Removing session 37109fb6-c46a-44a3-9a9e-05ac6ff9a57e (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:45:07.972 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:45:07.972 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:45:09.478 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:45:09.479 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 17a2395f-ac8f-455e-8e53-2ec5f7249d91 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:45:28.116 INFO [ActiveSessions$1.onStop] - Removing session 17a2395f-ac8f-455e-8e53-2ec5f7249d91 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:45:28.127 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:45:28.128 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:45:29.647 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:45:29.649 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 941b80b5-51b9-45ac-8e65-91ec7197d9a5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:45:42.963 INFO [ActiveSessions$1.onStop] - Removing session 941b80b5-51b9-45ac-8e65-91ec7197d9a5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:45:42.974 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:45:42.974 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:45:44.542 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:45:44.544 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 094bb8ab-555a-44e5-9f4e-77c3cf58e03f (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:46:01.659 INFO [ActiveSessions$1.onStop] - Removing session 094bb8ab-555a-44e5-9f4e-77c3cf58e03f (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:46:01.665 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:46:01.665 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:46:03.240 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:46:03.242 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 553f11a7-a07f-425f-ad6b-82b60e3229b1 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:46:32.639 INFO [ActiveSessions$1.onStop] - Removing session 553f11a7-a07f-425f-ad6b-82b60e3229b1 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:46:32.648 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:46:32.648 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:46:34.104 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:46:34.105 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ce10b79b-1380-4e23-8b83-d46222e97515 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:46:47.256 INFO [ActiveSessions$1.onStop] - Removing session ce10b79b-1380-4e23-8b83-d46222e97515 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:46:47.268 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:46:47.268 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:46:48.759 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:46:48.760 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 546cb331-eb47-4997-82ac-09be7d135ac9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:47:05.740 INFO [ActiveSessions$1.onStop] - Removing session 546cb331-eb47-4997-82ac-09be7d135ac9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:47:05.748 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:47:05.748 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:47:07.233 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:47:07.234 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0ba0143e-6434-443d-8fb7-de838acb05fa (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:48:01.746 INFO [ActiveSessions$1.onStop] - Removing session 0ba0143e-6434-443d-8fb7-de838acb05fa (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:48:01.752 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:48:01.752 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:48:03.250 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:48:03.251 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d834dc9b-8722-4d31-ba22-ffa288ad19af (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:48:27.703 INFO [ActiveSessions$1.onStop] - Removing session d834dc9b-8722-4d31-ba22-ffa288ad19af (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:48:27.711 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:48:27.711 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:48:29.282 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:48:29.284 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 74c42622-1273-4853-9433-586572422e9e (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:49:26.534 INFO [ActiveSessions$1.onStop] - Removing session 74c42622-1273-4853-9433-586572422e9e (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:49:26.542 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:49:26.542 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:49:28.007 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:49:28.008 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1a2e46ae-876b-4dbc-81a6-41b5b418d4bc (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:49:47.703 INFO [ActiveSessions$1.onStop] - Removing session 1a2e46ae-876b-4dbc-81a6-41b5b418d4bc (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:49:47.711 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:49:47.711 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:49:49.176 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:49:49.177 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session fcce7ec6-7f25-492f-93c1-2d2306330b43 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:50:52.414 INFO [ActiveSessions$1.onStop] - Removing session fcce7ec6-7f25-492f-93c1-2d2306330b43 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:50:52.419 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:50:52.419 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:50:54.303 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:50:54.304 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1d3a2203-df8c-4f37-9b39-9488963cec61 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:51:07.458 INFO [ActiveSessions$1.onStop] - Removing session 1d3a2203-df8c-4f37-9b39-9488963cec61 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:51:07.468 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:51:07.469 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:51:08.919 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:51:08.921 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 42b8e4a9-9690-4343-af2b-6cded5d2e1cb (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:51:25.764 INFO [ActiveSessions$1.onStop] - Removing session 42b8e4a9-9690-4343-af2b-6cded5d2e1cb (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:51:25.774 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:51:25.775 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:51:27.202 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:51:27.203 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6ea5b9d0-6e90-48ad-b155-93527621ae2c (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:52:23.121 INFO [ActiveSessions$1.onStop] - Removing session 6ea5b9d0-6e90-48ad-b155-93527621ae2c (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:52:23.126 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:52:23.127 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:52:24.771 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:52:24.773 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ca081a59-8eaf-40f8-9076-013c72db807b (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:52:40.484 INFO [ActiveSessions$1.onStop] - Removing session ca081a59-8eaf-40f8-9076-013c72db807b (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:52:40.491 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:52:40.492 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:52:41.978 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:52:41.980 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 71d946cd-f0a3-4aab-866d-28f7b484d6c9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:52:55.060 INFO [ActiveSessions$1.onStop] - Removing session 71d946cd-f0a3-4aab-866d-28f7b484d6c9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:52:55.067 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:52:55.068 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:52:56.565 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:52:56.566 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 798f063e-8f0d-4b58-9135-0d895ad4081a (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:53:12.866 INFO [ActiveSessions$1.onStop] - Removing session 798f063e-8f0d-4b58-9135-0d895ad4081a (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:53:12.873 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:53:12.873 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:53:14.327 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:53:14.329 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ef7a06a9-7436-4356-afd9-6220c2d6262f (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:53:36.811 INFO [ActiveSessions$1.onStop] - Removing session ef7a06a9-7436-4356-afd9-6220c2d6262f (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:53:36.823 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:53:36.824 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:53:38.261 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:53:38.264 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b987b33b-2d71-47a5-8348-28ac1aa9b35b (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:53:51.459 INFO [ActiveSessions$1.onStop] - Removing session b987b33b-2d71-47a5-8348-28ac1aa9b35b (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:53:51.468 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:53:51.468 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:53:52.811 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:53:52.812 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 95b2f31a-b985-47fd-89b5-bc8c4be04266 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:54:09.442 INFO [ActiveSessions$1.onStop] - Removing session 95b2f31a-b985-47fd-89b5-bc8c4be04266 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:54:09.452 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:54:09.452 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:54:10.890 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:54:10.892 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a3db4062-55e0-4854-9cf6-8bad7bc4b63b (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:54:37.325 INFO [ActiveSessions$1.onStop] - Removing session a3db4062-55e0-4854-9cf6-8bad7bc4b63b (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:54:37.332 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:54:37.333 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:54:38.852 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:54:38.854 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 72c2bb50-8201-4183-89b7-164677846e2a (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:54:51.526 INFO [ActiveSessions$1.onStop] - Removing session 72c2bb50-8201-4183-89b7-164677846e2a (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:54:51.534 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:54:51.534 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:54:53.088 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:54:53.089 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 182c1e97-d54f-4b2f-97c0-cf7f3c63f25a (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:55:09.463 INFO [ActiveSessions$1.onStop] - Removing session 182c1e97-d54f-4b2f-97c0-cf7f3c63f25a (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:55:09.477 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:55:09.478 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:55:10.979 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:55:10.980 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 3edadf2c-ca0d-4260-bf70-14978af40c19 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:55:25.162 INFO [ActiveSessions$1.onStop] - Removing session 3edadf2c-ca0d-4260-bf70-14978af40c19 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:55:25.167 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:55:25.167 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:55:26.655 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:55:26.656 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d333d556-512f-4d9c-8f57-655455cb8ae7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:55:47.933 INFO [ActiveSessions$1.onStop] - Removing session d333d556-512f-4d9c-8f57-655455cb8ae7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:55:47.943 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:55:47.943 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:55:49.383 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:55:49.385 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4dbeb6a4-c921-423f-b9fa-645f526646de (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:56:13.096 INFO [ActiveSessions$1.onStop] - Removing session 4dbeb6a4-c921-423f-b9fa-645f526646de (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:56:13.103 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:56:13.104 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:56:14.585 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:56:14.586 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 9fee67c7-62a1-41bb-8b61-df1800c06fd3 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:56:31.238 INFO [ActiveSessions$1.onStop] - Removing session 9fee67c7-62a1-41bb-8b61-df1800c06fd3 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:56:31.244 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:56:31.244 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:56:32.744 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:56:32.746 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session e16432bd-00a8-4ea9-87c7-1fb234ba933e (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:57:05.403 INFO [ActiveSessions$1.onStop] - Removing session e16432bd-00a8-4ea9-87c7-1fb234ba933e (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:57:05.415 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:57:05.415 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:57:07.333 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:57:07.334 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 35eb5055-6da9-4229-a1bd-c54ea42b79c5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:57:23.880 INFO [ActiveSessions$1.onStop] - Removing session 35eb5055-6da9-4229-a1bd-c54ea42b79c5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:57:23.888 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:57:23.889 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:57:25.351 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:57:25.352 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a11910d5-f924-40d5-b698-02d0e5b3db03 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:57:37.966 INFO [ActiveSessions$1.onStop] - Removing session a11910d5-f924-40d5-b698-02d0e5b3db03 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:57:37.984 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:57:37.984 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:57:39.311 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:57:39.313 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 69a5950d-3196-4576-b212-cb558eb284d9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:57:55.659 INFO [ActiveSessions$1.onStop] - Removing session 69a5950d-3196-4576-b212-cb558eb284d9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:57:55.665 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:57:55.665 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:57:57.134 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:57:57.136 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session fbb54c7c-2b21-42c2-9284-fa6e924c07cc (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:58:09.182 INFO [ActiveSessions$1.onStop] - Removing session fbb54c7c-2b21-42c2-9284-fa6e924c07cc (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:58:09.193 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:58:09.193 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:58:10.628 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:58:10.629 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 41211ba1-d2ce-4fbb-83ef-5bf44c78e199 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:58:23.490 INFO [ActiveSessions$1.onStop] - Removing session 41211ba1-d2ce-4fbb-83ef-5bf44c78e199 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:58:23.500 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:58:23.500 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:58:24.994 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:58:24.995 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7fd59e62-ce20-4944-87f5-adf74581af88 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:58:35.671 INFO [ActiveSessions$1.onStop] - Removing session 7fd59e62-ce20-4944-87f5-adf74581af88 (org.openqa.selenium.ie.InternetExplorerDriverService)
+08:59:43.715 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+08:59:43.715 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+08:59:45.104 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+08:59:45.106 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d822ee2e-0be7-4f39-931a-f9f00b2e8d23 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:00:01.895 INFO [ActiveSessions$1.onStop] - Removing session d822ee2e-0be7-4f39-931a-f9f00b2e8d23 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:00:01.901 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:00:01.901 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:00:03.368 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:00:03.370 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ca0736a9-4dc5-4923-9209-ec186fd07b08 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:03:13.306 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:03:13.307 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:03:14.632 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:03:14.634 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 03da58f0-e90c-475c-89eb-fbd65f771b9b (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:06:10.883 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:06:10.883 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:06:12.307 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:06:12.309 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 9602f5b9-3539-4699-b728-ca3c8b4d2345 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:06:12.614 INFO [ActiveSessions$1.onStop] - Removing session 9602f5b9-3539-4699-b728-ca3c8b4d2345 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:06:12.621 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:06:12.622 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:06:13.984 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:06:13.985 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 209d2835-3cb7-4a57-9526-062c41ebeb13 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:06:31.264 INFO [ActiveSessions$1.onStop] - Removing session 209d2835-3cb7-4a57-9526-062c41ebeb13 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:06:31.270 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:06:31.270 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:06:32.870 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:06:32.871 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5e7131c0-ae4e-4795-ab19-c988a997fa24 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:07:18.812 INFO [ActiveSessions$1.onStop] - Removing session 5e7131c0-ae4e-4795-ab19-c988a997fa24 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:07:18.818 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:07:18.818 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:07:20.345 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:07:20.346 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a7089dfe-06b7-4db4-9022-a979201bd8b8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:07:41.188 INFO [ActiveSessions$1.onStop] - Removing session a7089dfe-06b7-4db4-9022-a979201bd8b8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:07:41.195 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:07:41.195 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:07:42.855 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:07:42.857 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a60e9c9c-1cc5-4ad6-b8a5-d5ce5db53fd1 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:07:56.170 INFO [ActiveSessions$1.onStop] - Removing session a60e9c9c-1cc5-4ad6-b8a5-d5ce5db53fd1 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:07:56.177 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:07:56.177 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:07:57.749 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:07:57.750 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0bec66fe-cfe6-42f0-9fe0-bd6ccb0f35fe (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:07:58.223 INFO [ActiveSessions$1.onStop] - Removing session 0bec66fe-cfe6-42f0-9fe0-bd6ccb0f35fe (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:10:10.539 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:10:10.539 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:10:11.932 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:10:11.934 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0c07219e-b048-4c89-ab6b-02df8a22d65d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:10:12.133 INFO [ActiveSessions$1.onStop] - Removing session 0c07219e-b048-4c89-ab6b-02df8a22d65d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:10:12.142 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:10:12.142 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:10:13.570 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:10:13.571 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 39797898-4c51-42ab-8370-636ea8bdb3cf (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:10:29.753 INFO [ActiveSessions$1.onStop] - Removing session 39797898-4c51-42ab-8370-636ea8bdb3cf (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:10:29.759 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:10:29.759 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:10:31.295 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:10:31.296 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 737549e0-d6d6-4f8c-a6a1-887af4a799c5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:15.967 INFO [ActiveSessions$1.onStop] - Removing session 737549e0-d6d6-4f8c-a6a1-887af4a799c5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:15.973 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:11:15.974 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:17.525 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:11:17.527 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c981d4e5-06fe-4685-a318-2e4c5142c599 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:38.083 INFO [ActiveSessions$1.onStop] - Removing session c981d4e5-06fe-4685-a318-2e4c5142c599 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:38.091 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:11:38.091 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:39.537 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:11:39.538 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 733c39f3-2581-42cf-a2db-b04d61ec8698 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:52.480 INFO [ActiveSessions$1.onStop] - Removing session 733c39f3-2581-42cf-a2db-b04d61ec8698 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:52.494 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:11:52.494 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:53.971 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:11:53.972 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b5359d3d-9831-48ba-b2ec-797ab19681ab (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:54.351 INFO [ActiveSessions$1.onStop] - Removing session b5359d3d-9831-48ba-b2ec-797ab19681ab (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:54.360 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:11:54.360 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:55.706 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:11:55.707 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b377184a-0510-4ee8-844a-0f2a33dab6c1 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:55.975 INFO [ActiveSessions$1.onStop] - Removing session b377184a-0510-4ee8-844a-0f2a33dab6c1 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:55.983 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:11:55.983 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:11:57.288 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:11:57.289 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d979eadb-bf6a-49b2-990d-1a3ada7c58e5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:12:14.346 INFO [ActiveSessions$1.onStop] - Removing session d979eadb-bf6a-49b2-990d-1a3ada7c58e5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:12:14.352 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:12:14.352 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:12:15.943 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:12:15.945 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a0b8bbc0-edfc-4ec2-8688-393812355180 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:12:34.464 INFO [ActiveSessions$1.onStop] - Removing session a0b8bbc0-edfc-4ec2-8688-393812355180 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:12:34.470 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:12:34.470 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:12:35.942 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:12:35.943 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5f9e033f-12ad-4dc3-9064-2fc7de7187bb (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:12:48.928 INFO [ActiveSessions$1.onStop] - Removing session 5f9e033f-12ad-4dc3-9064-2fc7de7187bb (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:12:48.934 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:12:48.935 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:12:50.482 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:12:50.483 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4dfc9541-8c8a-4d8f-95ad-3d3e459ee238 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:03.576 INFO [ActiveSessions$1.onStop] - Removing session d6d0c39b-2173-4810-bcc3-4f59b74b3025 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:07.677 INFO [ActiveSessions$1.onStop] - Removing session 4dfc9541-8c8a-4d8f-95ad-3d3e459ee238 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:07.682 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:13:07.682 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:09.161 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:13:09.163 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7e3bb361-b538-41d7-93ab-d0f4eac4ce1d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:38.475 INFO [ActiveSessions$1.onStop] - Removing session 7e3bb361-b538-41d7-93ab-d0f4eac4ce1d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:38.482 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:13:38.482 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:39.832 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:13:39.834 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a4b9ad9d-a26d-4f5e-b1e9-a397cc7dba85 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:52.825 INFO [ActiveSessions$1.onStop] - Removing session a4b9ad9d-a26d-4f5e-b1e9-a397cc7dba85 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:52.831 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:13:52.831 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:54.353 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:13:54.354 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4de26b0e-0ef4-4de1-8704-7994346f183f (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:54.861 INFO [ActiveSessions$1.onStop] - Removing session 4de26b0e-0ef4-4de1-8704-7994346f183f (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:54.867 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:13:54.867 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:56.228 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:13:56.229 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ff49bfc3-e012-424c-8378-77113b36feb2 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:56.503 INFO [ActiveSessions$1.onStop] - Removing session ff49bfc3-e012-424c-8378-77113b36feb2 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:56.514 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:13:56.514 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:13:57.929 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:13:57.930 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d41e1aee-d7ff-45b1-a851-6129899320b4 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:14:14.976 INFO [ActiveSessions$1.onStop] - Removing session d41e1aee-d7ff-45b1-a851-6129899320b4 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:14:14.985 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:14:14.985 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:14:16.401 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:14:16.403 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b1246772-3a29-452e-8dfb-2dec59cc0af8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:15:14.619 INFO [ActiveSessions$1.onStop] - Removing session b1246772-3a29-452e-8dfb-2dec59cc0af8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:15:14.625 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:15:14.625 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:15:16.109 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:15:16.110 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 705742d9-7b02-4112-8205-5c5897aba0c9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:15:41.259 INFO [ActiveSessions$1.onStop] - Removing session 705742d9-7b02-4112-8205-5c5897aba0c9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:15:41.266 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:15:41.266 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:15:42.751 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:15:42.753 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session fccd829a-62fb-4a1a-a0b6-3f0d8857e0c0 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:16:38.132 INFO [ActiveSessions$1.onStop] - Removing session fccd829a-62fb-4a1a-a0b6-3f0d8857e0c0 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:16:38.139 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:16:38.139 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:16:39.606 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:16:39.607 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 15215411-06e6-4c79-a6ee-fd6c2c306386 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:17:01.859 INFO [ActiveSessions$1.onStop] - Removing session 15215411-06e6-4c79-a6ee-fd6c2c306386 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:17:01.867 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:17:01.868 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:17:03.424 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:17:03.425 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 11702965-b9fa-4b92-913e-b839c7f21248 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:07.970 INFO [ActiveSessions$1.onStop] - Removing session 11702965-b9fa-4b92-913e-b839c7f21248 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:07.978 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:18:07.979 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:09.556 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:18:09.557 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7f743800-0373-4ce4-bbd9-2a95b8da3b1a (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:22.296 INFO [ActiveSessions$1.onStop] - Removing session 7f743800-0373-4ce4-bbd9-2a95b8da3b1a (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:22.306 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:18:22.307 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:23.847 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:18:23.849 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 01e81ff3-0197-49aa-b221-9a372dd33734 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:24.321 INFO [ActiveSessions$1.onStop] - Removing session 01e81ff3-0197-49aa-b221-9a372dd33734 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:24.329 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:18:24.329 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:25.681 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:18:25.682 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f2a8b309-12c1-4096-ba1b-588d42f0a94d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:25.983 INFO [ActiveSessions$1.onStop] - Removing session f2a8b309-12c1-4096-ba1b-588d42f0a94d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:25.988 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:18:25.988 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:27.352 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:18:27.354 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ca8ae32c-5090-4265-b52b-bb1276009f3e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:44.161 INFO [ActiveSessions$1.onStop] - Removing session ca8ae32c-5090-4265-b52b-bb1276009f3e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:44.169 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:18:44.169 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:18:45.742 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:18:45.743 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 06375a0b-49d9-4b4f-a9b6-9049232a0ee6 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:19:42.081 INFO [ActiveSessions$1.onStop] - Removing session 06375a0b-49d9-4b4f-a9b6-9049232a0ee6 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:19:42.089 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:19:42.091 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:19:43.636 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:19:43.637 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 3a5d2578-24e9-4119-a6fd-16ecdf69b2c6 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:19:59.163 INFO [ActiveSessions$1.onStop] - Removing session 3a5d2578-24e9-4119-a6fd-16ecdf69b2c6 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:19:59.170 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:19:59.171 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:00.690 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:20:00.691 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 174db99e-9756-49e8-8141-e97363e382f8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:13.704 INFO [ActiveSessions$1.onStop] - Removing session 174db99e-9756-49e8-8141-e97363e382f8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:13.711 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:20:13.712 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:15.167 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:20:15.168 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6149e44a-5ad4-46c2-a110-d5036908e46c (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:15.578 INFO [ActiveSessions$1.onStop] - Removing session 6149e44a-5ad4-46c2-a110-d5036908e46c (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:15.584 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:20:15.585 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:16.942 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:20:16.943 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ad9ecef8-0132-4e6e-bd57-b0b5b08dbb65 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:17.254 INFO [ActiveSessions$1.onStop] - Removing session ad9ecef8-0132-4e6e-bd57-b0b5b08dbb65 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:17.259 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:20:17.259 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:18.753 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:20:18.754 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f30de85b-4ca0-412e-a4ed-68aea4b83ef8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:35.435 INFO [ActiveSessions$1.onStop] - Removing session f30de85b-4ca0-412e-a4ed-68aea4b83ef8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:35.452 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:20:35.452 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:20:36.957 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:20:36.958 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session fcc8fc2f-d3ee-41e0-9127-3d14b8b8a545 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:21:00.918 INFO [ActiveSessions$1.onStop] - Removing session fcc8fc2f-d3ee-41e0-9127-3d14b8b8a545 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:21:00.922 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:21:00.922 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:21:02.409 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:21:02.410 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 691c3e53-9aab-4193-8656-7f36a4f174bf (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:21:15.358 INFO [ActiveSessions$1.onStop] - Removing session 691c3e53-9aab-4193-8656-7f36a4f174bf (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:21:15.365 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:21:15.365 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:21:16.805 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:21:16.807 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c6c145f6-e1ac-4fe5-8b7a-80a1d3ebba87 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:21:17.351 INFO [ActiveSessions$1.onStop] - Removing session c6c145f6-e1ac-4fe5-8b7a-80a1d3ebba87 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:21:17.357 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:21:17.357 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:21:18.694 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:21:18.696 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 86420330-a7cc-4e7f-9eb6-5671da42a7c3 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:21:35.252 INFO [ActiveSessions$1.onStop] - Removing session 86420330-a7cc-4e7f-9eb6-5671da42a7c3 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:21:35.269 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:21:35.269 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:21:36.746 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:21:36.747 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 95435e52-8478-45eb-b440-23f706aa8d24 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:22:05.100 INFO [ActiveSessions$1.onStop] - Removing session 95435e52-8478-45eb-b440-23f706aa8d24 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:22:05.109 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:22:05.109 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:22:06.516 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:22:06.518 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session abb44d93-d6e6-420f-9825-fdede5fdb031 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:22:19.670 INFO [ActiveSessions$1.onStop] - Removing session abb44d93-d6e6-420f-9825-fdede5fdb031 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:22:19.684 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:22:19.684 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:22:21.150 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:22:21.151 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session cfc30f6e-6305-477a-ac06-5f4eaf6a7cf6 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:22:38.620 INFO [ActiveSessions$1.onStop] - Removing session cfc30f6e-6305-477a-ac06-5f4eaf6a7cf6 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:22:38.629 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:22:38.630 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:22:40.114 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:22:40.116 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2a301e73-d0e5-473c-aa7a-c81c22d09998 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:22:55.491 INFO [ActiveSessions$1.onStop] - Removing session 2a301e73-d0e5-473c-aa7a-c81c22d09998 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:22:55.498 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:22:55.498 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:22:57.043 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:22:57.044 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6cdc1064-5531-4a4e-b478-d224ff98c242 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:23:18.787 INFO [ActiveSessions$1.onStop] - Removing session 6cdc1064-5531-4a4e-b478-d224ff98c242 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:23:18.796 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:23:18.797 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:23:20.170 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:23:20.171 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session e304d53f-e101-47de-9efe-589f8921410c (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:23:45.182 INFO [ActiveSessions$1.onStop] - Removing session e304d53f-e101-47de-9efe-589f8921410c (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:23:45.196 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:23:45.196 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:23:46.655 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:23:46.656 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c31f37df-92ff-4e0d-baa9-2dc72665b4bd (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:23:46.915 INFO [ActiveSessions$1.onStop] - Removing session c31f37df-92ff-4e0d-baa9-2dc72665b4bd (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:23:46.921 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:23:46.922 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:23:48.359 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:23:48.361 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session cc97c855-2f7c-4899-bfeb-e0b850d521d2 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:24:03.373 INFO [ActiveSessions$1.onStop] - Removing session cc97c855-2f7c-4899-bfeb-e0b850d521d2 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:24:03.379 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:24:03.379 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:24:04.854 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:24:04.856 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5e48c784-7a11-4418-9140-ae3366add444 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:24:36.995 INFO [ActiveSessions$1.onStop] - Removing session 5e48c784-7a11-4418-9140-ae3366add444 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:24:37.002 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:24:37.003 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:24:38.472 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:24:38.473 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 93f165f0-710f-4774-8214-830147c79931 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:24:54.977 INFO [ActiveSessions$1.onStop] - Removing session 93f165f0-710f-4774-8214-830147c79931 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:24:54.982 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:24:54.982 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:24:56.515 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:24:56.516 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 778691ec-ebb0-44c3-a5ed-8346d34e414e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:09.739 INFO [ActiveSessions$1.onStop] - Removing session 778691ec-ebb0-44c3-a5ed-8346d34e414e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:09.751 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:25:09.751 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:11.231 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:25:11.232 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f408b281-fabe-4f4a-a4e0-c2898dd7fd49 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:11.706 INFO [ActiveSessions$1.onStop] - Removing session f408b281-fabe-4f4a-a4e0-c2898dd7fd49 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:11.714 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:25:11.714 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:13.129 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:25:13.130 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 053c923c-25a7-4e50-8e5b-f2a574af3845 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:30.543 INFO [ActiveSessions$1.onStop] - Removing session 053c923c-25a7-4e50-8e5b-f2a574af3845 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:30.550 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:25:30.550 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:32.088 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:25:32.089 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 15bf944a-ae37-4e36-939c-a3aca20736aa (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:44.593 INFO [ActiveSessions$1.onStop] - Removing session 15bf944a-ae37-4e36-939c-a3aca20736aa (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:44.599 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:25:44.599 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:46.289 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:25:46.290 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f038473b-5e4e-4b4b-a4d6-0c84e7ce99e3 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:59.726 INFO [ActiveSessions$1.onStop] - Removing session f038473b-5e4e-4b4b-a4d6-0c84e7ce99e3 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:25:59.733 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:25:59.733 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:26:01.317 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:26:01.319 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 9071f61f-15ba-411d-83de-178787e02f50 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:26:12.877 INFO [ActiveSessions$1.onStop] - Removing session 9071f61f-15ba-411d-83de-178787e02f50 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:26:30.849 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:26:30.850 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:26:32.230 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:26:32.231 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6f66470e-b0e7-41f2-a005-8bd2d862c019 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:26:32.649 INFO [ActiveSessions$1.onStop] - Removing session 6f66470e-b0e7-41f2-a005-8bd2d862c019 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:26:32.656 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:26:32.656 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:26:34.346 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:26:34.348 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8a6c3a00-5607-481e-a07b-82e8393aa80d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:26:50.840 INFO [ActiveSessions$1.onStop] - Removing session 8a6c3a00-5607-481e-a07b-82e8393aa80d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:26:50.850 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:26:50.850 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:26:52.321 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:26:52.323 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session bc253eb1-33f5-48d3-acb6-84028c325e09 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:27:37.281 INFO [ActiveSessions$1.onStop] - Removing session bc253eb1-33f5-48d3-acb6-84028c325e09 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:27:37.287 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:27:37.287 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:27:38.704 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:27:38.705 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5459aaaf-7814-4f74-bbe3-2bffbb944177 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:27:59.449 INFO [ActiveSessions$1.onStop] - Removing session 5459aaaf-7814-4f74-bbe3-2bffbb944177 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:27:59.456 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:27:59.456 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:01.011 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:28:01.012 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 60c937e7-8bbb-43ec-acb4-163b390e11fd (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:14.097 INFO [ActiveSessions$1.onStop] - Removing session 60c937e7-8bbb-43ec-acb4-163b390e11fd (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:14.105 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:28:14.105 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:15.526 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:28:15.528 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session aa9f9a34-fed4-4feb-9b43-1de0cab413a8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:16.116 INFO [ActiveSessions$1.onStop] - Removing session aa9f9a34-fed4-4feb-9b43-1de0cab413a8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:16.123 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:28:16.123 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:17.451 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:28:17.452 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c8363784-bfa3-4134-8b12-b371c6591aad (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:17.750 INFO [ActiveSessions$1.onStop] - Removing session c8363784-bfa3-4134-8b12-b371c6591aad (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:17.754 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:28:17.754 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:19.212 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:28:19.214 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ba372290-5a99-41ff-9dd5-4689f6cc1b5d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:35.687 INFO [ActiveSessions$1.onStop] - Removing session ba372290-5a99-41ff-9dd5-4689f6cc1b5d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:35.696 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:28:35.697 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:37.047 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:28:37.048 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4a72f86b-37af-4781-85a5-348d00641d38 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:55.853 INFO [ActiveSessions$1.onStop] - Removing session 4a72f86b-37af-4781-85a5-348d00641d38 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:55.859 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:28:55.859 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:28:57.311 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:28:57.312 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a90fc67b-6377-46c4-b6f4-7a94680baabd (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:29:10.052 INFO [ActiveSessions$1.onStop] - Removing session a90fc67b-6377-46c4-b6f4-7a94680baabd (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:29:10.058 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:29:10.058 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:29:11.425 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:29:11.427 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8d9b7c1c-9c4d-4110-b3f1-c41061643217 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:29:28.085 INFO [ActiveSessions$1.onStop] - Removing session 8d9b7c1c-9c4d-4110-b3f1-c41061643217 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:29:28.101 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:29:28.101 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:29:29.563 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:29:29.565 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1799b8ee-c781-47c4-8acc-83d3442780b1 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:29:59.063 INFO [ActiveSessions$1.onStop] - Removing session 1799b8ee-c781-47c4-8acc-83d3442780b1 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:29:59.070 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:29:59.070 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:00.451 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:30:00.452 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ab3c8206-eb22-42ef-8089-85655868d73a (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:13.884 INFO [ActiveSessions$1.onStop] - Removing session ab3c8206-eb22-42ef-8089-85655868d73a (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:13.891 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:30:13.891 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:15.288 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:30:15.290 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d18bf82a-04e4-4b3e-94e0-e1c4b75099b0 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:15.876 INFO [ActiveSessions$1.onStop] - Removing session d18bf82a-04e4-4b3e-94e0-e1c4b75099b0 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:15.883 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:30:15.883 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:17.262 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:30:17.263 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 31d44c39-58a3-4e93-a30e-29466565a502 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:17.468 INFO [ActiveSessions$1.onStop] - Removing session 31d44c39-58a3-4e93-a30e-29466565a502 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:17.476 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:30:17.477 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:18.920 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:30:18.922 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0569fa18-8217-4fdd-a8eb-8512b203431a (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:35.741 INFO [ActiveSessions$1.onStop] - Removing session 0569fa18-8217-4fdd-a8eb-8512b203431a (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:35.761 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:30:35.762 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:37.278 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:30:37.279 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8abdd102-e6c9-4482-b0a3-0c7af4423540 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:30:44.468 INFO [ActiveSessions$1.onStop] - Removing session ca0736a9-4dc5-4923-9209-ec186fd07b08 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:31:33.380 INFO [ActiveSessions$1.onStop] - Removing session 8abdd102-e6c9-4482-b0a3-0c7af4423540 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:31:33.387 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:31:33.388 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:31:35.287 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:31:35.288 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4fc1e4f0-0e44-41e3-8276-3a68f5e45eee (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:32:00.369 INFO [ActiveSessions$1.onStop] - Removing session 4fc1e4f0-0e44-41e3-8276-3a68f5e45eee (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:32:00.375 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:32:00.375 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:32:01.716 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:32:01.718 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b838e91b-9a8f-4808-a37b-ccd862ee6f47 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:32:57.293 INFO [ActiveSessions$1.onStop] - Removing session b838e91b-9a8f-4808-a37b-ccd862ee6f47 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:32:57.299 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:32:57.299 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:32:59.170 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:32:59.172 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1758db5e-c287-46e5-a5ad-a5368e15a593 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:33:20.008 INFO [ActiveSessions$1.onStop] - Removing session 1758db5e-c287-46e5-a5ad-a5368e15a593 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:33:20.016 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:33:20.016 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:33:21.526 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:33:21.528 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7275ad03-29df-463c-ab24-c5d4182fa2cf (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:00.069 INFO [ActiveSessions$1.onStop] - Removing session 03da58f0-e90c-475c-89eb-fbd65f771b9b (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:25.490 INFO [ActiveSessions$1.onStop] - Removing session 7275ad03-29df-463c-ab24-c5d4182fa2cf (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:25.497 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:34:25.497 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:27.020 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:34:27.022 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2e319ebe-1222-41d4-8d34-ea47c5f40065 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:40.780 INFO [ActiveSessions$1.onStop] - Removing session 2e319ebe-1222-41d4-8d34-ea47c5f40065 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:40.788 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:34:40.788 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:42.263 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:34:42.264 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c4285296-1acc-4a5e-a4e0-ec1aed1d59bc (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:42.668 INFO [ActiveSessions$1.onStop] - Removing session c4285296-1acc-4a5e-a4e0-ec1aed1d59bc (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:42.676 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:34:42.676 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:44.020 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:34:44.021 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ebb94b72-a301-48f3-903e-1e1db9176761 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:44.324 INFO [ActiveSessions$1.onStop] - Removing session ebb94b72-a301-48f3-903e-1e1db9176761 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:44.333 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:34:44.333 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:34:45.723 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:34:45.724 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 435d13b1-4911-4411-aaa1-707cf9e9716a (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:35:02.655 INFO [ActiveSessions$1.onStop] - Removing session 435d13b1-4911-4411-aaa1-707cf9e9716a (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:35:02.666 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:35:02.667 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:35:04.043 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:35:04.045 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session fcfb5aaa-ae88-4eb3-a688-d1eac0afe84f (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:01.494 INFO [ActiveSessions$1.onStop] - Removing session fcfb5aaa-ae88-4eb3-a688-d1eac0afe84f (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:01.511 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:36:01.512 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:02.967 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:36:02.969 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 747f0e0c-df3e-4810-9153-bffc56f873eb (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:18.337 INFO [ActiveSessions$1.onStop] - Removing session 747f0e0c-df3e-4810-9153-bffc56f873eb (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:18.343 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:36:18.344 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:19.764 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:36:19.765 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d7a663ec-d99a-4a41-be47-a1af200504e2 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:32.753 INFO [ActiveSessions$1.onStop] - Removing session d7a663ec-d99a-4a41-be47-a1af200504e2 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:32.759 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:36:32.759 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:34.194 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:36:34.196 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 27b08689-735d-497e-9030-727978a44d0f (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:34.882 INFO [ActiveSessions$1.onStop] - Removing session 27b08689-735d-497e-9030-727978a44d0f (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:34.888 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:36:34.888 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:36.209 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:36:36.210 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5f97b2c6-bee0-4e4c-a836-2be8c9efd817 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:36.496 INFO [ActiveSessions$1.onStop] - Removing session 5f97b2c6-bee0-4e4c-a836-2be8c9efd817 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:36.501 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:36:36.502 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:37.835 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:36:37.837 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session db7f076e-cedc-46c2-8c6d-d3ff9a46e9d0 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:54.507 INFO [ActiveSessions$1.onStop] - Removing session db7f076e-cedc-46c2-8c6d-d3ff9a46e9d0 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:54.512 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:36:54.513 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:36:55.894 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:36:55.896 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 66a396bb-f543-4156-8a5f-07acd65dab10 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:37:18.912 INFO [ActiveSessions$1.onStop] - Removing session 66a396bb-f543-4156-8a5f-07acd65dab10 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:37:18.917 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:37:18.918 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:37:20.383 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:37:20.385 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 43319ba1-bc5e-4789-ae97-85f49832839d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:37:33.049 INFO [ActiveSessions$1.onStop] - Removing session 43319ba1-bc5e-4789-ae97-85f49832839d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:37:33.058 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:37:33.059 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:37:34.536 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:37:34.537 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7a52e68e-cbd8-41af-a928-0fdc5f0a8f6e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:37:35.014 INFO [ActiveSessions$1.onStop] - Removing session 7a52e68e-cbd8-41af-a928-0fdc5f0a8f6e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:37:35.021 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:37:35.022 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:37:36.353 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:37:36.354 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d9098a43-0170-48f9-807c-6b2247730851 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:37:53.223 INFO [ActiveSessions$1.onStop] - Removing session d9098a43-0170-48f9-807c-6b2247730851 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:37:53.230 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:37:53.230 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:37:54.869 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:37:54.870 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session fac1996d-9bfc-4859-9517-6cdd94591309 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:38:25.096 INFO [ActiveSessions$1.onStop] - Removing session fac1996d-9bfc-4859-9517-6cdd94591309 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:38:25.101 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:38:25.102 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:38:26.569 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:38:26.571 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5567729a-3df7-4b0d-8bf6-0725d905cc44 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:38:39.619 INFO [ActiveSessions$1.onStop] - Removing session 5567729a-3df7-4b0d-8bf6-0725d905cc44 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:38:39.630 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:38:39.630 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:38:41.154 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:38:41.155 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7fc4b8fc-10e5-4b63-8075-edc47b93d3f0 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:38:58.540 INFO [ActiveSessions$1.onStop] - Removing session 7fc4b8fc-10e5-4b63-8075-edc47b93d3f0 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:38:58.546 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:38:58.546 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:39:00.093 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:39:00.094 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8b54eaff-f02c-4f69-bb8d-ec23eba6a933 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:39:14.229 INFO [ActiveSessions$1.onStop] - Removing session 8b54eaff-f02c-4f69-bb8d-ec23eba6a933 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:39:14.234 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:39:14.234 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:39:15.815 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:39:15.816 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 3797857f-4aea-4fd5-9b36-34455533c4e7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:39:38.159 INFO [ActiveSessions$1.onStop] - Removing session 3797857f-4aea-4fd5-9b36-34455533c4e7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:39:38.165 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:39:38.165 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:39:39.674 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:39:39.676 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 76adb3f6-2ac3-47b7-9387-b480282843fc (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:40:04.976 INFO [ActiveSessions$1.onStop] - Removing session 76adb3f6-2ac3-47b7-9387-b480282843fc (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:40:04.985 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:40:04.985 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:40:06.459 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:40:06.461 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 76163af3-149d-45bc-b226-3862a7e06578 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:40:06.763 INFO [ActiveSessions$1.onStop] - Removing session 76163af3-149d-45bc-b226-3862a7e06578 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:40:06.769 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:40:06.769 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:40:08.212 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:40:08.213 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a199fda6-238a-4d21-bee1-d71e2c4a4747 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:40:25.411 INFO [ActiveSessions$1.onStop] - Removing session a199fda6-238a-4d21-bee1-d71e2c4a4747 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:40:25.426 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:40:25.426 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:40:26.816 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:40:26.817 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session afe2eb86-a10c-4ff2-9f9d-20f51757973e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:40:59.201 INFO [ActiveSessions$1.onStop] - Removing session afe2eb86-a10c-4ff2-9f9d-20f51757973e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:40:59.210 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:40:59.211 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:00.627 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:41:00.628 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5abdee12-ec25-421b-b693-13139f70f9de (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:17.219 INFO [ActiveSessions$1.onStop] - Removing session 5abdee12-ec25-421b-b693-13139f70f9de (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:17.227 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:41:17.228 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:18.576 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:41:18.577 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 9da4981d-606a-480e-a345-4600ba569904 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:31.754 INFO [ActiveSessions$1.onStop] - Removing session 9da4981d-606a-480e-a345-4600ba569904 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:31.761 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:41:31.764 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:33.244 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:41:33.246 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 40786b4a-bcc7-4d59-a120-656e442e07d9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:33.593 INFO [ActiveSessions$1.onStop] - Removing session 40786b4a-bcc7-4d59-a120-656e442e07d9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:33.602 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:41:33.603 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:34.926 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:41:34.927 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1268551c-6c88-4f5f-b6b7-3e8d5f3a6de8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:51.785 INFO [ActiveSessions$1.onStop] - Removing session 1268551c-6c88-4f5f-b6b7-3e8d5f3a6de8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:51.804 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:41:51.804 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:41:53.325 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:41:53.326 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session e0854362-bcad-4134-a009-3c34103328bc (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:42:04.610 INFO [ActiveSessions$1.onStop] - Removing session e0854362-bcad-4134-a009-3c34103328bc (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:42:04.616 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:42:04.617 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:42:06.093 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:42:06.095 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4752802b-53b4-45d4-96f0-0f8053fb037b (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:42:20.224 INFO [ActiveSessions$1.onStop] - Removing session 4752802b-53b4-45d4-96f0-0f8053fb037b (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:42:20.232 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:42:20.232 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:42:21.615 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:42:21.616 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1c2c7ec5-7030-46be-8b11-68ccee2b1403 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:42:33.062 INFO [ActiveSessions$1.onStop] - Removing session 1c2c7ec5-7030-46be-8b11-68ccee2b1403 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:43:44.549 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:43:44.549 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:43:45.869 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:43:45.871 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 3a7e60c2-28ce-408a-8ab5-6bf8718da7bd (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:43:46.213 INFO [ActiveSessions$1.onStop] - Removing session 3a7e60c2-28ce-408a-8ab5-6bf8718da7bd (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:43:46.218 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:43:46.218 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:43:47.681 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:43:47.682 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0f146955-51c9-4c4f-b000-f3e85ccbaa8c (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:44:04.366 INFO [ActiveSessions$1.onStop] - Removing session 0f146955-51c9-4c4f-b000-f3e85ccbaa8c (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:44:04.378 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:44:04.379 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:44:05.766 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:44:05.768 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session fd5c2528-e3df-47f0-9e53-4cd4d0ca6dc9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:44:49.794 INFO [ActiveSessions$1.onStop] - Removing session fd5c2528-e3df-47f0-9e53-4cd4d0ca6dc9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:44:49.798 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:44:49.799 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:44:51.292 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:44:51.293 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ada744a6-5b98-4b80-9804-d3d0612f085e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:11.442 INFO [ActiveSessions$1.onStop] - Removing session ada744a6-5b98-4b80-9804-d3d0612f085e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:11.448 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:45:11.448 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:12.873 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:45:12.875 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b520cb71-e310-4c43-8b6a-1cd05ea8d9b5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:25.539 INFO [ActiveSessions$1.onStop] - Removing session b520cb71-e310-4c43-8b6a-1cd05ea8d9b5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:25.546 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:45:25.547 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:27.019 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:45:27.020 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 3904714e-b275-47f0-997f-68ea05a682c4 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:27.466 INFO [ActiveSessions$1.onStop] - Removing session 3904714e-b275-47f0-997f-68ea05a682c4 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:27.474 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:45:27.474 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:28.804 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:45:28.805 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 26372e54-a430-45ab-9ca8-271a62bf515d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:29.076 INFO [ActiveSessions$1.onStop] - Removing session 26372e54-a430-45ab-9ca8-271a62bf515d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:29.083 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:45:29.083 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:30.641 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:45:30.642 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 319cf8c4-d908-4139-a478-d8974a684cfa (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:47.209 INFO [ActiveSessions$1.onStop] - Removing session 319cf8c4-d908-4139-a478-d8974a684cfa (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:47.216 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:45:47.216 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:45:48.729 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:45:48.731 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d40e78b2-6566-4593-8d82-fac16503f93e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:46:07.166 INFO [ActiveSessions$1.onStop] - Removing session d40e78b2-6566-4593-8d82-fac16503f93e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:46:07.175 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:46:07.175 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:46:08.510 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:46:08.511 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 49444840-196b-4cdb-9818-8f6ab6e91581 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:46:21.693 INFO [ActiveSessions$1.onStop] - Removing session 49444840-196b-4cdb-9818-8f6ab6e91581 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:46:21.700 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:46:21.700 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:46:22.999 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:46:23.001 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 749aa1d0-4711-4898-9d80-9fd558cfdd8d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:46:40.213 INFO [ActiveSessions$1.onStop] - Removing session 749aa1d0-4711-4898-9d80-9fd558cfdd8d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:46:40.224 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:46:40.225 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:46:41.634 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:46:41.635 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session e88cf302-f415-4437-a844-221d8f2100db (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:11.895 INFO [ActiveSessions$1.onStop] - Removing session e88cf302-f415-4437-a844-221d8f2100db (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:11.902 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:47:11.903 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:13.360 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:47:13.361 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f5c9c18e-52ef-4a86-9fd9-667a76aec65f (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:26.484 INFO [ActiveSessions$1.onStop] - Removing session f5c9c18e-52ef-4a86-9fd9-667a76aec65f (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:26.507 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:47:26.507 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:27.970 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:47:27.971 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a7ff889c-172a-4e31-adea-211b927b2313 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:28.301 INFO [ActiveSessions$1.onStop] - Removing session a7ff889c-172a-4e31-adea-211b927b2313 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:28.307 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:47:28.307 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:29.662 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:47:29.664 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 09d3bbdc-7721-4c9e-a724-8bb929463237 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:29.947 INFO [ActiveSessions$1.onStop] - Removing session 09d3bbdc-7721-4c9e-a724-8bb929463237 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:29.955 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:47:29.955 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:31.298 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:47:31.299 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 27f8789c-5db1-41e5-a015-85c7e7ae9ec8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:47.799 INFO [ActiveSessions$1.onStop] - Removing session 27f8789c-5db1-41e5-a015-85c7e7ae9ec8 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:47.805 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:47:47.805 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:47:49.320 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:47:49.321 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session e6628298-d29c-4fe7-95f4-8f28f8bae57b (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:48:48.173 INFO [ActiveSessions$1.onStop] - Removing session e6628298-d29c-4fe7-95f4-8f28f8bae57b (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:48:48.182 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:48:48.182 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:48:49.657 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:48:49.658 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8f898fd2-0499-435b-9592-2b7a4bbf485c (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:49:18.189 INFO [ActiveSessions$1.onStop] - Removing session 8f898fd2-0499-435b-9592-2b7a4bbf485c (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:49:18.200 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:49:18.200 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:49:19.686 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:49:19.687 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 93b22824-ab84-4356-b686-733722c4cf1e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:50:15.953 INFO [ActiveSessions$1.onStop] - Removing session 93b22824-ab84-4356-b686-733722c4cf1e (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:50:15.958 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:50:15.959 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:50:17.402 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:50:17.404 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a525b0cc-5e7f-4f6e-83d2-1f2808701d17 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:50:37.598 INFO [ActiveSessions$1.onStop] - Removing session a525b0cc-5e7f-4f6e-83d2-1f2808701d17 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:50:37.603 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:50:37.603 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:50:38.930 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:50:38.931 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 33bf3bb0-8cde-4b65-a24b-40849c134e8b (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:51:41.970 INFO [ActiveSessions$1.onStop] - Removing session 33bf3bb0-8cde-4b65-a24b-40849c134e8b (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:51:41.976 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:51:41.977 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:51:43.909 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:51:43.910 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 84d71338-91af-4868-9a4f-3ddc48e11b02 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:51:57.013 INFO [ActiveSessions$1.onStop] - Removing session 84d71338-91af-4868-9a4f-3ddc48e11b02 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:51:57.018 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:51:57.019 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:51:58.384 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:51:58.386 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 9a07f820-8ae6-464c-a5ac-0f6d3d751fe5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:51:58.888 INFO [ActiveSessions$1.onStop] - Removing session 9a07f820-8ae6-464c-a5ac-0f6d3d751fe5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:51:58.894 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:51:58.894 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:52:00.242 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:52:00.243 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 3556cabe-f4b4-4040-9552-f4ebe409cf22 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:52:00.428 INFO [ActiveSessions$1.onStop] - Removing session 3556cabe-f4b4-4040-9552-f4ebe409cf22 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:52:00.436 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:52:00.436 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:52:01.879 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:52:01.881 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2601c3d4-5b14-425b-af14-ad56118fd319 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:52:18.793 INFO [ActiveSessions$1.onStop] - Removing session 2601c3d4-5b14-425b-af14-ad56118fd319 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:52:18.801 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:52:18.801 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:52:20.340 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:52:20.342 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a5019877-600a-42da-9f1e-03a2a034a8f5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:18.512 INFO [ActiveSessions$1.onStop] - Removing session a5019877-600a-42da-9f1e-03a2a034a8f5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:18.522 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:53:18.522 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:19.865 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:53:19.867 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 85de5495-f7a7-4aec-aee0-22b4c0e74acd (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:35.294 INFO [ActiveSessions$1.onStop] - Removing session 85de5495-f7a7-4aec-aee0-22b4c0e74acd (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:35.302 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:53:35.303 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:37.210 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:53:37.211 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 095812c4-9dc4-4b0c-aa4f-b5be9e57ceab (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:50.386 INFO [ActiveSessions$1.onStop] - Removing session 095812c4-9dc4-4b0c-aa4f-b5be9e57ceab (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:50.396 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:53:50.397 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:51.837 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:53:51.838 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0ef5a27b-a7b4-4ae8-90de-886255e173f2 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:52.497 INFO [ActiveSessions$1.onStop] - Removing session 0ef5a27b-a7b4-4ae8-90de-886255e173f2 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:52.503 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:53:52.503 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:53.984 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:53:53.985 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7ee5ccb8-53c6-4a85-bedb-23fcb367a133 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:54.273 INFO [ActiveSessions$1.onStop] - Removing session 7ee5ccb8-53c6-4a85-bedb-23fcb367a133 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:54.281 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:53:54.281 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:53:55.721 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:53:55.722 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 69f9bb58-fd96-45bb-9665-ccec7c655886 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:54:12.444 INFO [ActiveSessions$1.onStop] - Removing session 69f9bb58-fd96-45bb-9665-ccec7c655886 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:54:12.455 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:54:12.456 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:54:13.848 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:54:13.850 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2809a2b4-710e-408c-8ecf-9c09472fb020 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:54:38.519 INFO [ActiveSessions$1.onStop] - Removing session 2809a2b4-710e-408c-8ecf-9c09472fb020 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:54:38.525 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:54:38.525 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:54:40.003 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:54:40.004 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2558cd7f-90d1-455a-b6b7-b64c6f733384 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:54:53.388 INFO [ActiveSessions$1.onStop] - Removing session 2558cd7f-90d1-455a-b6b7-b64c6f733384 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:54:53.413 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:54:53.414 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:54:54.765 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:54:54.767 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session dd7f5f17-3739-479f-a7fd-792be87469b9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:54:55.267 INFO [ActiveSessions$1.onStop] - Removing session dd7f5f17-3739-479f-a7fd-792be87469b9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:54:55.274 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:54:55.274 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:54:56.629 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:54:56.631 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session e5373b72-f1d1-490c-9b4f-fcee1b371733 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:55:14.641 INFO [ActiveSessions$1.onStop] - Removing session e5373b72-f1d1-490c-9b4f-fcee1b371733 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:55:14.657 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:55:14.657 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:55:16.126 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:55:16.128 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session dd6294fa-aa6f-405e-8c8d-fd2e4a72eee7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:55:43.444 INFO [ActiveSessions$1.onStop] - Removing session dd6294fa-aa6f-405e-8c8d-fd2e4a72eee7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:55:43.456 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:55:43.456 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:55:45.154 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:55:45.155 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7c16308d-38c1-4086-b24e-30a3808fb91d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:55:58.291 INFO [ActiveSessions$1.onStop] - Removing session 7c16308d-38c1-4086-b24e-30a3808fb91d (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:55:58.300 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:55:58.300 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:55:59.829 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:55:59.830 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session cb7e702b-e510-4042-bd7e-33f472df59f2 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:56:17.472 INFO [ActiveSessions$1.onStop] - Removing session cb7e702b-e510-4042-bd7e-33f472df59f2 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:56:17.479 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:56:17.480 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:56:18.998 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:56:18.999 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 62e11d24-0932-4d6e-8303-bc38301f33c3 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:56:33.730 INFO [ActiveSessions$1.onStop] - Removing session 62e11d24-0932-4d6e-8303-bc38301f33c3 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:56:33.747 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:56:33.747 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:56:35.189 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:56:35.190 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session e402e7b5-3c94-453a-b5d2-30239bc34831 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:56:57.318 INFO [ActiveSessions$1.onStop] - Removing session e402e7b5-3c94-453a-b5d2-30239bc34831 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:56:57.325 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:56:57.325 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:56:58.855 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:56:58.857 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session e55711ea-ff84-4dab-86ed-85624daa2e5b (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:57:23.994 INFO [ActiveSessions$1.onStop] - Removing session e55711ea-ff84-4dab-86ed-85624daa2e5b (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:57:24.001 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:57:24.002 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:57:25.323 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:57:25.325 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 373af616-fb96-4310-8efa-0ac0329a45a6 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:57:25.628 INFO [ActiveSessions$1.onStop] - Removing session 373af616-fb96-4310-8efa-0ac0329a45a6 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:57:25.635 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:57:25.635 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:57:26.993 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:57:26.994 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session bfa5fcd8-c7dc-4186-adfd-61b29f35d9e2 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:57:43.686 INFO [ActiveSessions$1.onStop] - Removing session bfa5fcd8-c7dc-4186-adfd-61b29f35d9e2 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:57:43.696 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:57:43.697 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:57:45.203 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:57:45.204 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0d4b978a-1d61-4aa1-aca2-56e0099acb0a (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:58:17.309 INFO [ActiveSessions$1.onStop] - Removing session 0d4b978a-1d61-4aa1-aca2-56e0099acb0a (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:58:17.320 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:58:17.320 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:58:18.700 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:58:18.702 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6b0a4a5b-6d07-4fb5-9c7c-022cce548a83 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:58:35.343 INFO [ActiveSessions$1.onStop] - Removing session 6b0a4a5b-6d07-4fb5-9c7c-022cce548a83 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:58:35.351 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:58:35.351 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:58:36.642 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:58:36.644 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4d42b5e4-c55f-4082-ae00-c927c25fb73f (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:58:49.493 INFO [ActiveSessions$1.onStop] - Removing session 4d42b5e4-c55f-4082-ae00-c927c25fb73f (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:58:49.502 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:58:49.502 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:58:50.882 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:58:50.884 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session cd367698-badd-427e-bbf9-1b9914a79cac (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:58:51.389 INFO [ActiveSessions$1.onStop] - Removing session cd367698-badd-427e-bbf9-1b9914a79cac (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:58:51.397 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:58:51.398 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:58:52.750 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:58:52.751 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6130dac2-7afb-4de6-936f-15f2cc47559b (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:59:09.303 INFO [ActiveSessions$1.onStop] - Removing session 6130dac2-7afb-4de6-936f-15f2cc47559b (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:59:09.311 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:59:09.311 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:59:10.791 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:59:10.792 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4439b45e-b709-46e7-956e-9c67e24783f7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:59:24.249 INFO [ActiveSessions$1.onStop] - Removing session 4439b45e-b709-46e7-956e-9c67e24783f7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:59:24.257 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:59:24.257 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:59:25.729 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:59:25.730 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f7160108-6a46-46ce-b102-01a797cc81fc (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:59:38.649 INFO [ActiveSessions$1.onStop] - Removing session f7160108-6a46-46ce-b102-01a797cc81fc (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:59:38.657 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+09:59:38.658 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+09:59:39.966 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+09:59:39.967 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 30322beb-1229-47a0-bef6-cce72bc8b7ee (org.openqa.selenium.ie.InternetExplorerDriverService)
+09:59:52.103 INFO [ActiveSessions$1.onStop] - Removing session 30322beb-1229-47a0-bef6-cce72bc8b7ee (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:16:16.247 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:16:16.247 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:16:17.728 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:16:17.730 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 9d258ec6-f28b-4802-a8a2-5d4cef197122 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:16:18.440 INFO [ActiveSessions$1.onStop] - Removing session 9d258ec6-f28b-4802-a8a2-5d4cef197122 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:16:18.445 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:16:18.445 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:16:20.248 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:16:20.250 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4372160d-2895-4b02-87b1-dc175dd4d9b9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:16:38.111 INFO [ActiveSessions$1.onStop] - Removing session 4372160d-2895-4b02-87b1-dc175dd4d9b9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:16:38.132 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:16:38.132 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:16:39.434 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:16:39.435 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 65825878-d18b-40eb-a4ee-2fc59356a77f (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:17:25.042 INFO [ActiveSessions$1.onStop] - Removing session 65825878-d18b-40eb-a4ee-2fc59356a77f (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:17:25.047 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:17:25.048 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:17:26.374 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:17:26.375 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 9f606893-1e2e-4444-926d-861884bf4011 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:17:46.099 INFO [ActiveSessions$1.onStop] - Removing session 9f606893-1e2e-4444-926d-861884bf4011 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:17:46.107 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:17:46.107 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:17:47.401 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:17:47.402 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 47a8d497-22a4-4124-8765-43070254873e (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:00.456 INFO [ActiveSessions$1.onStop] - Removing session 47a8d497-22a4-4124-8765-43070254873e (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:00.462 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:18:00.463 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:01.776 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:18:01.778 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5eaf48a7-7ba4-4db6-84f6-69d202d01af3 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:02.337 INFO [ActiveSessions$1.onStop] - Removing session 5eaf48a7-7ba4-4db6-84f6-69d202d01af3 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:02.344 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:18:02.345 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:03.685 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:18:03.687 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6a33faca-a5c7-49a2-a4b2-70b28fbf0174 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:03.967 INFO [ActiveSessions$1.onStop] - Removing session 6a33faca-a5c7-49a2-a4b2-70b28fbf0174 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:03.975 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:18:03.975 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:05.356 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:18:05.358 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8f4ec5d7-22b8-4966-a415-1e11c26e1864 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:21.563 INFO [ActiveSessions$1.onStop] - Removing session 8f4ec5d7-22b8-4966-a415-1e11c26e1864 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:21.570 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:18:21.570 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:22.873 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:18:22.874 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6cd20fe9-1c02-4a44-8380-d3a6d630121c (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:40.933 INFO [ActiveSessions$1.onStop] - Removing session 6cd20fe9-1c02-4a44-8380-d3a6d630121c (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:40.942 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:18:40.942 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:42.267 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:18:42.269 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 81358b34-bb07-4fea-b11b-c90b88e62ba5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:55.172 INFO [ActiveSessions$1.onStop] - Removing session 81358b34-bb07-4fea-b11b-c90b88e62ba5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:55.177 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:18:55.177 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:18:56.536 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:18:56.538 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2ec117e9-04c9-4606-8416-b7e91fb706a7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:19:12.750 INFO [ActiveSessions$1.onStop] - Removing session 2ec117e9-04c9-4606-8416-b7e91fb706a7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:19:12.758 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:19:12.758 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:19:14.156 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:19:14.158 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 3872a669-ef22-4ef2-b5c1-5dc0eec00a37 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:19:44.573 INFO [ActiveSessions$1.onStop] - Removing session 3872a669-ef22-4ef2-b5c1-5dc0eec00a37 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:19:44.578 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:19:44.578 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:19:45.918 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:19:45.919 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 91a87b68-217e-49da-a5bf-07019144f4e0 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:19:58.911 INFO [ActiveSessions$1.onStop] - Removing session 91a87b68-217e-49da-a5bf-07019144f4e0 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:19:58.920 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:19:58.920 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:20:00.405 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:20:00.406 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f34a17cd-0fcf-4087-90d6-3678f234348a (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:20:00.917 INFO [ActiveSessions$1.onStop] - Removing session f34a17cd-0fcf-4087-90d6-3678f234348a (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:20:00.921 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:20:00.922 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:20:02.268 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:20:02.269 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8963f1c1-7fc8-41e2-8b15-e855759f2155 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:20:02.553 INFO [ActiveSessions$1.onStop] - Removing session 8963f1c1-7fc8-41e2-8b15-e855759f2155 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:20:02.561 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:20:02.562 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:20:03.948 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:20:03.949 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session cb015d52-0de5-4a26-9ff6-705a2a01629c (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:20:20.927 INFO [ActiveSessions$1.onStop] - Removing session cb015d52-0de5-4a26-9ff6-705a2a01629c (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:20:20.934 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:20:20.935 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:20:22.215 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:20:22.216 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4301d249-ca26-4830-b3f9-551657cdd944 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:21:16.095 INFO [ActiveSessions$1.onStop] - Removing session 4301d249-ca26-4830-b3f9-551657cdd944 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:21:16.102 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:21:16.103 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:21:17.396 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:21:17.397 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a6665259-5a2a-4f00-ac40-8e88d6fa3373 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:21:42.228 INFO [ActiveSessions$1.onStop] - Removing session a6665259-5a2a-4f00-ac40-8e88d6fa3373 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:21:42.235 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:21:42.235 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:21:43.538 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:21:43.540 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b731b93b-edc3-458c-bd44-e481cbda70f7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:22:39.263 INFO [ActiveSessions$1.onStop] - Removing session b731b93b-edc3-458c-bd44-e481cbda70f7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:22:39.270 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:22:39.271 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:22:40.839 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:22:40.840 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 408f41e0-cf71-45e7-a0ce-90fdc636f7b9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:23:00.866 INFO [ActiveSessions$1.onStop] - Removing session 408f41e0-cf71-45e7-a0ce-90fdc636f7b9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:23:00.875 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:23:00.875 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:23:02.179 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:23:02.181 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 35a25134-dae9-4d50-b3f4-654eb09e6392 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:04.442 INFO [ActiveSessions$1.onStop] - Removing session 35a25134-dae9-4d50-b3f4-654eb09e6392 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:04.460 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:24:04.460 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:05.919 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:24:05.920 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 95e6a800-2f81-4dc8-928b-d80e7ea88d1e (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:18.767 INFO [ActiveSessions$1.onStop] - Removing session 95e6a800-2f81-4dc8-928b-d80e7ea88d1e (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:18.774 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:24:18.774 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:20.097 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:24:20.099 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 26364bb4-c3de-4cd3-8a5a-9309a94ab70a (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:20.600 INFO [ActiveSessions$1.onStop] - Removing session 26364bb4-c3de-4cd3-8a5a-9309a94ab70a (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:20.605 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:24:20.605 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:21.952 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:24:21.953 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7883a3db-c7c4-48b0-85f7-5de8682fa4b5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:22.216 INFO [ActiveSessions$1.onStop] - Removing session 7883a3db-c7c4-48b0-85f7-5de8682fa4b5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:22.222 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:24:22.222 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:23.739 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:24:23.741 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 01a9906a-332c-41e1-845c-c0d5fc2239fa (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:40.243 INFO [ActiveSessions$1.onStop] - Removing session 01a9906a-332c-41e1-845c-c0d5fc2239fa (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:40.249 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:24:40.249 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:24:41.538 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:24:41.540 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 16fec711-4c8a-4b55-9e70-d3ad19a9f730 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:25:37.784 INFO [ActiveSessions$1.onStop] - Removing session 16fec711-4c8a-4b55-9e70-d3ad19a9f730 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:25:37.794 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:25:37.795 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:25:39.104 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:25:39.105 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ab389dd7-43eb-4ea4-af58-cff67ea8e5a5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:25:54.393 INFO [ActiveSessions$1.onStop] - Removing session ab389dd7-43eb-4ea4-af58-cff67ea8e5a5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:25:54.399 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:25:54.400 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:25:55.809 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:25:55.811 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 04fda590-79ae-47c8-b91f-93e355a3fae7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:09.019 INFO [ActiveSessions$1.onStop] - Removing session 04fda590-79ae-47c8-b91f-93e355a3fae7 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:09.026 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:26:09.026 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:10.328 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:26:10.329 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b4878242-55ea-40bb-a2cc-f9be2c8c2d12 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:10.807 INFO [ActiveSessions$1.onStop] - Removing session b4878242-55ea-40bb-a2cc-f9be2c8c2d12 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:10.819 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:26:10.819 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:12.158 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:26:12.159 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ef1a7ca0-17be-421b-be48-c028f26b1fcc (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:12.440 INFO [ActiveSessions$1.onStop] - Removing session ef1a7ca0-17be-421b-be48-c028f26b1fcc (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:12.446 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:26:12.446 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:13.738 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:26:13.740 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1ed2ccdf-47f1-4338-9ee8-3a284dc2e40c (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:30.521 INFO [ActiveSessions$1.onStop] - Removing session 1ed2ccdf-47f1-4338-9ee8-3a284dc2e40c (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:30.531 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:26:30.531 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:32.008 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:26:32.009 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 30c60ba9-0576-4269-aa83-25d8dfc7e376 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:54.108 INFO [ActiveSessions$1.onStop] - Removing session 30c60ba9-0576-4269-aa83-25d8dfc7e376 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:54.117 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:26:54.118 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:26:55.565 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:26:55.566 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 58927b02-e1ba-4fa4-a823-288d010e908f (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:27:08.276 INFO [ActiveSessions$1.onStop] - Removing session 58927b02-e1ba-4fa4-a823-288d010e908f (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:27:08.282 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:27:08.283 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:27:09.564 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:27:09.567 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session c7d225a2-51e3-4385-bfaa-78318572f449 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:27:10.119 INFO [ActiveSessions$1.onStop] - Removing session c7d225a2-51e3-4385-bfaa-78318572f449 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:27:10.125 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:27:10.126 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:27:11.295 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:27:11.296 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8530dd19-143f-466e-bfe8-a1eb8423f29f (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:27:27.357 INFO [ActiveSessions$1.onStop] - Removing session 8530dd19-143f-466e-bfe8-a1eb8423f29f (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:27:27.364 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:27:27.365 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:27:28.742 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:27:28.744 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 58605fdc-3b2e-4a3c-a7c8-0a7c5f9c59e9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:27:56.114 INFO [ActiveSessions$1.onStop] - Removing session 58605fdc-3b2e-4a3c-a7c8-0a7c5f9c59e9 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:27:56.121 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:27:56.122 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:27:57.431 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:27:57.432 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2f65351c-7d51-46e7-9d43-823ef7499181 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:28:10.339 INFO [ActiveSessions$1.onStop] - Removing session 2f65351c-7d51-46e7-9d43-823ef7499181 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:28:10.345 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:28:10.346 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:28:11.678 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:28:11.680 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ec7ebd59-d90b-4bd4-9faa-81d713306305 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:28:29.059 INFO [ActiveSessions$1.onStop] - Removing session ec7ebd59-d90b-4bd4-9faa-81d713306305 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:28:29.068 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:28:29.068 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:28:30.548 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:28:30.550 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 4229a8f5-86ae-4d83-b95f-e7e572104c15 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:28:44.919 INFO [ActiveSessions$1.onStop] - Removing session 4229a8f5-86ae-4d83-b95f-e7e572104c15 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:28:44.925 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:28:44.925 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:28:46.386 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:28:46.387 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0ec11fd3-5b58-4f5f-ab2d-ca855626a323 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:29:08.347 INFO [ActiveSessions$1.onStop] - Removing session 0ec11fd3-5b58-4f5f-ab2d-ca855626a323 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:29:08.354 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:29:08.354 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:29:09.629 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:29:09.631 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 9f8faf89-7455-4d49-8fcf-6481cc735246 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:29:33.571 INFO [ActiveSessions$1.onStop] - Removing session 9f8faf89-7455-4d49-8fcf-6481cc735246 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:29:33.578 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:29:33.579 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:29:35.077 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:29:35.079 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5c17ecb6-36b4-4b84-8bef-7a02ebbfd4e0 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:29:35.392 INFO [ActiveSessions$1.onStop] - Removing session 5c17ecb6-36b4-4b84-8bef-7a02ebbfd4e0 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:29:35.404 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:29:35.404 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:29:36.814 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:29:36.815 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 20910847-552c-4c83-8d55-f213b76e1c76 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:29:52.853 INFO [ActiveSessions$1.onStop] - Removing session 20910847-552c-4c83-8d55-f213b76e1c76 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:29:52.861 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:29:52.861 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:29:54.211 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:29:54.213 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session be6e434d-db50-4c62-82bd-c9f290492ea1 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:30:26.736 INFO [ActiveSessions$1.onStop] - Removing session be6e434d-db50-4c62-82bd-c9f290492ea1 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:30:26.743 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:30:26.743 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:30:28.038 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:30:28.039 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d41ff83f-a796-44d4-92e8-a448c81d54e5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:30:44.536 INFO [ActiveSessions$1.onStop] - Removing session d41ff83f-a796-44d4-92e8-a448c81d54e5 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:30:44.543 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:30:44.543 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:30:45.815 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:30:45.816 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 60503c27-ce71-4fdd-a246-2d9034da208b (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:30:58.707 INFO [ActiveSessions$1.onStop] - Removing session 60503c27-ce71-4fdd-a246-2d9034da208b (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:30:58.715 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:30:58.715 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:00.177 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:31:00.178 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 827ba8ac-f6b3-47c2-804f-81ebb422f45c (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:00.636 INFO [ActiveSessions$1.onStop] - Removing session 827ba8ac-f6b3-47c2-804f-81ebb422f45c (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:00.642 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:31:00.642 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:01.974 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:31:01.976 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d8a7ab4d-6189-4559-b3b7-f8606a08ab98 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:18.612 INFO [ActiveSessions$1.onStop] - Removing session d8a7ab4d-6189-4559-b3b7-f8606a08ab98 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:18.619 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:31:18.620 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:19.897 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:31:19.898 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 0a099b02-1e06-4fb9-88b4-09a30bc4f039 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:32.464 INFO [ActiveSessions$1.onStop] - Removing session 0a099b02-1e06-4fb9-88b4-09a30bc4f039 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:32.470 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:31:32.470 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:33.927 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:31:33.929 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 6f4bb085-2b73-42e2-9aa4-8a95ecf64719 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:46.742 INFO [ActiveSessions$1.onStop] - Removing session 6f4bb085-2b73-42e2-9aa4-8a95ecf64719 (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:46.751 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+10:31:46.751 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:48.079 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+10:31:48.081 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 875e0604-008b-4850-9009-432c4047324c (org.openqa.selenium.ie.InternetExplorerDriverService)
+10:31:59.544 INFO [ActiveSessions$1.onStop] - Removing session 875e0604-008b-4850-9009-432c4047324c (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:43:14.443 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:43:14.447 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:43:17.078 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:43:17.143 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5ccea0df-2b06-49b5-9b8c-86e982557483 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:43:19.325 INFO [ActiveSessions$1.onStop] - Removing session 5ccea0df-2b06-49b5-9b8c-86e982557483 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:43:19.335 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:43:19.335 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:43:21.506 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:43:21.512 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 870380b6-28fc-4a0f-bc05-7ed8a716ec57 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:43:21.822 INFO [ActiveSessions$1.onStop] - Removing session 870380b6-28fc-4a0f-bc05-7ed8a716ec57 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:44:04.145 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:44:04.145 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:44:05.626 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:44:05.630 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 56709bc3-5031-4758-b5aa-511d2b070b6a (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:44:05.894 INFO [ActiveSessions$1.onStop] - Removing session 56709bc3-5031-4758-b5aa-511d2b070b6a (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:44:55.930 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:44:55.930 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:44:57.355 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:44:57.359 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session f45a778c-8157-4bcf-be48-72ad9baf9e95 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:44:57.561 INFO [ActiveSessions$1.onStop] - Removing session f45a778c-8157-4bcf-be48-72ad9baf9e95 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:45:48.630 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:45:48.631 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:45:49.973 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:45:49.975 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 73364b00-874f-46dd-af62-aecd1476cede (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:46:10.137 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:46:10.138 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:46:11.509 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:46:11.513 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session efaf23d4-ac68-4290-9bc5-33157786524f (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:46:11.785 INFO [ActiveSessions$1.onStop] - Removing session efaf23d4-ac68-4290-9bc5-33157786524f (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:46:29.959 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:46:29.959 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:46:31.331 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:46:31.335 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a91abc47-6d39-4710-8f9e-93625c2917a1 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:46:31.512 INFO [ActiveSessions$1.onStop] - Removing session a91abc47-6d39-4710-8f9e-93625c2917a1 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:47:48.509 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:47:48.509 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:47:50.004 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:47:50.008 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session e3044f39-eb64-4e1b-9ff4-c9c8f65a6835 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:47:50.927 INFO [ActiveSessions$1.onStop] - Removing session e3044f39-eb64-4e1b-9ff4-c9c8f65a6835 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:48:18.095 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:48:18.096 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:48:19.474 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:48:19.477 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session b8dc145a-ea19-4457-8fc8-19b77b715c3f (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:48:20.636 INFO [ActiveSessions$1.onStop] - Removing session b8dc145a-ea19-4457-8fc8-19b77b715c3f (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:48:35.328 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:48:35.328 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:48:36.681 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:48:36.684 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 673bd479-b59e-409c-a2f7-ffbc64b1950a (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:48:37.606 INFO [ActiveSessions$1.onStop] - Removing session 673bd479-b59e-409c-a2f7-ffbc64b1950a (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:48:58.875 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:48:58.875 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:49:00.246 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:49:00.248 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 5eb470e5-25df-4e28-8af2-2efd1f2f6203 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:49:01.368 INFO [ActiveSessions$1.onStop] - Removing session 5eb470e5-25df-4e28-8af2-2efd1f2f6203 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:49:55.878 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:49:55.878 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:49:57.370 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:49:57.373 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 066f5c0f-c10e-43c3-b159-013fc3f50b8a (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:49:58.777 INFO [ActiveSessions$1.onStop] - Removing session 066f5c0f-c10e-43c3-b159-013fc3f50b8a (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:50:19.251 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:50:19.251 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:50:20.912 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:50:20.915 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 487ff7b6-d614-4f9b-aeb1-48bdf26d8941 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:50:27.297 INFO [ActiveSessions$1.onStop] - Removing session 487ff7b6-d614-4f9b-aeb1-48bdf26d8941 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:52:39.582 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:52:39.582 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:52:41.019 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:52:41.024 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8a11c642-6acf-452b-a22a-33531701ff0e (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:52:47.302 INFO [ActiveSessions$1.onStop] - Removing session 8a11c642-6acf-452b-a22a-33531701ff0e (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:53:16.468 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+12:53:16.468 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+12:53:18.115 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+12:53:18.119 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session e154b690-a790-46a8-ac9e-4bf36cf1bd90 (org.openqa.selenium.ie.InternetExplorerDriverService)
+12:53:24.665 INFO [ActiveSessions$1.onStop] - Removing session e154b690-a790-46a8-ac9e-4bf36cf1bd90 (org.openqa.selenium.ie.InternetExplorerDriverService)
+13:52:02.048 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+13:52:02.138 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+13:52:02.459 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+13:52:02.776 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+13:52:06.273 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+13:52:06.275 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+13:52:08.727 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:52:08.767 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 77dac549-4726-4c6a-afaa-8a74cbc67d42 (org.openqa.selenium.ie.InternetExplorerDriverService)
+13:52:10.068 INFO [ActiveSessions$1.onStop] - Removing session 77dac549-4726-4c6a-afaa-8a74cbc67d42 (org.openqa.selenium.ie.InternetExplorerDriverService)
+13:52:10.071 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+13:52:10.071 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+13:52:11.880 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:52:11.882 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 48164135-4051-485b-9494-ba3fe82d6369 (org.openqa.selenium.ie.InternetExplorerDriverService)
+13:52:28.321 INFO [ActiveSessions$1.onStop] - Removing session 48164135-4051-485b-9494-ba3fe82d6369 (org.openqa.selenium.ie.InternetExplorerDriverService)
+13:52:28.331 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "internet explorer"
+}
+13:52:28.332 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.ie.InternetExplorerDriverService)
+13:52:29.916 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+13:52:29.917 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 22b0d5b8-4d0f-4c4c-93bc-3573bf2f3f92 (org.openqa.selenium.ie.InternetExplorerDriverService)
+14:22:58.206 INFO [ActiveSessions$1.onStop] - Removing session 22b0d5b8-4d0f-4c4c-93bc-3573bf2f3f92 (org.openqa.selenium.ie.InternetExplorerDriverService)

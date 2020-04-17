@@ -18,5 +18,6 @@ class UserErrorGeustCest
 
         $I->amOnPage("/user/create");
         $I->waitForText("(#403)", 25);
+
     }
 }

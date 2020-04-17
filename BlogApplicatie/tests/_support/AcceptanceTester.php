@@ -34,15 +34,7 @@ class AcceptanceTester extends \Codeception\Actor
     );
 
     use _generated\AcceptanceTesterActions;
-    public function afterSuite(\Codeception\Event\SuiteEvent $e) {
-        exec('CD C:/xampp/mysql/bin & mysql -u root blogapplicatie < ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql');
-        echo "afterSuite";
-    }
 
-    public function beforeSuite(\Codeception\Event\SuiteEvent $e) {
-        exec('CD C:/xampp/mysql/bin & mysqldump -u root blogapplicatie > ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql');
-        echo "beforeSuite";
-    }
 
     public function beforeTest() {
         exec('CD C:/xampp/mysql/bin & mysqldump -u root blogapplicatie > ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql');
@@ -54,17 +46,6 @@ class AcceptanceTester extends \Codeception\Actor
         echo "afterTest";
     }
 
-    public function testSuccess(\Codeception\Event\TestEvent $e) {
-        exec('CD C:/xampp/mysql/bin & mysql -u root blogapplicatie < ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql');
-    }
-
-    public function testFailed(\Codeception\Event\FailEvent $e) {
-        exec('CD C:/xampp/mysql/bin & mysql -u root blogapplicatie < ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql');
-    }
-
-    public function afterTestt(\Codeception\Event\TestEvent $e) {
-        exec('CD C:/xampp/mysql/bin & mysql -u root blogapplicatie < ../../htdocs/Yii/yii2-blog-applicatie/BlogApplicatie/tests/_data/before-test.sql');
-    }
 
     public function loginAdmin($I) {
         $username = '#loginform-username';
